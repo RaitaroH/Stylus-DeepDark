@@ -1,4 +1,4 @@
-# Sylus-DeepDark
+# Stylus-DeepDark
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/Stylus%20-%20DeepDark.png)
 Write your scripts in the dark. (Stylus dark theme)
 
