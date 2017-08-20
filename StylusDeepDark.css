@@ -1,13 +1,21 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
 @-moz-document regexp("moz-extension://.*"), regexp("chrome-extension://.*") {
+
+/*Theme made by RaitaroH @https://github.com/RaitaroH/MyAnimeList-DeepDark*/
+  
+/*1.0.0*/
+	
+	/*Main color variables*/
 	:root
 	{
 		/*User colors*/
-		--main-color: #00adee;
-		--main-background: #111111;
-		--second-background: #181818;
-		--hover-background: #232323;
-		--main-text: #EFF0F1;
-		--dimer-text: #CCCCCC;
+		--main-color: /*[[mainColor]]*/;
+		--main-background: /*[[mainBackground]]*/;
+		--second-background: /*[[secondBackground]]*/;
+		--hover-background: /*[[hoverBackground]]*/;
+		--main-text: /*[[mainText]]*/;
+		--dimer-text: /*[[dimerText]]*/;
 
 		/*DeepDark colors*/
 		/*
