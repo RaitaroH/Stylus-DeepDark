@@ -11,7 +11,7 @@ Theme as a userstyle [here](https://userstyles.org/styles/146429/stylus-deepdark
 # Screenshots
 Manage page
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/Manage.png)
-The code and the popup menu themed
+The code and the popup menu themed (NOTE: the errors are not an issue)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/Code.png)
 A popup window example
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/Windows.png)
