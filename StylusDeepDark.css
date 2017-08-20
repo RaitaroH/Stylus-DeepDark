@@ -1,0 +1,300 @@
+@-moz-document regexp("moz-extension://.*"), regexp("chrome-extension://.*") {
+	:root
+	{
+		/*User colors*/
+		--main-color: #00adee;
+		--main-background: #111111;
+		--second-background: #181818;
+		--hover-background: #232323;
+		--main-text: #EFF0F1;
+		--dimer-text: #CCCCCC;
+
+		/*DeepDark colors*/
+		/*
+		--main-color: #00adee;
+		--main-background: #111111;
+		--second-background: #181818; 
+		--hover-background: #232323;
+		--main-text: #eff0f1;
+		--dimer-text: #CCCCCC;
+		*/
+
+		/*KDE colors*/
+		/*
+		--main-color: #3DAEE9;
+		--main-background: #232629;
+		--second-background: #2a2e32;
+		--hover-background: #31363b;
+		--main-text: #eff0f1;
+		--dimer-text: #bdc3c7;
+		*/
+
+		/*Vertex Dark colors*/
+		/*
+		--main-color: #4080fb;
+		--main-background: #2B2B2C;
+		--second-background: #353638;
+		--hover-background: #515254;
+		--main-text: #F3F3F5;
+		--dimer-text: #AEAFB0;
+		*/
+
+		/*Arc Dark colors*/
+		/*
+		--main-color: #5294E2;
+		--main-background: #343944;
+		--second-background: #383C4A;
+		--hover-background: #414A59;
+		--main-text: #C1C8D1;
+		--dimer-text: #B3BAC5;
+		*/
+
+		/*Firefox Dark colors*/
+		/*
+		--main-color: #5675B9;
+		--main-background: #272B35;
+		--second-background: #181D20;
+		--hover-background: #353A44;
+		--main-text: #E3EEF9;
+		--dimer-text: #606376;
+		*/
+
+		/*Discord colors*/
+		/*
+		--main-color: #7289DA;
+		--main-background: #1E2124;
+		--second-background: #2F3136;
+		--hover-background: #484B51;
+		--main-text: #FFFFFF;
+		--dimer-text: #ADA8AA;
+		*/
+
+		/*YouTube dark colors*/
+		/*
+		--main-color: #E52117;
+		--main-background: #111111;
+		--second-background: #232323;
+		--hover-background: #343434;
+		--main-text: #E1E1E1;
+		--dimer-text: #7F7F7F;
+		*/
+
+		/*Mint-Y-Dark colors*/
+		/*
+		--main-color: #9AB87C;
+		--main-background: #2F2F2F;
+		--second-background: #383838;
+		--hover-background: #404040;
+		--main-text: #FFFFFF;
+		--dimer-text: #D5DADA;
+		*/
+	}
+
+	#stylus-edit, body, html, #notes, #header
+	{
+		background-color: var(--main-background) !important;
+		color: var(--dimer-text) !important;
+	}
+	a, a:visited, .style-name-link
+	{
+		color: var(--main-color) !important;
+		opacity: .9;
+	}
+	a:hover, .style-name-link:hover
+	{
+		opacity: 1;
+	}
+
+	.disabled h2::after
+	{
+		background-color: var(--hover-background) !important;
+	}
+
+	.entry
+	{
+		border-color: var(--hover-background) !important;
+	}
+
+	#header h1, .CodeMirror
+	{
+		color: var(--main-text) !important;
+	}
+	#header
+	{
+		border-color: var(--main-background) !important;
+	}
+
+	.CodeMirror-lines, .cm-s-mbo.CodeMirror
+	{
+		background-color: var(--second-background) !important;
+	}
+
+	.CodeMirror-activeline-background, .CodeMirror-gutters, .resize-grip
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.CodeMirror
+	{
+		border-color: var(--hover-background)  !important;
+	}
+
+
+	/*Changed text highlight*/
+	::selection
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	::-moz-selection
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection, .CodeMirror-selected, .CodeMirror-focused .CodeMirror-selected
+	{
+		background-color: var(--hover-background) !important;
+	}
+
+
+	/*Popup*/
+	.main-controls, .entry, .firefox body, #help-popup .title
+	{
+		background-color: var(--main-background) !important;
+	}
+	#help-popup
+	{
+		background-color: var(--hover-background) !important;
+	}
+
+
+	/*Icons*/
+	.svg-icon, .svg-icon.info, .newUI .entry .svg-icon
+	{
+		fill: var(--main-text) !important;
+	}
+	.svg-icon.info:hover, .svg-icon:hover, a:hover .svg-icon, .newUI .entry:hover .svg-icon:hover
+	{
+		fill: var(--main-color) !important;
+	}
+
+
+	/*History*/
+	#message-box-title, #message-box-buttons
+	{
+		background-color: var(--hover-background) !important;
+	}
+	#message-box-contents
+	{
+		background-color: var(--second-background) !important;
+	}
+
+	.CodeMirror-matchingbracket
+	{
+		color: var(--main-color) !important;
+	}
+
+
+	/*Update warning*/
+	.newUI .updater-icons > :not(.check-update)::after
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+
+
+	/*List of matching opened tabs*/
+	.regexp-report details[data-type="full"]
+	{
+		color: var(--main-color) !important;
+	}
+
+
+	/*Text fields*/
+	#name, .applies-to li .applies-value, #search, .keymap-list input
+	{
+		background-color: var(--hover-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	#name:hover, .applies-to li .applies-value:hover, #search:hover, .keymap-list input:hover, #name:active, .applies-to li .applies-value:active, #search:active, .keymap-list input:active, #name:focus, .applies-to li .applies-value:focus, #search:focus, .keymap-list input:focus
+	{
+		border: 1px solid var(--main-color) !important;
+	}
+
+
+	/*Buttons*/
+	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla, #editor\.keyMap, #editor\.theme, #editor\.matchHighlight, #editor\.tabSize, *[class="applies-type style-contributor"], .add-section, .beautify-section, .test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates, #add-style-label, #manage-options-button, button, #file-all-styles, #unfile-all-styles, #manage\.newUI\.targets, #badgeNormal, #badgeDisabled, #updateInterval, #popupWidth
+	{
+		background-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	option
+	{
+		background-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	#save-button:hover, #beautify:hover, #cancel-button:hover, #from-mozilla:hover, #to-mozilla:hover, #editor\.keyMap:hover, #editor\.theme:hover, #editor\.matchHighlight:hover, #editor\.tabSize:hover, *[class="applies-type style-contributor"]:hover, .add-section:hover, .beautify-section:hover, .test-regexp:hover, .remove-applies-to:hover, .add-applies-to:hover, option:hover, #check-all-updates:hover, #add-style-label:hover, #manage-options-button:hover, button:hover, #file-all-styles:hover, #unfile-all-styles:hover, #manage\.newUI\.targets:hover, #updateInterval:hover, #popupWidth:hover
+	{
+		color: var(--main-color) !important;
+	}
+
+
+	.CodeMirror-lint-tooltip
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+
+
+	/*Search*/
+	.CodeMirror-search-match, .CodeMirror-search /*, .cm-searching*/
+	{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+	}
+	.CodeMirror-dialog, .CodeMirror-dialog input
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.CodeMirror-dialog-top
+	{
+		border-color: var(--main-color) !important;
+	}
+
+
+	/*Default theme overwritten with adjusted colors*/
+	.cm-s-default.CodeMirror { background: var(--second-background); color: var(--main-text); }
+	.cm-s-default div.CodeMirror-selected { background: var(--hover-background); }
+	.cm-s-default .CodeMirror-line::selection, .cm-s-default .CodeMirror-line > span::selection, .cm-s-default .CodeMirror-line > span > span::selection { background: var(--hover-background); }
+	.cm-s-default .CodeMirror-line::-moz-selection, .cm-s-default .CodeMirror-line > span::-moz-selection, .cm-s-default .CodeMirror-line > span > span::-moz-selection { background-color: var(--hover-background); }
+	.cm-s-default .CodeMirror-gutters { background: var(--hover-background); border-right: 0px; }
+	.cm-s-default .CodeMirror-guttermarker { color: var(--main-text); }
+	.cm-s-default .CodeMirror-guttermarker-subtle, .cm-s-default .CodeMirror-linenumber { color: var(--dimer-text); }
+	.cm-s-default .CodeMirror-cursor { border-left: 1px solid var(--main-color); }
+
+	.cm-s-default span.cm-comment { color: var(--dimer-text); }
+	.cm-s-default span.cm-atom, .cm-s-default span.cm-number { color: var(--main-color); opacity: .6; }
+
+	.cm-s-default span.cm-property, .cm-s-default span.cm-attribute { color: var(--main-color); opacity: 1; }
+	.cm-s-default span.cm-keyword, .cm-s-default span.cm-string { color: var(--main-color); filter: hue-rotate(60deg); }
+	.cm-s-default span.cm-string.cm-property { color: var(--main-text); }
+
+	.cm-s-default span.cm-variable { color: var(--main-text); }
+	.cm-s-default span.cm-variable-2 { color: var(--main-color); opacity: .6; }
+	.cm-s-default .cm-variable-3, .cm-s-default .cm-type { color: var(--main-color); filter: hue-rotate(280deg); }
+	.cm-s-default span.cm-def { color: var(--main-text); }
+	.cm-s-default span.cm-bracket { color: var(--main-text); font-weight: bold; }
+	.cm-s-default span.cm-tag { color: var(--main-color); opacity: .6; }
+	.cm-s-default span.cm-link, .cm-s-default span.cm-keyword { color: var(--main-color); filter: invert(100%); }
+	.cm-s-default span.cm-error { border-bottom: var(--hover-background); color: var(--main-text); }
+	.cm-s-default span.cm-qualifier { color: var(--main-text); }
+
+	.cm-s-default .CodeMirror-activeline-background { background: var(--second-background); }
+	.cm-s-default .CodeMirror-matchingbracket { color: var(--main-color); }
+	.cm-s-default .CodeMirror-matchingtag { background: var(--dimer-text); }
+
+	.cm-s-default .cm-builtin { color: var(--main-color); }
+	.cm-s-default .cm-meta { color: var(--dimer-text); }
+
+}
