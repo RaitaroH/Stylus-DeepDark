@@ -1,10 +1,8 @@
-@namespace url(http://www.w3.org/1999/xhtml);
-
 @-moz-document regexp("moz-extension://.*"), regexp("chrome-extension://.*") {
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/Stylus-DeepDark*/
   
-/*1.0.0*/
+/*1.0.1*/
 	
 	/*Main color variables*/
 	:root
