@@ -2,7 +2,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/Stylus-DeepDark*/
   
-/*1.0.1*/
+/*1.0.2*/
 	
 	/*Main color variables*/
 	:root
@@ -170,6 +170,11 @@
 	#help-popup
 	{
 		background-color: var(--hover-background) !important;
+	}
+	#confirm > div
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
 	}
 
 
