@@ -30,6 +30,7 @@ Colors Showcase (the colors are available in the code; different colors can be u
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/Mint-Y-DarkColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/VertexDarkColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/YoutubeColors.png)
+![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/9animeColors.png)
 
 # Code colors
 Code colors also change depending on the palette used. No user changes required.
