@@ -8,6 +8,8 @@ Also, credit where credit is due for the color palettes down bellow. ([@KDE](htt
 
 Theme as a userstyle [here](https://userstyles.org/styles/146887/stylus-deepdark).
 
+**NOTE: This CAN work with Stylish in Google Chrome, BUT I don't support Stylish.**
+
 ### **You can also install all my themes at once from [here](https://github.com/RaitaroH/Import-All-Deepdark).**
 
 # Screenshots
