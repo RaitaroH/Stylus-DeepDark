@@ -2,7 +2,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/Stylus-DeepDark*/
   
-/*1.0.5*/
+/*1.0.6*/
 	
 	/*Main color variables*/
 	:root
@@ -221,7 +221,12 @@
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-
+	
+	#filters.active
+	{
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+	}
 
 	/*List of matching opened tabs*/
 	.regexp-report details[data-type="full"]
