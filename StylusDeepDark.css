@@ -2,7 +2,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/Stylus-DeepDark*/
   
-/*1.0.4*/
+/*1.0.5*/
 	
 	/*Main color variables*/
 	:root
@@ -317,5 +317,29 @@
 
 	.cm-s-default .cm-builtin { color: var(--main-color); }
 	.cm-s-default .cm-meta { color: var(--dimer-text); }
+	
+	
+	/*Stylish in chrome specific*/
+	:focus
+	{
+		outline-color: var(--main-color);
+	}
+	.CodeMirror div.CodeMirror-cursor
+	{
+		border-color: var(--main-color);
+	}
+	input
+	{
+		background-color: var(--second-background);
+		color: var(--main-text);
+	}
+	fieldset, [style-id], .disabled
+	{
+		border-color: var(--hover-background);
+	}
+	.CodeMirror.cm-s-default.CodeMirror-wrap.CodeMirror-active
+	{
+		outline-color: var(--main-color);
+	}
 
 }
