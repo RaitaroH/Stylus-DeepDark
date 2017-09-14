@@ -1,6 +1,6 @@
 # Stylus-DeepDark
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/Stylus%20-%20DeepDark.png)
-Write your scripts in the dark. (Stylus dark theme)
+Write thy scripts in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 
 This is a dark theme for Stylus inspired by [FT DeepDark](https://addons.mozilla.org/en-US/firefox/addon/ft-deepdark/?src=search).
 
