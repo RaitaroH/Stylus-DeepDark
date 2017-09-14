@@ -2,7 +2,7 @@
 
 /*Theme made by RaitaroH @https://github.com/RaitaroH/Stylus-DeepDark*/
   
-/*1.0.6*/
+/*1.0.7*/
 	
 	/*Main color variables*/
 	:root
@@ -345,6 +345,12 @@
 	.CodeMirror.cm-s-default.CodeMirror-wrap.CodeMirror-active
 	{
 		outline-color: var(--main-color);
+	}
+	
+	/*Stylus in chrome specific*/
+	#manage\.onlyEnabled\.invert, #manage\.onlyLocal\.invert
+	{
+		color: var(--dimer-text);
 	}
 
 }
