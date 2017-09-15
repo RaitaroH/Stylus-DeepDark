@@ -1,6 +1,6 @@
 # Stylus-DeepDark
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/Stylus%20-%20DeepDark.png)
-Write thy scripts in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
+Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 
 This is a dark theme for Stylus inspired by [FT DeepDark](https://addons.mozilla.org/en-US/firefox/addon/ft-deepdark/?src=search).
 
@@ -29,6 +29,7 @@ Colors Showcase (the colors are available in the code; different colors can be u
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/DeepDarkColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/DiscordColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/FirefoxDarkColors.png)
+![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/Firefox57DarkColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/Mint-Y-DarkColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/VertexDarkColors.png)
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/YoutubeColors.png)
