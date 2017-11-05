@@ -4,7 +4,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.0*/
+/*1.1.1*/
 
 	/*Main color variables*/
 	:root
@@ -213,7 +213,7 @@
 		border-color: var(--hover-background) !important;
 	}
 
-	#header h1, .CodeMirror
+	#header h1
 	{
 		color: var(--main-text) !important;
 	}
@@ -222,12 +222,7 @@
 		border-color: var(--main-background) !important;
 	}
 
-	.CodeMirror-lines, .cm-s-mbo.CodeMirror
-	{
-		background-color: var(--second-background) !important;
-	}
-
-	.CodeMirror-activeline-background, .CodeMirror-gutters, .resize-grip
+	.resize-grip
 	{
 		background-color: var(--hover-background) !important;
 	}
@@ -248,11 +243,35 @@
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
+	
+	
+	/*To be commented out in case you want a stylus theme*/
 	.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection, .CodeMirror-selected, .CodeMirror-focused .CodeMirror-selected
 	{
 		background-color: var(--hover-background) !important;
 	}
+	.CodeMirror
+	{
+		color: var(--main-text) !important;
+	}
+	.CodeMirror-lines, .cm-s-mbo.CodeMirror
+	{
+		background-color: var(--second-background) !important;
+	}
 
+	.CodeMirror-activeline-background, .CodeMirror-gutters
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.CodeMirror-matchingbracket
+	{
+		color: var(--main-color) !important;
+	}
+	.CodeMirror div.CodeMirror-cursor
+	{
+		border-color: var(--main-color);
+	}
+	
 
 	/*Popup*/
 	.main-controls, .entry, .firefox body, #help-popup .title
@@ -290,12 +309,6 @@
 	{
 		background-color: var(--second-background) !important;
 	}
-
-	.CodeMirror-matchingbracket
-	{
-		color: var(--main-color) !important;
-	}
-
 
 	/*Update warning*/
 	.newUI .updater-icons > :not(.check-update)::after
@@ -410,10 +423,6 @@
 	:focus
 	{
 		outline-color: var(--main-color);
-	}
-	.CodeMirror div.CodeMirror-cursor
-	{
-		border-color: var(--main-color);
 	}
 	input
 	{
