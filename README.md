@@ -6,6 +6,8 @@ This is a dark theme for Stylus inspired by [FT DeepDark](https://addons.mozilla
 
 Also, credit where credit is due for the color palettes down bellow. ([@KDE](https://github.com/KDE), [@horst3180](https://github.com/horst3180), [@linuxmint](https://github.com/linuxmint), [Firefox](https://www.mozilla.org/en-US/firefox/new/), [YouTube](https://www.youtube.com/) and [Discord](https://discordapp.com/))
 
+Install from github: [here](https://rawgit.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css), using Stylus.
+
 Theme as a userstyle [here](https://userstyles.org/styles/146887/stylus-deepdark).
 
 **NOTE: This CAN work with Stylish in Google Chrome, BUT I don't support Stylish.**
