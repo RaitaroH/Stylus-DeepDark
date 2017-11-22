@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.1.3
+@version 1.1.4
 @updateURL https://rawgit.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Stylus dark theme
 @author RaitaroH
@@ -131,7 +131,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.3*/
+/*1.1.4*/
 
 	/*Main color variables*/
 	:root
@@ -535,6 +535,8 @@
 	.cm-s-default span.cm-bracket { color: var(--main-text); font-weight: bold; }
 	.cm-s-default span.cm-tag { color: var(--main-color); opacity: .6; }
 	.cm-s-default span.cm-link, .cm-s-default span.cm-keyword { color: var(--main-color); filter: invert(100%); }
+	/*Color picker fixed*/
+	.codemirror-colorview-background  {  filter: invert(100%) !important; }
 	.cm-s-default span.cm-error { border-bottom: var(--hover-background); color: var(--main-text); }
 	.cm-s-default span.cm-qualifier { color: var(--main-text); }
 
