@@ -315,7 +315,7 @@
 		*/
 	}
 
-	#stylus-edit, body, html, #notes, #header
+	#stylus-edit, body, html, #notes, #header, .CodeMirror
 	{
 		background-color: var(--main-background) !important;
 		color: var(--dimer-text) !important;
@@ -470,11 +470,15 @@
 
 
 	/*Buttons*/
-	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla, #editor\.keyMap, #editor\.theme, #editor\.matchHighlight, #editor\.tabSize, *[class="applies-type style-contributor"], .add-section, .beautify-section, .test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates, #add-style-label, #manage-options-button, button, #file-all-styles, #unfile-all-styles, #manage\.newUI\.targets, #badgeNormal, #badgeDisabled, #updateInterval, #popupWidth, #editor\.linter
+	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla, #editor\.keyMap, #editor\.theme, #editor\.matchHighlight, #editor\.tabSize, *[class="applies-type style-contributor"], .add-section, .beautify-section, .test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates, #add-style-label, #manage-options-button, button, #file-all-styles, #unfile-all-styles, #manage\.newUI\.targets, #badgeNormal, #badgeDisabled, #updateInterval, #popupWidth, #editor\.linter, #options button, #manage\.onlyUsercss\.invert
 	{
 		background-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 		border: 1px solid var(--hover-background) !important;
+	}
+	#options button
+	{
+		background-image: none !important;
 	}
 	option
 	{
@@ -535,8 +539,6 @@
 	.cm-s-default span.cm-bracket { color: var(--main-text); font-weight: bold; }
 	.cm-s-default span.cm-tag { color: var(--main-color); opacity: .6; }
 	.cm-s-default span.cm-link, .cm-s-default span.cm-keyword { color: var(--main-color); }
-	.cm-s-default span.cm-keyword:not(.cm-colorview), .cm-s-default span.cm-string { color: var(--main-color); filter: hue-rotate(60deg); }
-	.cm-s-default span.cm-link, .cm-s-default span.cm-keyword:not(.cm-colorview) { color: var(--main-color); filter: invert(100%); }
 	.cm-s-default span.cm-error { border-bottom: var(--hover-background); color: var(--main-text); }
 	.cm-s-default span.cm-qualifier { color: var(--main-text); }
 
@@ -568,7 +570,7 @@
 	}
 
 	/*Stylus in chrome specific*/
-	#manage\.onlyEnabled\.invert, #manage\.onlyLocal\.invert
+	#manage\.onlyEnabled\.invert, #manage\.onlyLocal\.invert, #manage\.onlyUsercss\.invert
 	{
 		color: var(--dimer-text);
 	}
