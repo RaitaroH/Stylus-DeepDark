@@ -470,7 +470,7 @@
 
 
 	/*Buttons*/
-	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla, #editor\.keyMap, #editor\.theme, #editor\.matchHighlight, #editor\.tabSize, *[class="applies-type style-contributor"], .add-section, .beautify-section, .test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates, #add-style-label, #manage-options-button, button, #file-all-styles, #unfile-all-styles, #manage\.newUI\.targets, #badgeNormal, #badgeDisabled, #updateInterval, #popupWidth, #editor\.linter, #options button
+	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla, #editor\.keyMap, #editor\.theme, #editor\.matchHighlight, #editor\.tabSize, *[class="applies-type style-contributor"], .add-section, .beautify-section, .test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates, #add-style-label, #manage-options-button, button, #file-all-styles, #unfile-all-styles, #manage\.newUI\.targets, #badgeNormal, #badgeDisabled, #updateInterval, #popupWidth, #editor\.linter, #options button, #manage\.onlyUsercss\.invert
 	{
 		background-color: var(--second-background) !important;
 		color: var(--main-text) !important;
@@ -570,7 +570,7 @@
 	}
 
 	/*Stylus in chrome specific*/
-	#manage\.onlyEnabled\.invert, #manage\.onlyLocal\.invert
+	#manage\.onlyEnabled\.invert, #manage\.onlyLocal\.invert, #manage\.onlyUsercss\.invert
 	{
 		color: var(--dimer-text);
 	}
