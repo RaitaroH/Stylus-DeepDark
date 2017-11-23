@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.1.4
+@version 1.1.5
 @updateURL https://rawgit.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Stylus dark theme
 @author RaitaroH
@@ -131,7 +131,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.4*/
+/*1.1.5*/
 
 	/*Main color variables*/
 	:root
@@ -475,10 +475,17 @@
 		background-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 		border: 1px solid var(--hover-background) !important;
+		box-shadow: 0 1px 0.5px rgba(0,0,0,0.13) !important;
 	}
 	#options button
 	{
 		background-image: none !important;
+		text-shadow: none !important;
+	}
+	#options button:hover
+	{
+		color: var(--main-color) !important;
+		background-color: var(--hover-background) !important;
 	}
 	option
 	{
@@ -539,6 +546,8 @@
 	.cm-s-default span.cm-bracket { color: var(--main-text); font-weight: bold; }
 	.cm-s-default span.cm-tag { color: var(--main-color); opacity: .6; }
 	.cm-s-default span.cm-link, .cm-s-default span.cm-keyword { color: var(--main-color); }
+	.cm-s-default span.cm-keyword:not(.cm-colorview), .cm-s-default span.cm-string { color: var(--main-color); filter: hue-rotate(60deg); }
+	.cm-s-default span.cm-link, .cm-s-default span.cm-keyword:not(.cm-colorview) { color: var(--main-color); filter: invert(100%); }
 	.cm-s-default span.cm-error { border-bottom: var(--hover-background); color: var(--main-text); }
 	.cm-s-default span.cm-qualifier { color: var(--main-text); }
 
@@ -573,6 +582,18 @@
 	#manage\.onlyEnabled\.invert, #manage\.onlyLocal\.invert, #manage\.onlyUsercss\.invert
 	{
 		color: var(--dimer-text);
+	}
+	#advanced.collapsible h1
+	{
+		color: var(--main-text) !important;
+	}
+	#advanced.collapsible h1:hover
+	{
+		color: var(--main-color) !important;
+	}
+	.block
+	{
+		border-color: var(--hover-background) !important;
 	}
 
 	
