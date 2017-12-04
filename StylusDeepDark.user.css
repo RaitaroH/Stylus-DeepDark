@@ -437,6 +437,9 @@
 	{
 		fill: var(--main-color) !important;
 	}
+  .svg-icon.checked{
+    fill: var(--main-background) !important;
+  }
 
 
 	/*History*/
