@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.1.5
+@version 1.1.6
 @updateURL https://rawgit.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Stylus dark theme
 @author RaitaroH
@@ -427,6 +427,9 @@
 	{
 		fill: var(--main-color) !important;
 	}
+  .svg-icon.checked{
+    fill: var(--main-background) !important;
+  }
 
 
 	/*History*/
