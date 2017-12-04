@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.1.5
+@version 1.1.6
 @updateURL https://rawgit.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Stylus dark theme
 @author RaitaroH
@@ -131,7 +131,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.5*/
+/*1.1.6*/
 
 	/*Main color variables*/
 	:root
@@ -332,14 +332,24 @@
 		opacity: 1;
 	}
 
-	.disabled h2::after
+	.disabled h2::after, .disabled h2::after, .entry.usercss .style-name-link::after
 	{
 		background-color: var(--hover-background) !important;
+		box-shadow: var(--shadow) !important;
 	}
+	.entry.usercss .style-name-link::after
+	{
+		color: var(--main-color) !important;
+	}
+
 
 	.entry
 	{
 		border-color: var(--hover-background) !important;
+	}
+	.newUI .entry .style-name:hover::before
+	{
+		filter: grayscale(1);
 	}
 
 	#header h1
@@ -433,6 +443,7 @@
 	#message-box-title, #message-box-buttons
 	{
 		background-color: var(--hover-background) !important;
+		box-shadow: var(--shadow) !important;
 	}
 	#message-box-contents
 	{
@@ -476,7 +487,7 @@
 	{
 		background-color: var(--second-background) !important;
 		color: var(--main-text) !important;
-		border: 1px solid var(--hover-background) !important;
+		border: 1px solid transparent !important;
 		box-shadow: var(--shadow) !important;
 	}
 	#options button
@@ -584,6 +595,7 @@
 	#manage\.onlyEnabled\.invert, #manage\.onlyLocal\.invert, #manage\.onlyUsercss\.invert
 	{
 		color: var(--dimer-text);
+		box-shadow: var(--shadow) !important;
 	}
 	#advanced.collapsible h1
 	{
@@ -637,4 +649,16 @@
 	{
 		outline-color: var(--main-color) !important;
 	}
+
+
+	/*Checkboxes*/
+	input[type="checkbox"]
+	{
+		background: var(--hover-background) !important;
+	}
+	svg[class="svg-icon checked"]
+	{
+		fill: var(--main-color) !important;
+	}
+
 }
