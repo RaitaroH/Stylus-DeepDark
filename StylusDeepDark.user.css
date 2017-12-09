@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.1.6
+@version 1.1.7
 @updateURL https://rawgit.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Stylus dark theme
 @author RaitaroH
@@ -131,7 +131,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.6*/
+/*1.1.7*/
 
 	/*Main color variables*/
 	:root
@@ -342,6 +342,19 @@
 		color: var(--main-color) !important;
 	}
 
+	#filters label:hover, #filters .filter-selection:hover, #filters label:hover select, #filters .filter-selection:hover select
+	{
+		background-color: transparent !important;
+		color: var(--main-color) !important;
+	}
+	#filters label:hover .svg-icon.select-arrow, #filters .filter-selection:hover .svg-icon.select-arrow
+	{
+		fill: var(--main-color) !important;
+	}
+	select, .svg-icon.select-arrow
+	{
+		transition: none !important;
+	}
 
 	.entry
 	{
@@ -359,6 +372,14 @@
 	#header
 	{
 		border-color: var(--main-background) !important;
+	}
+	#header summary h2:hover
+	{
+		color: var(--main-color) !important;
+	}
+	#header summary h2:hover
+	{
+		color: var(--main-color) !important;
 	}
 
 	.resize-grip
@@ -450,6 +471,11 @@
 		background-color: var(--second-background) !important;
 	}
 
+	.help-text mark
+	{
+		background: var(--hover-background) !important;
+	}
+
 	/*Update warning*/
 	.newUI .updater-icons > :not(.check-update)::after
 	{
@@ -476,6 +502,10 @@
 		background-color: var(--hover-background) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
+	input:not([type]), #search
+	{
+		color: var(--main-text) !important;
+	}
 	#name:hover, .applies-to li .applies-value:hover, #search:hover, .keymap-list input:hover, #name:active, .applies-to li .applies-value:active, #search:active, .keymap-list input:active, #name:focus, .applies-to li .applies-value:focus, #search:focus, .keymap-list input:focus
 	{
 		border: 1px solid var(--main-color) !important;
@@ -485,7 +515,7 @@
 	/*Buttons*/
 	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla, #editor\.keyMap, #editor\.theme, #editor\.matchHighlight, #editor\.tabSize, *[class="applies-type style-contributor"], .add-section, .beautify-section, .test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates, #add-style-label, #manage-options-button, button, #file-all-styles, #unfile-all-styles, #manage\.newUI\.targets, #badgeNormal, #badgeDisabled, #updateInterval, #popupWidth, #editor\.linter, #options button, #manage\.onlyUsercss\.invert
 	{
-		background-color: var(--second-background) !important;
+		background: var(--second-background) !important;
 		color: var(--main-text) !important;
 		border: 1px solid transparent !important;
 		box-shadow: var(--shadow) !important;
@@ -498,11 +528,10 @@
 	#options button:hover
 	{
 		color: var(--main-color) !important;
-		background-color: var(--hover-background) !important;
 	}
 	option
 	{
-		background-color: var(--second-background) !important;
+		background: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
 	#save-button:hover, #beautify:hover, #cancel-button:hover, #from-mozilla:hover, #to-mozilla:hover, #editor\.keyMap:hover, #editor\.theme:hover, #editor\.matchHighlight:hover, #editor\.tabSize:hover, *[class="applies-type style-contributor"]:hover, .add-section:hover, .beautify-section:hover, .test-regexp:hover, .remove-applies-to:hover, .add-applies-to:hover, option:hover, #check-all-updates:hover, #add-style-label:hover, #manage-options-button:hover, button:hover, #file-all-styles:hover, #unfile-all-styles:hover, #manage\.newUI\.targets:hover, #updateInterval:hover, #popupWidth:hover, #editor\.linter:hover
@@ -652,11 +681,17 @@
 
 
 	/*Checkboxes*/
-	input[type="checkbox"]
+	input[type="checkbox"], input[type="checkbox"]:not(.slider)
 	{
-		background: var(--hover-background) !important;
+		background: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+		box-shadow: var(--shadow) !important;
 	}
-	svg[class="svg-icon checked"]
+	input[type="checkbox"]:hover, input[type="checkbox"]:not(.slider):hover
+	{
+		border-color: var(--main-color) !important;
+	}
+	svg[class="svg-icon checked"], input[type="checkbox"]:checked:not(.slider) + .svg-icon.checked
 	{
 		fill: var(--main-color) !important;
 	}
