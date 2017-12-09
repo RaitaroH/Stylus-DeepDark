@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.1.7
+@version 1.1.8
 @updateURL https://rawgit.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Stylus dark theme
 @author RaitaroH
@@ -131,7 +131,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.7*/
+/*1.1.8*/
 
 	/*Main color variables*/
 	:root
@@ -483,10 +483,16 @@
 		border-color: var(--hover-background) !important;
 	}
 
-	#filters.active
+	#filters.active, .active #filters-stats
 	{
 		background-color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
+	}
+
+	body.all-styles-hidden-by-filters::before, body.all-styles-hidden-by-filters::after
+	{
+		color: var(--main-color) !important;
+		opacity: .5;
 	}
 
 	/*List of matching opened tabs*/
