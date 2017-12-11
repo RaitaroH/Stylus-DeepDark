@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.1.8
+@version 1.1.9
 @updateURL https://rawgit.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Stylus dark theme
 @author RaitaroH
@@ -131,7 +131,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.8*/
+/*1.1.9*/
 
 	/*Main color variables*/
 	:root
@@ -567,6 +567,29 @@
 	.CodeMirror-dialog-top
 	{
 		border-color: var(--main-color) !important;
+	}
+
+
+	/*Autocomplete hints*/
+	.CodeMirror-hints
+	{
+		background: var(--main-background) !important;
+		box-shadow: var(--shadow) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.CodeMirror-hint
+	{
+		color: var(--main-text) !important;
+	}
+	li.CodeMirror-hint-active
+	{
+		background: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+	}
+	li.CodeMirror-hint:hover
+	{
+		background: var(--hover-background) !important;
+		color: var(--main-color) !important;
 	}
 
 
