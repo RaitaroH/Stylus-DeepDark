@@ -503,7 +503,7 @@
 
 
 	/*Text fields*/
-	#name, .applies-to li .applies-value, #search, .keymap-list input
+	#name, .applies-to li .applies-value, #search, .keymap-list input, .config-value
 	{
 		background-color: var(--hover-background) !important;
 		border: 1px solid var(--hover-background) !important;
