@@ -317,7 +317,7 @@
 		*/
 	}
 
-	#stylus-edit, body, html, #notes, #header, .CodeMirror
+	#stylus-edit, body, html, #notes, #header, .CodeMirror, #actions
 	{
 		background-color: var(--main-background) !important;
 		color: var(--dimer-text) !important;
