@@ -689,13 +689,15 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	.config-dialog select
+	.config-dialog select,
+	.beautify-options select
 	{
 		background-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
-	.config-dialog select:hover
+	.config-dialog select:hover,
+	.beautify-options select:hover
 	{
 		color: var(--main-color) !important;
 	}
