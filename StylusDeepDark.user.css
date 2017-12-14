@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.2.1
+@version 1.2.2
 @updateURL https://raw.githubusercontent.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Stylus dark theme
 @author RaitaroH
@@ -131,7 +131,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.1*/
+/*1.2.2*/
 
 	/*Main color variables*/
 	:root
@@ -332,7 +332,7 @@
 		opacity: 1;
 	}
 
-	.disabled h2::after, .disabled h2::after, .entry.usercss .style-name-link::after
+	.disabled h2::after, .disabled h2::after, .entry.usercss .style-name-link::after, .search-result, .search-result-meta
 	{
 		background-color: var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
@@ -403,8 +403,8 @@
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
-	
-	
+
+
 	/*To be commented out in case you want a stylus theme*/
 	.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection, .CodeMirror-selected, .CodeMirror-focused .CodeMirror-selected
 	{
@@ -431,7 +431,7 @@
 	{
 		border-color: var(--main-color);
 	}
-	
+
 
 	/*Popup*/
 	.main-controls, .entry, .firefox body, #help-popup .title
@@ -668,7 +668,7 @@
 		border-color: var(--hover-background) !important;
 	}
 
-	
+
 	/*Install *.user.css page*/
 	.CodeMirror-linewidget .applies-to
 	{
