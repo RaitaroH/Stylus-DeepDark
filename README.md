@@ -19,10 +19,8 @@ Manage page
 ![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/Manage.png)
 The code and the popup menu themed 
 
-NOTE: the errors are not an issue with my themes. See more info [here](https://github.com/CSSLint/csslint/issues/538) and also on the official [stylus](https://github.com/openstyles/stylus/issues/149) github.
-![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/Code.png)
 A popup window example
-![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/Windows.png)
+![alt tag](https://raw.githubusercontent.com/RaitaroH/Sylus-DeepDark/master/Images/Code.png)
 
 # Colors
 Colors Showcase (the colors are available in the code; different colors can be used)
