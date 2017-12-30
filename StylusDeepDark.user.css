@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.2.4
+@version 1.2.5
 @updateURL https://raw.githubusercontent.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Stylus dark theme
 @author RaitaroH
@@ -131,7 +131,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.4*/
+/*1.2.5*/
 
 	/*Main color variables*/
 	:root
@@ -457,6 +457,10 @@
 	.svg-icon.info:hover, .svg-icon:hover, a:hover .svg-icon, .newUI .entry:hover .svg-icon:hover
 	{
 		fill: var(--main-color) !important;
+	}
+	.newUI .can-update[data-details$="locally edited"] .update svg, .newUI .update-problem .check-update svg
+	{
+		fill: #DA4453 !important;
 	}
 
 
