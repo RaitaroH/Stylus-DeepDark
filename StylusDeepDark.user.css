@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.2.5
+@version 1.2.6
 @updateURL https://raw.githubusercontent.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Stylus dark theme
 @author RaitaroH
@@ -131,7 +131,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.5*/
+/*1.2.6*/
 
 	/*Main color variables*/
 	:root
@@ -507,12 +507,12 @@
 
 
 	/*Text fields*/
-	#name, .applies-to li .applies-value, #search, .keymap-list input, .config-value, #sort-select
+	#name, .applies-to li .applies-value, #search, .keymap-list input, .config-value, #sort-select, .sorter-selection select
 	{
 		background-color: var(--hover-background) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
-	input:not([type]), #search, #sort-select
+	input:not([type]), #search, #sort-select, .sorter-selection select
 	{
 		color: var(--main-text) !important;
 	}
