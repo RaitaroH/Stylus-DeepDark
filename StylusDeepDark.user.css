@@ -645,7 +645,7 @@
 	{
 		outline-color: var(--main-color);
 	}
-	input
+	input:not([type="checkbox"])
 	{
 		background-color: var(--second-background);
 		color: var(--main-text);
@@ -724,7 +724,6 @@
 	/*Checkboxes*/
 	input[type="checkbox"], input[type="checkbox"]:not(.slider)
 	{
-		background: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
 	}
