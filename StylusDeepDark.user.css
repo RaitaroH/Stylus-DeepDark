@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.2.8
+@version 1.2.9
 @updateURL https://raw.githubusercontent.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 @author RaitaroH
@@ -131,7 +131,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.8*/
+/*1.2.9*/
 
 	/*Main color variables*/
 	:root
@@ -486,6 +486,14 @@
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
+
+	/*Install warning*/
+	.warnings
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+
 
 	#filters.active, .active #filters-stats
 	{
