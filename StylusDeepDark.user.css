@@ -363,7 +363,8 @@
 		opacity: 1;
 	}
 
-	.disabled h2::after, .disabled h2::after, .entry.usercss .style-name-link::after, .search-result, .search-result-meta
+	.disabled h2::after, .disabled h2::after, .entry.usercss .style-name-link::after,
+	.search-result, .search-result-meta
 	{
 		background-color: var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
@@ -373,12 +374,14 @@
 		color: var(--main-color) !important;
 	}
 
-	#filters label:hover, #filters .filter-selection:hover, #filters label:hover select, #filters .filter-selection:hover select
+	#filters label:hover, #filters .filter-selection:hover, #filters label:hover select,
+	#filters .filter-selection:hover select
 	{
 		background-color: transparent !important;
 		color: var(--main-color) !important;
 	}
-	#filters label:hover .svg-icon.select-arrow, #filters .filter-selection:hover .svg-icon.select-arrow
+	#filters label:hover .svg-icon.select-arrow,
+	#filters .filter-selection:hover .svg-icon.select-arrow
 	{
 		fill: var(--main-color) !important;
 	}
@@ -437,7 +440,9 @@
 
 
 	/*To be commented out in case you want a stylus theme*/
-	.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection, .CodeMirror-selected, .CodeMirror-focused .CodeMirror-selected
+	.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection,
+	.CodeMirror-line > span > span::-moz-selection, .CodeMirror-selected,
+	.CodeMirror-focused .CodeMirror-selected
 	{
 		background-color: var(--hover-background) !important;
 	}
@@ -485,7 +490,8 @@
 	{
 		fill: var(--main-text) !important;
 	}
-	.svg-icon.info:hover, .svg-icon:hover, a:hover .svg-icon, .newUI .entry:hover .svg-icon:hover
+	.svg-icon.info:hover, .svg-icon:hover, a:hover .svg-icon,
+	.newUI .entry:hover .svg-icon:hover
 	{
 		fill: var(--main-color) !important;
 	}
@@ -546,7 +552,8 @@
 
 
 	/*Text fields*/
-	#name, .applies-to li .applies-value, #search, .keymap-list input, .config-value, #sort-select, .sorter-selection select
+	#name, .applies-to li .applies-value, #search, .keymap-list input,
+	.config-value, #sort-select, .sorter-selection select
 	{
 		background-color: var(--hover-background) !important;
 		border: 1px solid var(--hover-background) !important;
@@ -555,14 +562,23 @@
 	{
 		color: var(--main-text) !important;
 	}
-	#name:hover, .applies-to li .applies-value:hover, #search:hover, .keymap-list input:hover, #name:active, .applies-to li .applies-value:active, #search:active, .keymap-list input:active, #name:focus, .applies-to li .applies-value:focus, #search:focus, .keymap-list input:focus
+	#name:hover, .applies-to li .applies-value:hover, #search:hover,
+	.keymap-list input:hover, #name:active, .applies-to li .applies-value:active,
+	#search:active, .keymap-list input:active, #name:focus,
+	.applies-to li .applies-value:focus, #search:focus, .keymap-list input:focus
 	{
 		border: 1px solid var(--main-color) !important;
 	}
 
 
 	/*Buttons*/
-	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla, #editor\.keyMap, #editor\.theme, #editor\.matchHighlight, #editor\.tabSize, *[class="applies-type style-contributor"], .add-section, .beautify-section, .test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates, #add-style-label, #manage-options-button, button, #file-all-styles, #unfile-all-styles, #manage\.newUI\.targets, #badgeNormal, #badgeDisabled, #updateInterval, #popupWidth, #editor\.linter, #options button, #manage\.onlyUsercss\.invert
+	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla,
+	#editor\.keyMap, #editor\.theme, #editor\.matchHighlight, #editor\.tabSize,
+	*[class="applies-type style-contributor"], .add-section, .beautify-section,
+	.test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates, #add-style-label,
+	#manage-options-button, button, #file-all-styles, #unfile-all-styles,
+	#manage\.newUI\.targets, #badgeNormal, #badgeDisabled, #updateInterval,
+	#popupWidth, #editor\.linter, #options button, #manage\.onlyUsercss\.invert
 	{
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
@@ -588,7 +604,13 @@
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	#save-button:hover, #beautify:hover, #cancel-button:hover, #from-mozilla:hover, #to-mozilla:hover, #editor\.keyMap:hover, #editor\.theme:hover, #editor\.matchHighlight:hover, #editor\.tabSize:hover, *[class="applies-type style-contributor"]:hover, .add-section:hover, .beautify-section:hover, .test-regexp:hover, .remove-applies-to:hover, .add-applies-to:hover, option:hover, #check-all-updates:hover, #add-style-label:hover, #manage-options-button:hover, button:hover, #file-all-styles:hover, #unfile-all-styles:hover, #manage\.newUI\.targets:hover, #updateInterval:hover, #popupWidth:hover, #editor\.linter:hover
+	#save-button:hover, #beautify:hover, #cancel-button:hover, #from-mozilla:hover,
+	#to-mozilla:hover, #editor\.keyMap:hover, #editor\.theme:hover, #editor\.matchHighlight:hover,
+	#editor\.tabSize:hover, *[class="applies-type style-contributor"]:hover, .add-section:hover,
+	.beautify-section:hover, .test-regexp:hover, .remove-applies-to:hover, .add-applies-to:hover,
+	option:hover, #check-all-updates:hover, #add-style-label:hover, #manage-options-button:hover,
+	button:hover, #file-all-styles:hover, #unfile-all-styles:hover, #manage\.newUI\.targets:hover,
+	#updateInterval:hover, #popupWidth:hover, #editor\.linter:hover
 	{
 		color: var(--main-color) !important;
 	}
@@ -649,8 +671,10 @@
 	/*Default theme overwritten with adjusted colors*/
 	.cm-s-default.CodeMirror { background: var(--second-background); color: var(--main-text); }
 	.cm-s-default div.CodeMirror-selected { background: var(--hover-background); }
-	.cm-s-default .CodeMirror-line::selection, .cm-s-default .CodeMirror-line > span::selection, .cm-s-default .CodeMirror-line > span > span::selection { background: var(--hover-background); }
-	.cm-s-default .CodeMirror-line::-moz-selection, .cm-s-default .CodeMirror-line > span::-moz-selection, .cm-s-default .CodeMirror-line > span > span::-moz-selection { background-color: var(--hover-background); }
+	.cm-s-default .CodeMirror-line::selection, .cm-s-default .CodeMirror-line > span::selection,
+	.cm-s-default .CodeMirror-line > span > span::selection { background: var(--hover-background); }
+	.cm-s-default .CodeMirror-line::-moz-selection, .cm-s-default .CodeMirror-line > span::-moz-selection,
+	.cm-s-default .CodeMirror-line > span > span::-moz-selection { background-color: var(--hover-background); }
 	.cm-s-default .CodeMirror-gutters { background: var(--hover-background); border-right: 0px; }
 	.cm-s-default .CodeMirror-guttermarker { color: var(--main-text); }
 	.cm-s-default .CodeMirror-guttermarker-subtle, .cm-s-default .CodeMirror-linenumber { color: var(--dimer-text); }
@@ -670,7 +694,8 @@
 	.cm-s-default span.cm-bracket { color: var(--main-text); font-weight: bold; }
 	.cm-s-default span.cm-tag { color: var(--main-color); opacity: .6; }
 	.cm-s-default span.cm-link, .cm-s-default span.cm-keyword { color: var(--main-color); }
-	.cm-s-default span.cm-keyword:not(.cm-colorview), .cm-s-default span.cm-string { color: var(--main-color); filter: hue-rotate(60deg); }
+	.cm-s-default span.cm-keyword:not(.cm-colorview),
+	.cm-s-default span.cm-string { color: var(--main-color); filter: hue-rotate(60deg); }
 	.cm-s-default span.cm-link, .cm-s-default span.cm-keyword:not(.cm-colorview) { color: var(--main-color); filter: invert(100%); }
 	.cm-s-default span.cm-error { border-bottom: var(--hover-background); color: var(--main-text); }
 	.cm-s-default span.cm-qualifier { color: var(--main-text); }
