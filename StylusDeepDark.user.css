@@ -426,6 +426,7 @@
 	#header
 	{
 		border-color: var(--main-background) !important;
+		white-space: nowrap !important;
 	}
 	#header summary h2:hover
 	{
