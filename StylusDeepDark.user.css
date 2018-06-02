@@ -347,7 +347,18 @@
 		--dimer-text: #986E3F;
 		*/
 	}
-
+	#hotkey-info mark
+	{
+		background:  var(--main-background) !important;
+		border: 1px solid var(--main-color) !important;
+		color: var(--main-color) !important;
+	}
+	#hotkey-info[data-active],
+	#hotkey-info > div
+	{
+		background: var(--main-background) !important;
+		border: transparent !important;
+	}
 	#stylus-edit, body, html, #notes, #header, .CodeMirror, #actions
 	{
 		background-color: var(--main-background) !important;
