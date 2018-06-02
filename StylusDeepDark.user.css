@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.3.2
+@version 1.3.3
 @updateURL https://raw.githubusercontent.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 @author RaitaroH
@@ -26,7 +26,7 @@
 	"Ubuntu_grey": "#EF7847",
 	"Ubuntu_purple": "#EF7847",
 	"Orange": "#ff6905",
-	"Jisho_夜明け":  "#EF7D6C"
+	"Jisho_夜明け": "#EF7D6C"
 }
 @var select mainBackground 'Main background color' {
 	"DeepDark": "#111111",
@@ -45,7 +45,7 @@
 	"Ubuntu_grey": "#312D2A",
 	"Ubuntu_purple": "#2C071A",
 	"Orange": "#0a0400",
-	"Jisho_夜明け":  "#332222"
+	"Jisho_夜明け": "#332222"
 }
 @var select secondBackground 'Second background color' {
 	"DeepDark": "#181818",
@@ -64,7 +64,7 @@
 	"Ubuntu_grey": "#3D3C38",
 	"Ubuntu_purple": "#430B28",
 	"Orange": "#0e0702",
-	"Jisho_夜明け":  "#2A1B1B"
+	"Jisho_夜明け": "#2A1B1B"
 }
 @var select hoverBackground 'Hover background color' {
 	"DeepDark": "#232323",
@@ -83,7 +83,7 @@
 	"Ubuntu_grey": "#59564D",
 	"Ubuntu_purple": "#520D30",
 	"Orange": "#110903",
-	"Jisho_夜明け":  "#863B2F"
+	"Jisho_夜明け": "#863B2F"
 }
 @var select mainText 'Main text color' {
 	"DeepDark": "#eff0f1",
@@ -102,7 +102,7 @@
 	"Ubuntu_grey": "#F2F1EF",
 	"Ubuntu_purple": "#F2F1EF",
 	"Orange": "#fff9f5",
-	"Jisho_夜明け":  "#EFB26C"
+	"Jisho_夜明け": "#EFB26C"
 }
 @var select dimerText 'Secondary text color' {
 	"DeepDark": "#CCCCCC",
@@ -121,15 +121,15 @@
 	"Ubuntu_grey": "#E6E5E3",
 	"Ubuntu_purple": "#E6E5E3",
 	"Orange": "#ffede1",
-	"Jisho_夜明け":  "#986E3F"
+	"Jisho_夜明け": "#986E3F"
 }
-@var select cursorWidth 'Cursor Width' {
+@var select cursorWidth 'Cursor width' {
 	"Slim 1px": "1px",
 	"Wider 2px": "2px",
 	"Wider+ 3px": "3px",
 	"Block 7px": "7px"
 }
-@var select cursorColor 'Cursor Color' {
+@var select cursorColor 'Cursor color' {
 	"DeepDark": "#00adee",
 	"BreezeDark": "#3DAEE9",
 	"Vertex Dark": "#4080fb",
@@ -158,7 +158,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.3.2*/
+/*1.3.3*/
 
 	/*Main color variables*/
 	:root
