@@ -347,6 +347,15 @@
 		--dimer-text: #986E3F;
 		*/
 	}
+	html
+	{
+		text-rendering: optimizeLegibility !important;
+		-webkit-font-smoothing: antialiased !important;
+	}
+	html.newUI .entry.odd
+	{
+		background-color: rgba(0, 0, 0, .138)!important;
+	}
 	#hotkey-info mark
 	{
 		background:  var(--main-background) !important;
