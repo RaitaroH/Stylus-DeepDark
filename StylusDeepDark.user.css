@@ -856,4 +856,24 @@
 		border-left-width: var(--cursor-width) !important;
 		border-color: var(--cursor-color) !important;
 	}
+
+
+	/* Colorpicker
+	This prevents the format change arrow from being cut off to the right,
+	and in addition when hovering/focus we get the nice --main-color.
+	 */
+	.colorpicker-format-change
+	{
+		top: -3px;
+		right: 0px;
+		padding-right: 3px !important;
+	}
+	.colorpicker-format-change-button:hover
+	{
+		color: var(--main-color) !important;
+	}
+	.colorpicker-input:hover, .colorpicker-input:focus
+	{
+		border-color: var(--main-color) !important;
+	}
 }
