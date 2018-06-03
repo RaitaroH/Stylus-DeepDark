@@ -179,9 +179,9 @@
 
 		/* These are must have static colors */
 		/*Disable all color/warning exact match from Stylus Turn all Styles off */
-		--warning-disable-all: #d62929;
+		--warning-disable-all: #DA4453;
 		/*No match regex ( This is --main-color from petrocompletions*/
-		--no-match: #FFC700;
+		--no-match: #FDBC4B;
 		/* Odd entry background (sorry --shadow is too light for this purpose)*/
 		--odd-entry-background: rgba(0, 0, 0, .16);
 
