@@ -171,7 +171,7 @@
 		--main-text: /*[[mainText]]*/;
 		--dimer-text: /*[[dimerText]]*/;
 
-		--shadow: 0 1px 0.5px rgba(0,0,0,0.13);
+		--shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
 
 		/*Cursor width and color*/
 		--cursor-width: /*[[cursorWidth]]*/;
@@ -667,7 +667,7 @@
 
 
 	/*Search*/
-	.CodeMirror-search-match, .CodeMirror-search /*, .cm-searching*/
+	.CodeMirror-search-match, .CodeMirror-search/*, .cm-searching*/
 	{
 		background: var(--main-color) !important;
 		border-color: var(--main-color) !important;
