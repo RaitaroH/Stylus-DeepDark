@@ -177,6 +177,8 @@
 		--cursor-width: /*[[cursorWidth]]*/;
 		--cursor-color: /*[[cursorColor]]*/;
 
+		/*Disable all color*/
+		--disable-all: #d62929;
 		/*Warning color*/
 		--warning: #f33;
 		/*No match regex*/
@@ -839,6 +841,12 @@
 	svg[class="svg-icon checked"], input[type="checkbox"]:checked:not(.slider) + .svg-icon.checked
 	{
 		fill: var(--main-color) !important;
+	}
+	/* This fixes the disable all checkbox background being too bright on hover	 */
+	#disableAll:hover
+	{
+		border-color: var(--disable-all) !important;
+		background-color: var(--second-background) !important;
 	}
 
 
