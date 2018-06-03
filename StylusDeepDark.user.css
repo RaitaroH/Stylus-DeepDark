@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.3.4
+@version 1.3.5
 @updateURL https://raw.githubusercontent.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 @author RaitaroH
@@ -158,7 +158,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.3.4*/
+/*1.3.5*/
 
 	/*Main color variables*/
 	:root
@@ -494,9 +494,11 @@
 	{
 		color: var(--main-color) !important;
 	}
+	/*Cursor width and color*/
 	.CodeMirror div.CodeMirror-cursor
 	{
-		border-color: var(--main-color);
+		border-left-width: var(--cursor-width) !important;
+		border-color: var(--cursor-color) !important;
 	}
 
 
@@ -848,14 +850,6 @@
 	{
 		border-color: var(--disable-all) !important;
 		background-color: var(--second-background) !important;
-	}
-
-
-	/*Cursor width and color*/
-	.CodeMirror div.CodeMirror-cursor
-	{
-		border-left-width: var(--cursor-width) !important;
-		border-color: var(--cursor-color) !important;
 	}
 
 
