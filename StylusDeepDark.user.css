@@ -177,6 +177,8 @@
 		--cursor-width: /*[[cursorWidth]]*/;
 		--cursor-color: /*[[cursorColor]]*/;
 
+		/* Odd entry background*/
+		--odd-entry-background: rgba(0, 0, 0, .16);
 		/*DeepDark colors*/
 		/*
 		--main-color: #00adee;
@@ -352,9 +354,9 @@
 		text-rendering: optimizeLegibility !important;
 		-webkit-font-smoothing: antialiased !important;
 	}
-	html.newUI .entry.odd
+	html.newUI .entry.odd, .keymap-list > tbody > tr:nth-child(odd)
 	{
-		background-color: rgba(0, 0, 0, .138)!important;
+		background-color: var(--odd-entry-background) !important;
 	}
 	#hotkey-info mark
 	{
