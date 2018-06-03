@@ -177,13 +177,12 @@
 		--cursor-width: /*[[cursorWidth]]*/;
 		--cursor-color: /*[[cursorColor]]*/;
 
-		/*Disable all color*/
-		--disable-all: #d62929;
-		/*Warning color*/
-		--warning: #f33;
-		/*No match regex*/
-		--no-match: #d99b45;
-		/* Odd entry background*/
+		/* These are must have static colors */
+		/*Disable all color/warning exact match from Stylus Turn all Styles off */
+		--warning-disable-all: #d62929;
+		/*No match regex ( This is --main-color from petrocompletions*/
+		--no-match: #FFC700;
+		/* Odd entry background (sorry --shadow is too light for this purpose)*/
 		--odd-entry-background: rgba(0, 0, 0, .16);
 
 		/*DeepDark colors*/
@@ -588,7 +587,7 @@
 	}
 	.regexp-report details[data-type="invalid"]
 	{
-		color: var(--warning) !important;
+		color: var(--warning-disable-all) !important;
 	}
 
 
@@ -848,7 +847,7 @@
 	/* This fixes the disable all checkbox background being too bright on hover	 */
 	#disableAll:hover
 	{
-		border-color: var(--disable-all) !important;
+		border-color: var(--warning-disable-all) !important;
 		background-color: var(--second-background) !important;
 	}
 
