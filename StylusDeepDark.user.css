@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.3.5
+@version 1.3.6
 @updateURL https://raw.githubusercontent.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 @author RaitaroH
@@ -158,7 +158,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.3.5*/
+/*1.3.6*/
 
 	/*Main color variables*/
 	:root
@@ -177,13 +177,12 @@
 		--cursor-width: /*[[cursorWidth]]*/;
 		--cursor-color: /*[[cursorColor]]*/;
 
-		/*Disable all color*/
-		--disable-all: #d62929;
-		/*Warning color*/
-		--warning: #f33;
-		/*No match regex*/
-		--no-match: #d99b45;
-		/* Odd entry background*/
+		/* These are must have static colors */
+		/*Disable all color/warning exact match from Stylus Turn all Styles off */
+		--warning-disable-all: #DA4453;
+		/*No match regex ( This is --main-color from petrocompletions*/
+		--no-match: #FDBC4B;
+		/* Odd entry background (sorry --shadow is too light for this purpose)*/
 		--odd-entry-background: rgba(0, 0, 0, .16);
 
 		/*DeepDark colors*/
@@ -588,7 +587,7 @@
 	}
 	.regexp-report details[data-type="invalid"]
 	{
-		color: var(--warning) !important;
+		color: var(--warning-disable-all) !important;
 	}
 
 
@@ -848,7 +847,7 @@
 	/* This fixes the disable all checkbox background being too bright on hover	 */
 	#disableAll:hover
 	{
-		border-color: var(--disable-all) !important;
+		border-color: var(--warning-disable-all) !important;
 		background-color: var(--second-background) !important;
 	}
 
