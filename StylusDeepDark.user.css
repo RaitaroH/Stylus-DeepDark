@@ -177,8 +177,13 @@
 		--cursor-width: /*[[cursorWidth]]*/;
 		--cursor-color: /*[[cursorColor]]*/;
 
+		/*Warning color*/
+		--warning: #f33;
+		/*No match regex*/
+		--no-match: #d99b45;
 		/* Odd entry background*/
 		--odd-entry-background: rgba(0, 0, 0, .16);
+
 		/*DeepDark colors*/
 		/*
 		--main-color: #00adee;
@@ -571,6 +576,14 @@
 	.regexp-report details[data-type="full"]
 	{
 		color: var(--main-color) !important;
+	}
+	.regexp-report details[data-type="none"]
+	{
+		color: var(--no-match) !important;
+	}
+	.regexp-report details[data-type="invalid"]
+	{
+		color: var(--warning) !important;
 	}
 
 
