@@ -436,6 +436,7 @@
 	{
 		border-color: var(--main-background) !important;
 		white-space: nowrap !important;
+		width: 282px !important;
 	}
 	#header summary h2:hover
 	{
