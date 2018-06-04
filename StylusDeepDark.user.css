@@ -490,9 +490,17 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	.CodeMirror-matchingbracket
+	/* fix the bracket matching actually working*/
+	div.CodeMirror span.CodeMirror-matchingbracket
 	{
 		color: var(--main-color) !important;
+		font-weight: 900 !important;
+		outline: none !important;
+	}
+	div.CodeMirror span.CodeMirror-nonmatchingbracket
+	{
+		color: var(--warning-disable-all) !important;
+		font-weight: 900 !important;
 	}
 
 	/*Cursor width and color setting implementation*/
