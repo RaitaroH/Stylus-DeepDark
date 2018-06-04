@@ -178,9 +178,9 @@
 		--cursor-color: /*[[cursorColor]]*/;
 
 		/* These are must have static colors */
-		/*Disable all color/warning exact match from Stylus Turn all Styles off */
+		/*Disable all color/warning Breeze Dark*/
 		--warning-disable-all: #DA4453;
-		/*No match regex ( This is --main-color from petrocompletions*/
+		/*No match regex color from Breeze Dark*/
 		--no-match: #FDBC4B;
 		/* Odd entry background (sorry --shadow is too light for this purpose)*/
 		--odd-entry-background: rgba(0, 0, 0, .16);
@@ -493,7 +493,8 @@
 	{
 		color: var(--main-color) !important;
 	}
-	/*Cursor width and color*/
+
+	/*Cursor width and color setting implementation*/
 	.CodeMirror div.CodeMirror-cursor
 	{
 		border-left-width: var(--cursor-width) !important;
