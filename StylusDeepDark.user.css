@@ -360,7 +360,7 @@
 		text-rendering: optimizeLegibility !important;
 		-webkit-font-smoothing: antialiased !important;
 	}
-	html.newUI .entry.odd, .keymap-list > tbody > tr:nth-child(odd)
+	html.newUI .entry.odd, .keymap-list > tbody > tr:nth-child(odd), .entry.odd
 	{
 		background-color: var(--odd-entry-background) !important;
 	}
