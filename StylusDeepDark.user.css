@@ -694,10 +694,20 @@
 
 
 	/*Search*/
-	.CodeMirror-search-match, .CodeMirror-search/*, .cm-searching*/
+	.CodeMirror-search-match, .CodeMirror-search, .cm-searching
 	{
 		background: var(--main-color) !important;
 		border-color: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	.cm-searching:after
+	{
+		content: "" !important;
+		height: 1px !important;
+		background: var(--main-color) !important;
+		position: absolute !important;
+		width: 100% !important;
+		margin-top: 17px!important;
 	}
 	.CodeMirror-dialog, .CodeMirror-dialog input
 	{
