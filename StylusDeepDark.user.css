@@ -104,7 +104,7 @@
 	"Orange": "#fff9f5",
 	"Jisho_夜明け": "#EFB26C"
 }
-@var select dimerText 'Secondary text color' {
+@var select dimmerText 'Secondary text color' {
 	"DeepDark": "#CCCCCC",
 	"BreezeDark": "#bdc3c7",
 	"Vertex Dark": "#AEAFB0",
@@ -169,7 +169,7 @@
 		--second-background: /*[[secondBackground]]*/;
 		--hover-background: /*[[hoverBackground]]*/;
 		--main-text: /*[[mainText]]*/;
-		--dimer-text: /*[[dimerText]]*/;
+		--dimmer-text: /*[[dimmerText]]*/;
 
 		--shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
 
@@ -192,7 +192,7 @@
 		--second-background: #181818;
 		--hover-background: #232323;
 		--main-text: #eff0f1;
-		--dimer-text: #CCCCCC;
+		--dimmer-text: #CCCCCC;
 		*/
 
 		/*KDE colors*/
@@ -202,7 +202,7 @@
 		--second-background: #2a2e32;
 		--hover-background: #31363b;
 		--main-text: #eff0f1;
-		--dimer-text: #bdc3c7;
+		--dimmer-text: #bdc3c7;
 		*/
 
 		/*Vertex Dark colors*/
@@ -212,7 +212,7 @@
 		--second-background: #353638;
 		--hover-background: #515254;
 		--main-text: #F3F3F5;
-		--dimer-text: #AEAFB0;
+		--dimmer-text: #AEAFB0;
 		*/
 
 		/*Arc Dark colors*/
@@ -222,7 +222,7 @@
 		--second-background: #383C4A;
 		--hover-background: #414A59;
 		--main-text: #C1C8D1;
-		--dimer-text: #B3BAC5;
+		--dimmer-text: #B3BAC5;
 		*/
 
 		/*Firefox Dark colors*/
@@ -232,7 +232,7 @@
 		--second-background: #181D20;
 		--hover-background: #353A44;
 		--main-text: #E3EEF9;
-		--dimer-text: #606376;
+		--dimmer-text: #606376;
 		*/
 
 		/*Firefox57 Dark colors*/
@@ -242,7 +242,7 @@
 		--second-background: #252526;
 		--hover-background: #323234;
 		--main-text: #F9F9FA;
-		--dimer-text: #D0D0D0;
+		--dimmer-text: #D0D0D0;
 		*/
 
 		/*Discord colors*/
@@ -252,7 +252,7 @@
 		--second-background: #2F3136;
 		--hover-background: #484B51;
 		--main-text: #FFFFFF;
-		--dimer-text: #ADA8AA;
+		--dimmer-text: #ADA8AA;
 		*/
 
 		/*YouTube dark colors*/
@@ -262,7 +262,7 @@
 		--second-background: #232323;
 		--hover-background: #343434;
 		--main-text: #E1E1E1;
-		--dimer-text: #7F7F7F;
+		--dimmer-text: #7F7F7F;
 		*/
 
 		/*Mint-Y-Dark colors*/
@@ -272,7 +272,7 @@
 		--second-background: #383838;
 		--hover-background: #404040;
 		--main-text: #FFFFFF;
-		--dimer-text: #D5DADA;
+		--dimmer-text: #D5DADA;
 		*/
 
 		/*9anime colors*/
@@ -282,7 +282,7 @@
 		--second-background: #17151C;
 		--hover-background: #1E1C25;
 		--main-text: #B4B4B4;
-		--dimer-text: #747474;
+		--dimmer-text: #747474;
 		*/
 
 		/*Black and white*/
@@ -292,7 +292,7 @@
 		--second-background: #0a0a0a;
 		--hover-background: #0f0f0f;
 		--main-text: #b4b4b4;
-		--dimer-text: #828282;
+		--dimmer-text: #828282;
 		*/
 
 		/*Yellow (colors from petrocompletions)*/
@@ -302,7 +302,7 @@
 		--second-background: #202222;
 		--hover-background: #353838;
 		--main-text: #EFF0F1;
-		--dimer-text: #9F9999;
+		--dimmer-text: #9F9999;
 		*/
 
 		/*Yellow 2*/
@@ -312,7 +312,7 @@
 		--second-background: #0c0a04;
 		--hover-background: #0f0d05;
 		--main-text: #fffdf5;
-		--dimer-text: #fff8e1;
+		--dimmer-text: #fff8e1;
 		*/
 
 		/*Ubuntu grey colors*/
@@ -322,7 +322,7 @@
 		--second-background: #3D3C38;
 		--hover-background: #59564D;
 		--main-text: #F2F1EF;
-		--dimer-text: #E6E5E3;
+		--dimmer-text: #E6E5E3;
 		*/
 
 		/*Ubuntu purple colors*/
@@ -332,7 +332,7 @@
 		--second-background: #430B28;
 		--hover-background: #520D30;
 		--main-text: #F2F1EF;
-		--dimer-text: #E6E5E3;
+		--dimmer-text: #E6E5E3;
 		*/
 
 		/*Orange*/
@@ -342,7 +342,7 @@
 		--second-background: #0e0702;
 		--hover-background: #110903;
 		--main-text: #fff9f5;
-		--dimer-text: #ffede1;
+		--dimmer-text: #ffede1;
 		*/
 
 		/*Jisho 夜明け colors https://userstyles.org/styles/115621/jisho*/
@@ -352,7 +352,7 @@
 		--second-background: #2A1B1B;
 		--hover-background: #863B2F;
 		--main-text: #EFB26C;
-		--dimer-text: #986E3F;
+		--dimmer-text: #986E3F;
 		*/
 	}
 	html
@@ -379,7 +379,7 @@
 	#stylus-edit, body, html, #notes, #header, .CodeMirror, #actions
 	{
 		background-color: var(--main-background) !important;
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	a, a:visited, .style-name-link
 	{
@@ -717,10 +717,10 @@
 	.cm-s-default .CodeMirror-line > span > span::-moz-selection { background-color: var(--hover-background); }
 	.cm-s-default .CodeMirror-gutters { background: var(--hover-background); border-right: 0px; }
 	.cm-s-default .CodeMirror-guttermarker { color: var(--main-text); }
-	.cm-s-default .CodeMirror-guttermarker-subtle, .cm-s-default .CodeMirror-linenumber { color: var(--dimer-text); }
+	.cm-s-default .CodeMirror-guttermarker-subtle, .cm-s-default .CodeMirror-linenumber { color: var(--dimmer-text); }
 	.cm-s-default .CodeMirror-cursor { border-left: 1px solid var(--main-color); }
 
-	.cm-s-default span.cm-comment { color: var(--dimer-text); }
+	.cm-s-default span.cm-comment { color: var(--dimmer-text); }
 	.cm-s-default span.cm-atom, .cm-s-default span.cm-number { color: var(--main-color); opacity: .6; }
 
 	.cm-s-default span.cm-property, .cm-s-default span.cm-attribute { color: var(--main-color); opacity: 1; }
@@ -743,10 +743,10 @@
 
 	.cm-s-default .CodeMirror-activeline-background { background: var(--second-background); }
 	.cm-s-default .CodeMirror-matchingbracket { color: var(--main-color); }
-	.cm-s-default .CodeMirror-matchingtag { background: var(--dimer-text); }
+	.cm-s-default .CodeMirror-matchingtag { background: var(--dimmer-text); }
 
 	.cm-s-default .cm-builtin { color: var(--main-color); }
-	.cm-s-default .cm-meta { color: var(--dimer-text); }
+	.cm-s-default .cm-meta { color: var(--dimmer-text); }
 
 
 	/*Stylish in chrome specific*/
@@ -771,7 +771,7 @@
 	/*Stylus in chrome specific*/
 	#manage\.onlyEnabled\.invert, #manage\.onlyLocal\.invert, #manage\.onlyUsercss\.invert
 	{
-		color: var(--dimer-text);
+		color: var(--dimmer-text);
 		box-shadow: var(--shadow) !important;
 	}
 	#advanced.collapsible h1
