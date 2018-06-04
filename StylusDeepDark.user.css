@@ -456,7 +456,6 @@
 		border-color: var(--odd-entry-background) !important;
 	}
 
-
 	/*Changed text highlight*/
 	::selection
 	{
@@ -468,7 +467,6 @@
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
-
 
 	/*To be commented out in case you want a stylus theme*/
 	.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection,
@@ -510,7 +508,6 @@
 		border-color: var(--cursor-color) !important;
 	}
 
-
 	/*Popup*/
 	.main-controls, .entry, .firefox body, #help-popup .title
 	{
@@ -526,7 +523,6 @@
 		border-color: var(--hover-background) !important;
 	}
 
-
 	/*Icons*/
 	.svg-icon, .svg-icon.info, .newUI .entry .svg-icon
 	{
@@ -541,7 +537,6 @@
 	{
 		fill: var(--warning-disable-all) !important;
 	}
-
 
 	/*History*/
 	#message-box-title, #message-box-buttons
@@ -573,7 +568,6 @@
 		border-color: var(--hover-background) !important;
 	}
 
-
 	#filters.active, .active #filters-stats
 	{
 		background-color: var(--main-color) !important;
@@ -599,7 +593,6 @@
 	{
 		color: var(--warning-disable-all) !important;
 	}
-
 
 	/*Text fields*/
 	#name, .applies-to li .applies-value, #search, .keymap-list input,
@@ -692,7 +685,6 @@
 		color: var(--main-text) !important;
 	}
 
-
 	/*Search*/
 	.CodeMirror-search-match, .CodeMirror-search, .cm-searching
 	{
@@ -719,7 +711,6 @@
 		border-color: var(--main-color) !important;
 	}
 
-
 	/*Autocomplete hints*/
 	.CodeMirror-hints
 	{
@@ -741,7 +732,6 @@
 		background: var(--hover-background) !important;
 		color: var(--main-color) !important;
 	}
-
 
 	/*Default theme overwritten with adjusted colors*/
 	.cm-s-default.CodeMirror { background: var(--second-background); color: var(--main-text); }
@@ -783,7 +773,6 @@
 	.cm-s-default .cm-builtin { color: var(--main-color); }
 	.cm-s-default .cm-meta { color: var(--dimmer-text); }
 
-
 	/*Stylish in chrome specific*/
 	:focus
 	{
@@ -821,7 +810,6 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-
 
 	/*Install *.user.css page*/
 	.CodeMirror-linewidget .applies-to
@@ -864,7 +852,6 @@
 		outline-color: var(--main-color) !important;
 	}
 
-
 	/*Checkboxes*/
 	input[type="checkbox"], input[type="checkbox"]:not(.slider)
 	{
@@ -900,7 +887,6 @@
 	{
 		color: var(--warning-disable-all) !important;
 	}
-
 
 	/* Colorpicker
 	This prevents the format change arrow from being cut off to the right,
