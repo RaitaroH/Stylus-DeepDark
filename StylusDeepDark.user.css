@@ -910,7 +910,7 @@
 	{
 		top: -3px;
 		right: 0px;
-		padding-right: 3px !important;
+		padding-right: 3px;
 	}
 	.colorpicker-format-change-button:hover
 	{
