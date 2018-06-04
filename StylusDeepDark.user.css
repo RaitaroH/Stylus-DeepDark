@@ -620,6 +620,19 @@
 		border: 1px solid var(--main-color) !important;
 	}
 
+	/*Stylus popup fixes */
+	#stylus-popup .disabled .style-name
+	{
+		color: var(--hover-background) !important;
+	}
+	#stylus-popup .style-name:hover,  #stylus-popup .disabled .style-name:hover
+	{
+		color: var(--main-text) !important;
+	}
+	#stylus-popup #installed .entry:nth-child(even) .main-controls, #stylus-popup #installed .entry:nth-child(even)
+	{
+		background-color: var(--odd-entry-background) !important;
+	}
 
 	/*Buttons*/
 	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla,
@@ -853,6 +866,17 @@
 	svg[class="svg-icon checked"], input[type="checkbox"]:checked:not(.slider) + .svg-icon.checked
 	{
 		fill: var(--main-color) !important;
+	}
+	/* fixes the popup checkbox hover */
+	.style-name:hover input[type="checkbox"]:not(.slider),
+	.disabled .style-name:hover input[type="checkbox"]:not(.slider)
+	{
+		border-color: var(--main-color) !important;
+	}
+	/* This fixes the misalignment between [ ] Turn all styles off checkbox and label */
+	#disableAll
+	{
+		margin-top: 2px !important;
 	}
 	/* This fixes the disable all checkbox background being too bright on hover	 */
 	#disableAll:hover
