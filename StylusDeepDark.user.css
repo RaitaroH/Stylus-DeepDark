@@ -677,10 +677,12 @@
 	{
 		color: var(--main-color) !important;
 	}
-	#stylus button[disabled] {
+	#stylus button[disabled]
+	{
 		opacity: .4;
 	}
-	#stylus button[disabled]:hover {
+	#stylus button[disabled]:hover
+	{
 		color: var(--main-text) !important;
 	}
 
