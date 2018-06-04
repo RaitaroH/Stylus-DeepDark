@@ -453,7 +453,7 @@
 	}
 	.CodeMirror
 	{
-		border-color: var(--hover-background)  !important;
+		border-color: var(--odd-entry-background) !important;
 	}
 
 
