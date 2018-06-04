@@ -539,7 +539,7 @@
 	}
 	.newUI .can-update[data-details$="locally edited"] .update svg, .newUI .update-problem .check-update svg
 	{
-		fill: #DA4453 !important;
+		fill: var(--warning-disable-all) !important;
 	}
 
 
