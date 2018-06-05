@@ -492,12 +492,14 @@
 	div.CodeMirror span.CodeMirror-matchingbracket
 	{
 		color: var(--main-color) !important;
+		-webkit-text-fill-color: var(--main-color) !important;
 		font-weight: 900 !important;
 		outline: none !important;
 	}
 	div.CodeMirror span.CodeMirror-nonmatchingbracket
 	{
 		color: var(--warning-disable-all) !important;
+		 -webkit-text-fill-color: var(--warning-disable-all) !important;
 		font-weight: 900 !important;
 	}
 
