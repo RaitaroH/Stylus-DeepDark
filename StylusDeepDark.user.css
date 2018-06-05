@@ -698,13 +698,18 @@
 		color: var(--main-text) !important;
 	}
 
-	/*Search*/
-	.CodeMirror-search-match, .CodeMirror-search, .cm-searching
+	/*Search
+	Cannot enable  .cm-searching for time being, this causes issues with find/replace
+	in fact I dont think any of these selectors below have any effect*/
+	.CodeMirror-search-match, .CodeMirror-search/*, .cm-searching*/
 	{
 		background: var(--main-color) !important;
 		border-color: var(--main-color) !important;
-		color: var(--main-text) !important;
 	}
+	/*
+	Have to disable .cm-searching:after because this causes
+	a horizontal scroll and the background behind is lighter than the previous
+	I suspect this is an existing bug with this style
 	.cm-searching:after
 	{
 		content: "" !important;
@@ -713,7 +718,7 @@
 		position: absolute !important;
 		width: 100% !important;
 		margin-top: 17px!important;
-	}
+	} */
 	.CodeMirror-dialog, .CodeMirror-dialog input
 	{
 		background: var(--hover-background) !important;
