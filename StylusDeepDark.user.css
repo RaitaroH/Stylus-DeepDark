@@ -789,9 +789,11 @@
 	{
 		outline-color: var(--main-color);
 	}
+	/* fix: Stylus remove that unsightly white border in input */
 	body:not(#stylus-options) input
 	{
 		background-color: var(--second-background);
+		border: 1px solid var(--hover-background);
 		color: var(--main-text);
 	}
 	fieldset, [style-id], .disabled
