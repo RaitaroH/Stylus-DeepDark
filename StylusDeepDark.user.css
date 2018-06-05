@@ -626,6 +626,11 @@
 	{
 		background-color: var(--odd-entry-background) !important;
 	}
+	/* fix: dont allow UserCSS option names to wrap */
+	.config-name
+	{
+		white-space: nowrap !important;
+	}
 
 	/*Buttons*/
 	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla,
