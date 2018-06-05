@@ -632,6 +632,12 @@
 		white-space: nowrap !important;
 	}
 
+	/* editor line tweak */
+	#sections > div:not(:first-of-type)
+	{
+		border-top: 2px solid var(--second-background) !important;
+	}
+
 	/*Buttons*/
 	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla,
 	#editor\.keyMap, #editor\.theme, #editor\.matchHighlight, #editor\.tabSize,
