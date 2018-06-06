@@ -715,12 +715,39 @@
 	}
 
 	/*Search
-	Cannot enable  .cm-searching for time being, this causes issues with find/replace
-	in fact I dont think any of these selectors below have any effect*/
-	.CodeMirror-search-match, .CodeMirror-search/*, .cm-searching*/
+	Fixed search including replace and match highlight*/
+	.cm-searching
+	{
+		background-color: var(--warning-disable-all);
+		color: var(--main-text);
+	}
+	.cm-searching.cm-matchhighlight
+	{
+		/* tokens found by manual search should not animate by cm-matchhighlight */
+		animation-name: search-and-match-highlighter !important;
+	}
+	@keyframes search-and-match-highlighter {
+		from
+		{
+			background-color: var(--warning-disable-all);  /* search color */
+			color: var(--main-text);
+		}
+		to
+		{
+			background-color: var(--dimmer-text);  /* sarch + highlight */
+			color: var(--main-background);
+		}
+	}
+	/* .CodeMirror-search selector doesnt exist in Stylus source so, be gone */
+	.CodeMirror-search-match
 	{
 		background: var(--main-color) !important;
-		border-color: var(--main-color) !important;
+		border-color: var(--main-text) !important;
+	}
+	#stylus .search-target-match
+	{
+		background-color: var(--no-match) !important;
+		color: var(--main-background) !important;
 	}
 	/*
 	Have to disable .cm-searching:after because this causes
