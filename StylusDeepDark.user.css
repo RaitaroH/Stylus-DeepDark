@@ -631,6 +631,11 @@
 	{
 		background-color: var(--odd-entry-background) !important;
 	}
+	/* Thx Mottie for solution see #18 */
+	#installed .entry.disabled:focus-within .style-name
+	{
+		color: var(--main-text) !important;
+	}
 	/* fix: dont allow UserCSS option names to wrap */
 	.config-name
 	{
