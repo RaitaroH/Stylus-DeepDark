@@ -386,16 +386,24 @@
 		color: var(--main-color) !important;
 		opacity: .9;
 	}
-	a:hover, .style-name-link:hover
+	/* fix tab naviagation hoverinng */
+	a:hover, .style-name-link:hover, 	a:focus-within, .style-name-link:focus-within,
+	h2:focus-within .style-name-link
 	{
 		opacity: 1;
+		filter: brightness(110%) !important;
 	}
 
-	.disabled h2::after, .disabled h2::after, .entry.usercss .style-name-link::after,
+	.disabled h2::after, .entry.usercss .style-name-link::after,
 	.search-result, .search-result-meta
 	{
 		background-color: var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
+	}
+	/* fix tab naviagation hoverinng */
+	.disabled h2:focus-within .style-name-link
+	{
+		opacity: .7;
 	}
 	.entry.usercss .style-name-link::after
 	{
