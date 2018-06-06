@@ -462,6 +462,7 @@
 	.CodeMirror
 	{
 		border-color: var(--odd-entry-background) !important;
+		background-color: var(--second-background) !important;
 	}
 
 	/*Changed text highlight*/
@@ -491,11 +492,11 @@
 	{
 		background-color: var(--second-background) !important;
 	}
-
 	.CodeMirror-activeline-background, .CodeMirror-gutters
 	{
 		background-color: var(--hover-background) !important;
 	}
+
 	/* fix the bracket matching actually working*/
 	div.CodeMirror span.CodeMirror-matchingbracket
 	{
@@ -749,19 +750,7 @@
 		background-color: var(--no-match) !important;
 		color: var(--main-background) !important;
 	}
-	/*
-	Have to disable .cm-searching:after because this causes
-	a horizontal scroll and the background behind is lighter than the previous
-	I suspect this is an existing bug with this style
-	.cm-searching:after
-	{
-		content: "" !important;
-		height: 1px !important;
-		background: var(--main-color) !important;
-		position: absolute !important;
-		width: 100% !important;
-		margin-top: 17px!important;
-	} */
+
 	.CodeMirror-dialog, .CodeMirror-dialog input
 	{
 		background: var(--hover-background) !important;
@@ -910,6 +899,7 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+	/* fix wrong background color when CodeMirror is empty */
 	.CodeMirror-focused
 	{
 		outline-color: var(--main-color) !important;
