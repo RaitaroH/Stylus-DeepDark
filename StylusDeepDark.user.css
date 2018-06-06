@@ -663,7 +663,7 @@
 	.test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates, #add-style-label,
 	#manage-options-button, button, #file-all-styles, #unfile-all-styles,
 	#manage\.newUI\.targets, #badgeNormal, #badgeDisabled, #updateInterval,
-	#popupWidth, #editor\.linter, #options button, #manage\.onlyUsercss\.invert
+	#popupWidth, #editor\.linter, #options button
 	{
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
