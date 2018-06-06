@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.4.0
+@version 1.4.1
 @updateURL https://raw.githubusercontent.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 @author RaitaroH
@@ -158,7 +158,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.4.0*/
+/*1.4.1*/
 
 	/*Main color variables*/
 	:root
@@ -386,16 +386,24 @@
 		color: var(--main-color) !important;
 		opacity: .9;
 	}
-	a:hover, .style-name-link:hover
+	/* fix tab naviagation hoverinng */
+	a:hover, .style-name-link:hover, 	a:focus-within, .style-name-link:focus-within,
+	h2:focus-within .style-name-link
 	{
 		opacity: 1;
+		filter: brightness(110%) !important;
 	}
 
-	.disabled h2::after, .disabled h2::after, .entry.usercss .style-name-link::after,
+	.disabled h2::after, .entry.usercss .style-name-link::after,
 	.search-result, .search-result-meta
 	{
 		background-color: var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
+	}
+	/* fix tab naviagation hoverinng */
+	.disabled h2:focus-within .style-name-link
+	{
+		opacity: .7;
 	}
 	.entry.usercss .style-name-link::after
 	{
@@ -655,7 +663,7 @@
 	.test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates, #add-style-label,
 	#manage-options-button, button, #file-all-styles, #unfile-all-styles,
 	#manage\.newUI\.targets, #badgeNormal, #badgeDisabled, #updateInterval,
-	#popupWidth, #editor\.linter, #options button, #manage\.onlyUsercss\.invert
+	#popupWidth, #editor\.linter, #options button
 	{
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
