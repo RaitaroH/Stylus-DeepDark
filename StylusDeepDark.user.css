@@ -616,13 +616,16 @@
 	}
 
 	/*Stylus popup fixes */
+	/* Use opacity to solve disabled entries see #18 thx Mottie :)*/
 	#stylus-popup .disabled .style-name
 	{
-		color: var(--hover-background) !important;
+		opacity: .7;
 	}
+	/* Revert opacity  here  else the hover will also be dimmer. */
 	#stylus-popup .style-name:hover,  #stylus-popup .disabled .style-name:hover
 	{
 		color: var(--main-text) !important;
+		opacity: 1;
 	}
 	#stylus-popup #installed .entry:nth-child(even) .main-controls, #stylus-popup #installed .entry:nth-child(even)
 	{
