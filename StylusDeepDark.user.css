@@ -622,7 +622,7 @@
 		opacity: .7;
 	}
 	/* Revert opacity  here  else the hover will also be dimmer. */
-	#stylus-popup .style-name:hover,  #stylus-popup .disabled .style-name:hover
+	#stylus-popup .style-name:hover,  #stylus-popup .disabled:hover .style-name
 	{
 		color: var(--main-text) !important;
 		opacity: 1;
