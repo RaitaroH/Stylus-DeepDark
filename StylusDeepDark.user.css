@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.4.1
+@version 1.4.2
 @updateURL https://raw.githubusercontent.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 @author RaitaroH
@@ -158,7 +158,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.4.1*/
+/*1.4.2*/
 
 	/*Main color variables*/
 	:root
@@ -462,6 +462,7 @@
 	.CodeMirror
 	{
 		border-color: var(--odd-entry-background) !important;
+		background-color: var(--second-background) !important;
 	}
 
 	/*Changed text highlight*/
@@ -491,11 +492,11 @@
 	{
 		background-color: var(--second-background) !important;
 	}
-
 	.CodeMirror-activeline-background, .CodeMirror-gutters
 	{
 		background-color: var(--hover-background) !important;
 	}
+
 	/* fix the bracket matching actually working*/
 	div.CodeMirror span.CodeMirror-matchingbracket
 	{
@@ -715,26 +716,41 @@
 	}
 
 	/*Search
-	Cannot enable  .cm-searching for time being, this causes issues with find/replace
-	in fact I dont think any of these selectors below have any effect*/
-	.CodeMirror-search-match, .CodeMirror-search/*, .cm-searching*/
+	Fixed search including replace and match highlight*/
+	.cm-searching
 	{
-		background: var(--main-color) !important;
-		border-color: var(--main-color) !important;
+		background-color: var(--warning-disable-all);
+		color: var(--main-text);
 	}
-	/*
-	Have to disable .cm-searching:after because this causes
-	a horizontal scroll and the background behind is lighter than the previous
-	I suspect this is an existing bug with this style
-	.cm-searching:after
+	.cm-searching.cm-matchhighlight
 	{
-		content: "" !important;
-		height: 1px !important;
+		/* tokens found by manual search should not animate by cm-matchhighlight */
+		animation-name: search-and-match-highlighter !important;
+	}
+	@keyframes search-and-match-highlighter {
+		from
+		{
+			background-color: var(--warning-disable-all);  /* search color */
+			color: var(--main-text);
+		}
+		to
+		{
+			background-color: var(--dimmer-text);  /* sarch + highlight */
+			color: var(--main-background);
+		}
+	}
+	/* .CodeMirror-search selector doesnt exist in Stylus source so, be gone */
+	.CodeMirror-search-match
+	{
 		background: var(--main-color) !important;
-		position: absolute !important;
-		width: 100% !important;
-		margin-top: 17px!important;
-	} */
+		border-color: var(--main-text) !important;
+	}
+	#stylus .search-target-match
+	{
+		background-color: var(--no-match) !important;
+		color: var(--main-background) !important;
+	}
+
 	.CodeMirror-dialog, .CodeMirror-dialog input
 	{
 		background: var(--hover-background) !important;
@@ -883,6 +899,7 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+	/* fix wrong background color when CodeMirror is empty */
 	.CodeMirror-focused
 	{
 		outline-color: var(--main-color) !important;
