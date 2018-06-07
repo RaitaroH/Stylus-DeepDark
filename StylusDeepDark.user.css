@@ -388,7 +388,7 @@
 	}
 	/* fix tab navigation hoverinng */
 	a:hover, .style-name-link:hover, a:focus-within, .style-name-link:focus-within,
-	h2:focus-within .style-name-link
+	h2:focus-within .style-name-link, .entry:hover .style-name-link
 	{
 		opacity: 1;
 		filter: brightness(110%) !important;
@@ -401,9 +401,9 @@
 		box-shadow: var(--shadow) !important;
 	}
 	/* fix tab naviagation hoverinng */
-	.disabled h2:focus-within .style-name-link
+	.disabled h2:focus-within .style-name-link, .entry.disabled:hover .style-name-link
 	{
-		opacity: .7;
+		opacity: .8;
 	}
 	.entry.usercss .style-name-link::after
 	{
