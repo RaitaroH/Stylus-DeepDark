@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.4.3
+@version 1.4.4
 @updateURL https://raw.githubusercontent.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 @author RaitaroH
@@ -158,7 +158,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.4.3*/
+/*1.4.4*/
 
 	/*Main color variables*/
 	:root
@@ -386,9 +386,9 @@
 		color: var(--main-color) !important;
 		opacity: .9;
 	}
-	/* fix tab naviagation hoverinng */
-	a:hover, .style-name-link:hover, 	a:focus-within, .style-name-link:focus-within,
-	h2:focus-within .style-name-link
+	/* fix tab navigation hoverinng */
+	a:hover, .style-name-link:hover, a:focus-within, .style-name-link:focus-within,
+	h2:focus-within .style-name-link, .entry:hover .style-name-link
 	{
 		opacity: 1;
 		filter: brightness(110%) !important;
@@ -401,9 +401,9 @@
 		box-shadow: var(--shadow) !important;
 	}
 	/* fix tab naviagation hoverinng */
-	.disabled h2:focus-within .style-name-link
+	.disabled h2:focus-within .style-name-link, .entry.disabled:hover .style-name-link
 	{
-		opacity: .7;
+		opacity: .8;
 	}
 	.entry.usercss .style-name-link::after
 	{
@@ -458,6 +458,7 @@
 	.resize-grip
 	{
 		background-color: var(--hover-background) !important;
+		border-color: var(--main-background) !important;
 	}
 	.CodeMirror
 	{
@@ -641,7 +642,7 @@
 		background-color: var(--odd-entry-background) !important;
 	}
 	/* Thx Mottie for solution see #18 */
-	#installed .entry.disabled:focus-within .style-name
+	#installed .entry.disabled:focus-within .style-name, #installed .entry:focus-within .style-name
 	{
 		color: var(--main-text) !important;
 	}
