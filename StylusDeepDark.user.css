@@ -458,6 +458,7 @@
 	.resize-grip
 	{
 		background-color: var(--hover-background) !important;
+		border-color: var(--main-background) !important;
 	}
 	.CodeMirror
 	{
