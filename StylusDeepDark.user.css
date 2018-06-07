@@ -642,7 +642,7 @@
 		background-color: var(--odd-entry-background) !important;
 	}
 	/* Thx Mottie for solution see #18 */
-	#installed .entry.disabled:focus-within .style-name
+	#installed .entry.disabled:focus-within .style-name, #installed .entry:focus-within .style-name
 	{
 		color: var(--main-text) !important;
 	}
