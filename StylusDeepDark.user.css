@@ -436,15 +436,17 @@
 		filter: grayscale(1);
 	}
 
+	#header
+	{
+		white-space: nowrap !important;
+		width: 282px !important;
+	#header
+	{
+		border-right: 1px solid var(--hover-background) !important;
+	}
 	#header h1
 	{
 		color: var(--main-text) !important;
-	}
-	#header
-	{
-		border-color: var(--main-background) !important;
-		white-space: nowrap !important;
-		width: 282px !important;
 	}
 	#header summary h2:hover
 	{
