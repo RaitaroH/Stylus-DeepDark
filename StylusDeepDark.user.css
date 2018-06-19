@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.4.4
+@version 1.4.5
 @updateURL https://raw.githubusercontent.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 @author RaitaroH
@@ -158,7 +158,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.4.4*/
+/*1.4.5*/
 
 	/*Main color variables*/
 	:root
@@ -436,15 +436,17 @@
 		filter: grayscale(1);
 	}
 
+	#header
+	{
+		white-space: nowrap !important;
+		width: 282px !important;
+	#header
+	{
+		border-right: 1px solid var(--hover-background) !important;
+	}
 	#header h1
 	{
 		color: var(--main-text) !important;
-	}
-	#header
-	{
-		border-color: var(--main-background) !important;
-		white-space: nowrap !important;
-		width: 282px !important;
 	}
 	#header summary h2:hover
 	{
@@ -545,9 +547,27 @@
 	{
 		fill: var(--main-color) !important;
 	}
-	.newUI .can-update[data-details$="locally edited"] .update svg, .newUI .update-problem .check-update svg
+	.newUI .can-update[data-details$="locally edited"] .update svg,
+	.newUI .update-problem .check-update svg
 	{
 		fill: var(--warning-disable-all) !important;
+	}
+	/* these entries works as intended */
+	.newUI .entry.can-update[data-error="may be locally edited"] .update:after,
+	.newUI .entry[data-error="locally edited"] .update:after
+	{
+		background: var(--second-background) !important;
+		border-color: var(--warning-disable-all) !important;
+		color: var(--warning-disable-all) !important;
+	}
+	.newUI .no-update:not(.update-problem):not(.update-done) .up-to-date:after,
+	.newUI .update:not(.update-problem) .update-done .up-to-date:after,
+	.newUI .entry .updated[title="Update completed."]:after,
+	.newUI .entry .update[title="Install update"]:after
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-color) !important;
 	}
 
 	/*History*/
@@ -728,7 +748,8 @@
 		/* tokens found by manual search should not animate by cm-matchhighlight */
 		animation-name: search-and-match-highlighter !important;
 	}
-	@keyframes search-and-match-highlighter {
+	@keyframes search-and-match-highlighter
+	{
 		from
 		{
 			background-color: var(--warning-disable-all);  /* search color */
