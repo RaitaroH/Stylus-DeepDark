@@ -547,9 +547,27 @@
 	{
 		fill: var(--main-color) !important;
 	}
-	.newUI .can-update[data-details$="locally edited"] .update svg, .newUI .update-problem .check-update svg
+	.newUI .can-update[data-details$="locally edited"] .update svg,
+	.newUI .update-problem .check-update svg
 	{
 		fill: var(--warning-disable-all) !important;
+	}
+	/* these entries works as intended */
+	.newUI .entry.can-update[data-error="may be locally edited"] .update:after,
+	.newUI .entry[data-error="locally edited"] .update:after
+	{
+		background: var(--second-background) !important;
+		border-color: var(--warning-disable-all) !important;
+		color: var(--warning-disable-all) !important;
+	}
+	.newUI .no-update:not(.update-problem):not(.update-done) .up-to-date:after,
+	.newUI .update:not(.update-problem) .update-done .up-to-date:after,
+	.newUI .entry .updated[title="Update completed."]:after,
+	.newUI .entry .update[title="Install update"]:after
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--main-color) !important;
+		color: var(--main-color) !important;
 	}
 
 	/*History*/
