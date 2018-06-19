@@ -440,6 +440,7 @@
 	{
 		white-space: nowrap !important;
 		width: 282px !important;
+	}
 	#header
 	{
 		border-right: 1px solid var(--hover-background) !important;
