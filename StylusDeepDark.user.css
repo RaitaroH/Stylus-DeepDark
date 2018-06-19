@@ -748,7 +748,8 @@
 		/* tokens found by manual search should not animate by cm-matchhighlight */
 		animation-name: search-and-match-highlighter !important;
 	}
-	@keyframes search-and-match-highlighter {
+	@keyframes search-and-match-highlighter
+	{
 		from
 		{
 			background-color: var(--warning-disable-all);  /* search color */
