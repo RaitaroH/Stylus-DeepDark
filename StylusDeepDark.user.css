@@ -616,6 +616,14 @@
 	{
 		background-color: var(--second-background) !important;
 	}
+	#message-box-close-icon .svg-icon
+	{
+		fill: var(--dimmer-text) !important;
+	}
+	#message-box-close-icon:hover .svg-icon
+	{
+		fill: var(--main-color) !important;
+	}
 
 	.help-text mark
 	{
