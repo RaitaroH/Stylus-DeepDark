@@ -522,6 +522,7 @@
 	}
 	.CodeMirror
 	{
+		font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace !important;
 		font-size: var(--font-size) !important;
 		color: var(--main-text) !important;
 	}
@@ -1005,9 +1006,9 @@
 	 */
 	.colorpicker-format-change
 	{
-		top: -3px;
-		right: 0px;
-		padding-right: 3px;
+		top: 3px;
+		right: -1px;
+		padding-right: 2px;
 	}
 	.colorpicker-format-change-button:hover
 	{
