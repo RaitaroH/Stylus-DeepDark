@@ -148,6 +148,11 @@
 	"Twilight": "#323232",
 	"Night": "#447"
 }
+@var select fontSize 'Editor font size:' {
+	"Normal 14px": "14px",
+	"Large 15px": "15px",
+	"Larger 16px": "16px",
+}
 @var select cursorWidth 'Cursor width:' {
 	"Slim 1px": "1px",
 	"Wider 2px": "2px",
@@ -197,6 +202,8 @@
 		--dimmer-text: /*[[dimmerText]]*/;
 
 		--shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+		/* CodeMirror font size */
+		--font-size: /*[[fontSize]]*/;
 
 		/*Cursor width and color*/
 		--cursor-width: /*[[cursorWidth]]*/;
@@ -515,6 +522,7 @@
 	}
 	.CodeMirror
 	{
+		font-size: var(--font-size) !important;
 		color: var(--main-text) !important;
 	}
 	.CodeMirror-lines, .cm-s-mbo.CodeMirror
