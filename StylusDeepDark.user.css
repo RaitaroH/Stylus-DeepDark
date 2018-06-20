@@ -64,7 +64,8 @@
 	"Ubuntu_grey": "#3D3C38",
 	"Ubuntu_purple": "#430B28",
 	"Orange": "#0e0702",
-	"Jisho_夜明け": "#2A1B1B"
+	"Jisho_夜明け": "#2A1B1B",
+	"Twilight": "#141414",
 }
 @var select hoverBackground 'Hover background color:' {
 	"DeepDark": "#232323",
@@ -122,6 +123,30 @@
 	"Ubuntu_purple": "#E6E5E3",
 	"Orange": "#ffede1",
 	"Jisho_夜明け": "#986E3F"
+}
+@var select selectBackground 'Select background:' {
+	"DeepDark": "#232323",
+	"BreezeDark": "#31363b",
+	"Vertex Dark": "#515254",
+	"Arc Dark": "#414A59",
+	"Firefox Dark": "#353A44",
+	"Firefox57": "#323234",
+	"Discord": "#484B51",
+	"YouTubeDark": "#343434",
+	"Mint-Y-Dark": "#404040",
+	"9anime": "#1E1C25",
+	"Black&White": "#0f0f0f",
+	"Yellow_petrocompletions": "#353838",
+	"Yellow2": "#0f0d05",
+	"Ubuntu_grey": "#59564D",
+	"Ubuntu_purple": "#520D30",
+	"Orange": "#110903",
+	"Jisho_夜明け": "#863B2F",
+	"Lesser Dark": "#45443b",
+	"Shadowfox": "#353B48",
+	"Midnight": "#314d67",
+	"Twilight": "#323232",
+	"Night": "#447"
 }
 @var select cursorWidth 'Cursor width:' {
 	"Slim 1px": "1px",
@@ -484,9 +509,9 @@
 	/*To be commented out in case you want a stylus theme*/
 	.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection,
 	.CodeMirror-line > span > span::-moz-selection, .CodeMirror-selected,
-	.CodeMirror-focused .CodeMirror-selected
+	.CodeMirror-focused .CodeMirror-selected, .CodeMirror-activeline-background
 	{
-		background-color: var(--hover-background) !important;
+		background-color: var(--select-background) !important;
 	}
 	.CodeMirror
 	{
@@ -496,7 +521,7 @@
 	{
 		background-color: var(--second-background) !important;
 	}
-	.CodeMirror-activeline-background, .CodeMirror-gutters
+	.CodeMirror-gutters
 	{
 		background-color: var(--hover-background) !important;
 	}
