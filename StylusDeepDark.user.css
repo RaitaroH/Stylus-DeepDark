@@ -201,20 +201,22 @@
 		--main-text: /*[[mainText]]*/;
 		--dimmer-text: /*[[dimmerText]]*/;
 
-		--shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
-		/* CodeMirror font size */
+		/*select background*/
+		--select-background: /*[[selectBackground]]*/;
+		/*CodeMirror font size*/
 		--font-size: /*[[fontSize]]*/;
-
 		/*Cursor width and color*/
 		--cursor-width: /*[[cursorWidth]]*/;
 		--cursor-color: /*[[cursorColor]]*/;
 
-		/* These are must have static colors */
+		/*These are must have static colors*/
 		/*Disable all color/warning Breeze Dark*/
 		--warning-disable-all: #DA4453;
 		/*No match regex color from Breeze Dark*/
 		--no-match: #FDBC4B;
-		/* Odd entry background (sorry --shadow is too light for this purpose)*/
+		/*Shadow*/
+		--shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+		/*Odd entry background*/
 		--odd-entry-background: rgba(0, 0, 0, .16);
 
 		/*DeepDark colors*/
