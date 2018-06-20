@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.4.6
+@version 1.4.7
 @updateURL https://raw.githubusercontent.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 @author RaitaroH
@@ -64,7 +64,8 @@
 	"Ubuntu_grey": "#3D3C38",
 	"Ubuntu_purple": "#430B28",
 	"Orange": "#0e0702",
-	"Jisho_夜明け": "#2A1B1B"
+	"Jisho_夜明け": "#2A1B1B",
+	"Twilight": "#141414",
 }
 @var select hoverBackground 'Hover background color:' {
 	"DeepDark": "#232323",
@@ -123,6 +124,35 @@
 	"Orange": "#ffede1",
 	"Jisho_夜明け": "#986E3F"
 }
+@var select selectBackground 'Select background:' {
+	"DeepDark": "#232323",
+	"BreezeDark": "#31363b",
+	"Vertex Dark": "#515254",
+	"Arc Dark": "#414A59",
+	"Firefox Dark": "#353A44",
+	"Firefox57": "#323234",
+	"Discord": "#484B51",
+	"YouTubeDark": "#343434",
+	"Mint-Y-Dark": "#404040",
+	"9anime": "#1E1C25",
+	"Black&White": "#0f0f0f",
+	"Yellow_petrocompletions": "#353838",
+	"Yellow2": "#0f0d05",
+	"Ubuntu_grey": "#59564D",
+	"Ubuntu_purple": "#520D30",
+	"Orange": "#110903",
+	"Jisho_夜明け": "#863B2F",
+	"Lesser Dark": "#45443b",
+	"Shadowfox": "#353B48",
+	"Midnight": "#314d67",
+	"Twilight": "#323232",
+	"Night": "#447"
+}
+@var select fontSize 'Editor font size:' {
+	"Normal 14px": "14px",
+	"Large 15px": "15px",
+	"Larger 16px": "16px",
+}
 @var select cursorWidth 'Cursor width:' {
 	"Slim 1px": "1px",
 	"Wider 2px": "2px",
@@ -148,7 +178,6 @@
 	"Orange": "#ff6905",
 	"Jisho_夜明け": "#EF7D6C",
 	"Terminal": "#04f911",
-	"White": "#fff"
 }
 
 ==/UserStyle== */
@@ -158,7 +187,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.4.6*/
+/*1.4.7*/
 
 	/*Main color variables*/
 	:root
@@ -171,18 +200,22 @@
 		--main-text: /*[[mainText]]*/;
 		--dimmer-text: /*[[dimmerText]]*/;
 
-		--shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
-
+		/*select background*/
+		--select-background: /*[[selectBackground]]*/;
+		/*CodeMirror font size*/
+		--font-size: /*[[fontSize]]*/;
 		/*Cursor width and color*/
 		--cursor-width: /*[[cursorWidth]]*/;
 		--cursor-color: /*[[cursorColor]]*/;
 
-		/* These are must have static colors */
+		/*These are must have static colors*/
 		/*Disable all color/warning Breeze Dark*/
 		--warning-disable-all: #DA4453;
 		/*No match regex color from Breeze Dark*/
 		--no-match: #FDBC4B;
-		/* Odd entry background (sorry --shadow is too light for this purpose)*/
+		/*Shadow*/
+		--shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+		/*Odd entry background*/
 		--odd-entry-background: rgba(0, 0, 0, .16);
 
 		/*DeepDark colors*/
@@ -484,19 +517,21 @@
 	/*To be commented out in case you want a stylus theme*/
 	.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection,
 	.CodeMirror-line > span > span::-moz-selection, .CodeMirror-selected,
-	.CodeMirror-focused .CodeMirror-selected
+	.CodeMirror-focused .CodeMirror-selected, .CodeMirror-activeline-background
 	{
-		background-color: var(--hover-background) !important;
+		background-color: var(--select-background) !important;
 	}
 	.CodeMirror
 	{
+		font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace !important;
+		font-size: var(--font-size) !important;
 		color: var(--main-text) !important;
 	}
 	.CodeMirror-lines, .cm-s-mbo.CodeMirror
 	{
 		background-color: var(--second-background) !important;
 	}
-	.CodeMirror-activeline-background, .CodeMirror-gutters
+	.CodeMirror-gutters
 	{
 		background-color: var(--hover-background) !important;
 	}
@@ -580,6 +615,14 @@
 	#message-box-contents
 	{
 		background-color: var(--second-background) !important;
+	}
+	#message-box-close-icon .svg-icon
+	{
+		fill: var(--dimmer-text) !important;
+	}
+	#message-box-close-icon:hover .svg-icon
+	{
+		fill: var(--main-color) !important;
 	}
 
 	.help-text mark
@@ -972,9 +1015,9 @@
 	 */
 	.colorpicker-format-change
 	{
-		top: -3px;
-		right: 0px;
-		padding-right: 3px;
+		top: 3px;
+		right: -1px;
+		padding-right: 2px;
 	}
 	.colorpicker-format-change-button:hover
 	{
