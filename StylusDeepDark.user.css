@@ -877,15 +877,17 @@
 
 	/*Default theme overwritten with adjusted colors*/
 	.cm-s-default.CodeMirror { background: var(--second-background); color: var(--main-text); }
-	.cm-s-default div.CodeMirror-selected { background: var(--hover-background); }
+	.cm-s-default div.CodeMirror-selected { background: var(--select-background); }
+
 	.cm-s-default .CodeMirror-line::selection, .cm-s-default .CodeMirror-line > span::selection,
-	.cm-s-default .CodeMirror-line > span > span::selection { background: var(--hover-background); }
+	.cm-s-default .CodeMirror-line > span > span::selection { background: var(--select-background); }
 	.cm-s-default .CodeMirror-line::-moz-selection, .cm-s-default .CodeMirror-line > span::-moz-selection,
-	.cm-s-default .CodeMirror-line > span > span::-moz-selection { background-color: var(--hover-background); }
+	.cm-s-default .CodeMirror-line > span > span::-moz-selection { background-color: var(--select-background); }
+
 	.cm-s-default .CodeMirror-gutters { background: var(--hover-background); border-right: 0px; }
 	.cm-s-default .CodeMirror-guttermarker { color: var(--main-text); }
 	.cm-s-default .CodeMirror-guttermarker-subtle, .cm-s-default .CodeMirror-linenumber { color: var(--dimmer-text); }
-	.cm-s-default .CodeMirror-cursor { border-left: 1px solid var(--main-color); }
+	.cm-s-default .CodeMirror-cursor { border-left: var(--cursor-width) solid var(--cursor-color); }
 
 	.cm-s-default span.cm-comment { color: var(--dimmer-text); }
 	.cm-s-default span.cm-atom, .cm-s-default span.cm-number { color: var(--main-color); opacity: .6; }
@@ -908,7 +910,7 @@
 	.cm-s-default span.cm-qualifier { color: var(--main-text); }
 	.cm-s-default span.cm-keyword.colorview:after { filter: invert(100%); }
 
-	.cm-s-default .CodeMirror-activeline-background { background: var(--second-background); }
+	.cm-s-default .CodeMirror-activeline-background { background: var(--select-background); }
 	.cm-s-default .CodeMirror-matchingbracket { color: var(--main-color); }
 	.cm-s-default .CodeMirror-matchingtag { background: var(--dimmer-text); }
 
