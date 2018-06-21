@@ -561,6 +561,11 @@
 		font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace !important;
 		font-size: var(--font-size) !important;
 	}
+	.CodeMirror-lint-tooltip
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
 	/* fix the bracket matching actually working*/
 	div.CodeMirror span.CodeMirror-matchingbracket
 	{
@@ -796,12 +801,6 @@
 	}
 	#stylus button[disabled]:hover
 	{
-		color: var(--main-text) !important;
-	}
-
-	.CodeMirror-lint-tooltip
-	{
-		background-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
 
