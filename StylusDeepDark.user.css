@@ -440,8 +440,9 @@
 		opacity: .9;
 	}
 	/* fix tab navigation hoverinng */
-	a:hover, .style-name-link:hover, a:focus-within, .style-name-link:focus-within,
-	h2:focus-within .style-name-link, .entry:hover .style-name-link
+	a:hover, .style-name-link:hover, a:focus-within,
+	.style-name-link:focus-within, h2:focus-within .style-name-link,
+	.entry:hover .style-name-link
 	{
 		opacity: 1;
 		filter: brightness(110%) !important;
@@ -454,7 +455,8 @@
 		box-shadow: var(--shadow) !important;
 	}
 	/* fix tab naviagation hoverinng */
-	.disabled h2:focus-within .style-name-link, .entry.disabled:hover .style-name-link
+	.disabled h2:focus-within .style-name-link,
+	.entry.disabled:hover .style-name-link
 	{
 		opacity: .8;
 	}
@@ -463,8 +465,8 @@
 		color: var(--main-color) !important;
 	}
 
-	#filters label:hover, #filters .filter-selection:hover, #filters label:hover select,
-	#filters .filter-selection:hover select
+	#filters label:hover, #filters .filter-selection:hover,
+	#filters label:hover select, #filters .filter-selection:hover select
 	{
 		background-color: transparent !important;
 		color: var(--main-color) !important;
@@ -558,7 +560,8 @@
 	/* dont uncomment anything below */
 	.CodeMirror
 	{
-		font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace !important;
+		font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas',
+			'source-code-pro', monospace !important;
 		font-size: var(--font-size) !important;
 	}
 	.CodeMirror-lint-tooltip
@@ -680,7 +683,8 @@
 		border-color: var(--main-color) !important;
 	}
 
-	body.all-styles-hidden-by-filters::before, body.all-styles-hidden-by-filters::after
+	body.all-styles-hidden-by-filters::before,
+	body.all-styles-hidden-by-filters::after
 	{
 		color: var(--main-color) !important;
 		opacity: .5;
@@ -726,17 +730,20 @@
 		opacity: .7;
 	}
 	/* Revert opacity  here  else the hover will also be dimmer. */
-	#stylus-popup .entry:hover .style-name,  #stylus-popup .disabled:hover .style-name
+	#stylus-popup .entry:hover .style-name,
+	#stylus-popup .disabled:hover .style-name
 	{
 		color: var(--main-text) !important;
 		opacity: 1;
 	}
-	#stylus-popup #installed .entry:nth-child(even) .main-controls, #stylus-popup #installed .entry:nth-child(even)
+	#stylus-popup #installed .entry:nth-child(even) .main-controls,
+	#stylus-popup #installed .entry:nth-child(even)
 	{
 		background-color: var(--odd-entry-background) !important;
 	}
 	/* Thx Mottie for solution see #18 */
-	#installed .entry.disabled:focus-within .style-name, #installed .entry:focus-within .style-name
+	#installed .entry.disabled:focus-within .style-name,
+	#installed .entry:focus-within .style-name
 	{
 		color: var(--main-text) !important;
 	}
@@ -756,10 +763,10 @@
 	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla,
 	#editor\.keyMap, #editor\.theme, #editor\.matchHighlight, #editor\.tabSize,
 	*[class="applies-type style-contributor"], .add-section, .beautify-section,
-	.test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates, #add-style-label,
-	#manage-options-button, button, #file-all-styles, #unfile-all-styles,
-	#manage\.newUI\.targets, #badgeNormal, #badgeDisabled, #updateInterval,
-	#popupWidth, #editor\.linter, #options button
+	.test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates,
+	#add-style-label, #manage-options-button, button, #file-all-styles,
+	#unfile-all-styles, #manage\.newUI\.targets, #badgeNormal, #badgeDisabled,
+	#updateInterval, #popupWidth, #editor\.linter, #options button
 	{
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
@@ -785,13 +792,16 @@
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	#save-button:hover, #beautify:hover, #cancel-button:hover, #from-mozilla:hover,
-	#to-mozilla:hover, #editor\.keyMap:hover, #editor\.theme:hover, #editor\.matchHighlight:hover,
-	#editor\.tabSize:hover, *[class="applies-type style-contributor"]:hover, .add-section:hover,
-	.beautify-section:hover, .test-regexp:hover, .remove-applies-to:hover, .add-applies-to:hover,
-	option:hover, #check-all-updates:hover, #add-style-label:hover, #manage-options-button:hover,
-	button:hover, #file-all-styles:hover, #unfile-all-styles:hover, #manage\.newUI\.targets:hover,
-	#updateInterval:hover, #popupWidth:hover, #editor\.linter:hover
+	#save-button:hover, #beautify:hover, #cancel-button:hover,
+	#from-mozilla:hover, #to-mozilla:hover, #editor\.keyMap:hover,
+	#editor\.theme:hover, #editor\.matchHighlight:hover, #editor\.tabSize:hover,
+	*[class="applies-type style-contributor"]:hover, .add-section:hover,
+	.beautify-section:hover, .test-regexp:hover, .remove-applies-to:hover,
+	.add-applies-to:hover, option:hover, #check-all-updates:hover,
+	#add-style-label:hover, #manage-options-button:hover, button:hover,
+	#file-all-styles:hover, #unfile-all-styles:hover,
+	#manage\.newUI\.targets:hover, #updateInterval:hover, #popupWidth:hover,
+	#editor\.linter:hover
 	{
 		color: var(--main-color) !important;
 	}
@@ -886,7 +896,8 @@
 
 	.cm-s-default .CodeMirror-gutters { background: var(--hover-background); border-right: 0px; }
 	.cm-s-default .CodeMirror-guttermarker { color: var(--main-text); }
-	.cm-s-default .CodeMirror-guttermarker-subtle, .cm-s-default .CodeMirror-linenumber { color: var(--dimmer-text); }
+	.cm-s-default .CodeMirror-guttermarker-subtle,
+	.cm-s-default .CodeMirror-linenumber { color: var(--dimmer-text); }
 	.cm-s-default .CodeMirror-cursor { border-left: var(--cursor-width) solid var(--cursor-color); }
 
 	.cm-s-default span.cm-comment { color: var(--dimmer-text); }
@@ -898,14 +909,17 @@
 
 	.cm-s-default span.cm-variable { color: var(--main-text); }
 	.cm-s-default span.cm-variable-2 { color: var(--main-color); opacity: .6; }
-	.cm-s-default .cm-variable-3, .cm-s-default .cm-type { color: var(--main-color); filter: hue-rotate(280deg); }
+
+	.cm-s-default .cm-variable-3,
+	.cm-s-default .cm-type { color: var(--main-color); filter: hue-rotate(280deg); }
 	.cm-s-default span.cm-def { color: var(--main-text); }
 	.cm-s-default span.cm-bracket { color: var(--main-text); font-weight: bold; }
 	.cm-s-default span.cm-tag { color: var(--main-color); opacity: .6; }
 	.cm-s-default span.cm-link, .cm-s-default span.cm-keyword { color: var(--main-color); }
 	.cm-s-default span.cm-keyword:not(.cm-colorview),
 	.cm-s-default span.cm-string { color: var(--main-color); filter: hue-rotate(60deg); }
-	.cm-s-default span.cm-link, .cm-s-default span.cm-keyword:not(.cm-colorview) { color: var(--main-color); filter: invert(100%); }
+	.cm-s-default span.cm-link,
+	.cm-s-default span.cm-keyword:not(.cm-colorview) { color: var(--main-color); filter: invert(100%); }
 	.cm-s-default span.cm-error { border-bottom: var(--hover-background); color: var(--main-text); }
 	.cm-s-default span.cm-qualifier { color: var(--main-text); }
 	.cm-s-default span.cm-keyword.colorview:after { filter: invert(100%); }
@@ -939,7 +953,8 @@
 	}
 
 	/*Stylus in chrome specific*/
-	#manage\.onlyEnabled\.invert, #manage\.onlyLocal\.invert, #manage\.onlyUsercss\.invert
+	#manage\.onlyEnabled\.invert, #manage\.onlyLocal\.invert,
+	#manage\.onlyUsercss\.invert
 	{
 		color: var(--dimmer-text);
 		box-shadow: var(--shadow) !important;
@@ -1009,7 +1024,8 @@
 	{
 		border-color: var(--main-color) !important;
 	}
-	svg[class="svg-icon checked"], input[type="checkbox"]:checked:not(.slider) + .svg-icon.checked
+	input[type="checkbox"]:checked:not(.slider) + .svg-icon.checked,
+	svg[class="svg-icon checked"]
 	{
 		fill: var(--main-color) !important;
 	}
@@ -1019,12 +1035,14 @@
 	{
 		border-color: var(--main-color) !important;
 	}
-	/* This fixes the misalignment between [ ] Turn all styles off checkbox and label */
+	/* This fixes the misalignment between:
+	* [ ] Turn all styles off checkbox and label
+	*/
 	#disableAll
 	{
 		margin-top: 2px !important;
 	}
-	/* This fixes the disable all checkbox background being too bright on hover	 */
+	/* This fixes the disable all checkbox bg being too bright on hover	 */
 	#disableAll:hover
 	{
 		border-color: var(--warning-disable-all) !important;
@@ -1036,9 +1054,9 @@
 	}
 
 	/* Colorpicker
-	This prevents the format change arrow from being cut off to the right,
-	and in addition when hovering/focus we get the nice --main-color.
-	 */
+	* This prevents the format change arrow from being cut off to the right,
+	* and in addition when hovering/focus we get the nice --main-color.
+	*/
 	.colorpicker-format-change
 	{
 		top: 3px;
