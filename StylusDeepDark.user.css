@@ -519,7 +519,6 @@
 	.CodeMirror
 	{
 		border-color: var(--odd-entry-background) !important;
-		background-color: var(--second-background) !important;
 	}
 
 	/*Changed text highlight*/
@@ -541,13 +540,12 @@
 	{
 		background-color: var(--select-background) !important;
 	}
-	.CodeMirror
+	.CodeMirror, .CodeMirror-code, .CodeMirror-code
 	{
-		font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace !important;
-		font-size: var(--font-size) !important;
 		color: var(--main-text) !important;
+		background-color: var(--editor-background) !important;
 	}
-	.CodeMirror-lines, .cm-s-mbo.CodeMirror
+	.cm-s-mbo.CodeMirror
 	{
 		background-color: var(--second-background) !important;
 	}
@@ -555,7 +553,14 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
+	/* end of area to be commented out */
 
+	/* dont uncomment anything below */
+	.CodeMirror
+	{
+		font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace !important;
+		font-size: var(--font-size) !important;
+	}
 	/* fix the bracket matching actually working*/
 	div.CodeMirror span.CodeMirror-matchingbracket
 	{
