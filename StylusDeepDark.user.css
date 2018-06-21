@@ -65,7 +65,6 @@
 	"Ubuntu_purple": "#430B28",
 	"Orange": "#0e0702",
 	"Jisho_夜明け": "#2A1B1B",
-	"Twilight": "#141414",
 }
 @var select hoverBackground 'Hover background color:' {
 	"DeepDark": "#232323",
@@ -124,7 +123,27 @@
 	"Orange": "#ffede1",
 	"Jisho_夜明け": "#986E3F"
 }
-@var select selectBackground 'Select background:' {
+@var select editorBackground 'Editor background:' {
+	"DeepDark": "#181818",
+	"BreezeDark": "#2a2e32",
+	"Vertex Dark": "#353638",
+	"Arc Dark": "#383C4A",
+	"Firefox Dark": "#181D20",
+	"Firefox57": "#252526",
+	"Discord": "#2F3136",
+	"YouTubeDark": "#232323",
+	"Mint-Y-Dark": "#383838",
+	"9anime": "#17151C",
+	"Black&White": "#0a0a0a",
+	"Yellow_petrocompletions": "#202222",
+	"Yellow2": "#0c0a04",
+	"Ubuntu_grey": "#3D3C38",
+	"Ubuntu_purple": "#430B28",
+	"Orange": "#0e0702",
+	"Jisho_夜明け": "#2A1B1B",
+	"Twilight": "#141414",
+}
+@var select selectBackground 'Selection background:' {
 	"DeepDark": "#232323",
 	"BreezeDark": "#31363b",
 	"Vertex Dark": "#515254",
@@ -199,9 +218,10 @@
 		--hover-background: /*[[hoverBackground]]*/;
 		--main-text: /*[[mainText]]*/;
 		--dimmer-text: /*[[dimmerText]]*/;
-
-		/*select background*/
+		--editor-background: /*[[editorBackground]]*/;
+		/*Selection/current line background*/
 		--select-background: /*[[selectBackground]]*/;
+
 		/*CodeMirror font size*/
 		--font-size: /*[[fontSize]]*/;
 		/*Cursor width and color*/
