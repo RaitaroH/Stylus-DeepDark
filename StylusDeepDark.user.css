@@ -813,6 +813,11 @@
 
 	/*Search
 	Fixed search including replace and match highlight*/
+	#search-replace-dialog .CodeMirror-search-field,
+	#search-replace-dialog [data-action="clear"]
+	{
+		background: var(--second-background);
+	}
 	.cm-searching
 	{
 		background-color: var(--warning-disable-all);
