@@ -762,7 +762,7 @@
 	/*Buttons*/
 	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla,
 	#editor\.keyMap, #editor\.theme, #editor\.matchHighlight, #editor\.tabSize,
-	*[class="applies-type style-contributor"], .add-section, .beautify-section,
+	.applies-type.style-contributor, .add-section, .beautify-section,
 	.test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates,
 	#add-style-label, #manage-options-button, button, #file-all-styles,
 	#unfile-all-styles, #manage\.newUI\.targets, #badgeNormal, #badgeDisabled,
@@ -795,7 +795,7 @@
 	#save-button:hover, #beautify:hover, #cancel-button:hover,
 	#from-mozilla:hover, #to-mozilla:hover, #editor\.keyMap:hover,
 	#editor\.theme:hover, #editor\.matchHighlight:hover, #editor\.tabSize:hover,
-	*[class="applies-type style-contributor"]:hover, .add-section:hover,
+	.applies-type.style-contributor:hover, .add-section:hover,
 	.beautify-section:hover, .test-regexp:hover, .remove-applies-to:hover,
 	.add-applies-to:hover, option:hover, #check-all-updates:hover,
 	#add-style-label:hover, #manage-options-button:hover, button:hover,
