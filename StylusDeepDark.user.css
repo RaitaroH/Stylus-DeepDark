@@ -826,7 +826,7 @@
 	.cm-searching.cm-matchhighlight
 	{
 		/* tokens found by manual search should not animate by cm-matchhighlight */
-		animation-name: search-and-match-highlighter !important;
+		animation-name: search-and-match-highlighter;
 	}
 	@keyframes search-and-match-highlighter
 	{
