@@ -493,7 +493,6 @@
 
 	#header
 	{
-		white-space: nowrap !important;
 		width: 282px !important;
 	}
 	#header
@@ -511,6 +510,10 @@
 	#header summary h2:hover
 	{
 		color: var(--main-color) !important;
+	}
+	#linter-label
+	{
+		white-space: nowrap !important;
 	}
 
 	.resize-grip
