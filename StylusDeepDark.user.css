@@ -766,7 +766,7 @@
 	.test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates,
 	#add-style-label, #manage-options-button, button, #file-all-styles,
 	#unfile-all-styles, #manage\.newUI\.targets, #badgeNormal, #badgeDisabled,
-	#updateInterval, #popupWidth, #editor\.linter, #options button
+	#updateInterval, #popupWidth, #editor\.linter, #options button, #manage\.newUI\.sort
 	{
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
@@ -777,10 +777,6 @@
 	{
 		background-image: none !important;
 		text-shadow: none !important;
-	}
-	#options button:hover
-	{
-		color: var(--main-color) !important;
 	}
 	optgroup
 	{
@@ -801,7 +797,7 @@
 	#add-style-label:hover, #manage-options-button:hover, button:hover,
 	#file-all-styles:hover, #unfile-all-styles:hover,
 	#manage\.newUI\.targets:hover, #updateInterval:hover, #popupWidth:hover,
-	#editor\.linter:hover
+	#editor\.linter:hover, #options button:hover, #manage\.newUI\.sort:hover
 	{
 		color: var(--main-color) !important;
 	}
