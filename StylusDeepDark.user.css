@@ -439,7 +439,7 @@
 		color: var(--main-color) !important;
 		opacity: .9;
 	}
-	/* fix tab navigation hoverinng */
+	/* fix tab navigation hovering */
 	a:hover, .style-name-link:hover, a:focus-within,
 	.style-name-link:focus-within, h2:focus-within .style-name-link,
 	.entry:hover .style-name-link
@@ -454,7 +454,7 @@
 		background-color: var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
 	}
-	/* fix tab naviagation hoverinng */
+	/* fix tab naviagation hovering */
 	.disabled h2:focus-within .style-name-link,
 	.entry.disabled:hover .style-name-link
 	{
@@ -523,7 +523,7 @@
 		border-color: var(--odd-entry-background) !important;
 	}
 
-	/*Changed text highlight*/
+	/* Changed text highlight */
 	::selection
 	{
 		background: var(--main-color) !important;
@@ -535,7 +535,7 @@
 		color: var(--main-text) !important;
 	}
 
-	/*To be commented out in case you want a stylus theme*/
+	/* To be commented out in case you want a stylus theme */
 	.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection,
 	.CodeMirror-line > span > span::-moz-selection, .CodeMirror-selected,
 	.CodeMirror-focused .CodeMirror-selected, .CodeMirror-activeline-background
@@ -569,7 +569,7 @@
 		background-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	/* fix the bracket matching actually working*/
+	/* fix the bracket matching actually working */
 	div.CodeMirror span.CodeMirror-matchingbracket
 	{
 		color: var(--main-color) !important;
@@ -584,14 +584,14 @@
 		font-weight: 900 !important;
 	}
 
-	/*Cursor width and color setting implementation*/
+	/* Cursor width and color setting implementation */
 	.CodeMirror div.CodeMirror-cursor
 	{
 		border-left-width: var(--cursor-width) !important;
 		border-color: var(--cursor-color) !important;
 	}
 
-	/*Popup*/
+	/* Popup */
 	.main-controls, .entry, .firefox body, #help-popup .title
 	{
 		background-color: var(--main-background) !important;
@@ -606,7 +606,7 @@
 		border-color: var(--hover-background) !important;
 	}
 
-	/*Icons*/
+	/* Icons */
 	.svg-icon, .svg-icon.info, .newUI .entry .svg-icon
 	{
 		fill: var(--main-text) !important;
@@ -639,7 +639,7 @@
 		color: var(--main-color) !important;
 	}
 
-	/*History*/
+	/* History */
 	#message-box-title, #message-box-buttons
 	{
 		background-color: var(--hover-background) !important;
@@ -663,14 +663,14 @@
 		background: var(--hover-background) !important;
 	}
 
-	/*Update warning*/
+	/* Update warning */
 	.newUI .updater-icons > :not(.check-update)::after
 	{
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
 
-	/*Install warning*/
+	/* Install warning */
 	.warnings
 	{
 		background-color: var(--hover-background) !important;
@@ -690,7 +690,7 @@
 		opacity: .5;
 	}
 
-	/*List of matching opened tabs*/
+	/* List of matching opened tabs */
 	.regexp-report details[data-type="full"]
 	{
 		color: var(--main-color) !important;
@@ -704,7 +704,7 @@
 		color: var(--warning-disable-all) !important;
 	}
 
-	/*Text fields*/
+	/* Text fields */
 	#name, .applies-to li .applies-value, #search, .keymap-list input,
 	.config-value, #sort-select, .sorter-selection select
 	{
@@ -723,13 +723,13 @@
 		border: 1px solid var(--main-color) !important;
 	}
 
-	/*Stylus popup fixes */
-	/* Use opacity to solve disabled entries see #18 thx Mottie :)*/
+	/* Stylus popup fixes
+	 * Use opacity to solve disabled entries see #18 thx Mottie :) */
 	#stylus-popup .disabled .style-name
 	{
 		opacity: .7;
 	}
-	/* Revert opacity  here  else the hover will also be dimmer. */
+	/* Revert opacity here else the hover will also be dimmer. */
 	#stylus-popup .entry:hover .style-name,
 	#stylus-popup .disabled:hover .style-name
 	{
@@ -759,7 +759,7 @@
 		border-top: 2px solid var(--second-background) !important;
 	}
 
-	/*Buttons*/
+	/* Buttons */
 	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla,
 	#editor\.keyMap, #editor\.theme, #editor\.matchHighlight, #editor\.tabSize,
 	.applies-type.style-contributor, .add-section, .beautify-section,
@@ -811,8 +811,8 @@
 		color: var(--main-text) !important;
 	}
 
-	/*Search
-	Fixed search including replace and match highlight*/
+	/* Search
+	 * Fixed search including replace and match highlight */
 	#search-replace-dialog .CodeMirror-search-field,
 	#search-replace-dialog [data-action="clear"]
 	{
@@ -832,12 +832,12 @@
 	{
 		from
 		{
-			background-color: var(--warning-disable-all);  /* search color */
+			background-color: var(--warning-disable-all); /* search color */
 			color: var(--main-text);
 		}
 		to
 		{
-			background-color: var(--dimmer-text);  /* search + highlight */
+			background-color: var(--dimmer-text); /* search + highlight */
 			color: var(--main-background);
 		}
 	}
@@ -865,7 +865,7 @@
 		border-color: var(--main-color) !important;
 	}
 
-	/*Autocomplete hints*/
+	/* Autocomplete hints */
 	.CodeMirror-hints
 	{
 		background: var(--main-background) !important;
@@ -887,7 +887,7 @@
 		color: var(--main-color) !important;
 	}
 
-	/*Default theme overwritten with adjusted colors*/
+	/* Default theme overwritten with adjusted colors */
 	.cm-s-default.CodeMirror { background: var(--second-background); color: var(--main-text); }
 	.cm-s-default div.CodeMirror-selected { background: var(--select-background); }
 
@@ -933,7 +933,7 @@
 	.cm-s-default .cm-builtin { color: var(--main-color); }
 	.cm-s-default .cm-meta { color: var(--dimmer-text); }
 
-	/*Stylish in chrome specific*/
+	/* Stylish in chrome specific */
 	:focus
 	{
 		outline-color: var(--main-color);
@@ -954,7 +954,7 @@
 		outline-color: var(--main-color);
 	}
 
-	/*Stylus in chrome specific*/
+	/* Stylus in chrome specific */
 	#manage\.onlyEnabled\.invert, #manage\.onlyLocal\.invert,
 	#manage\.onlyUsercss\.invert
 	{
@@ -974,7 +974,7 @@
 		border-color: var(--hover-background) !important;
 	}
 
-	/*Install *.user.css page*/
+	/* Install *.user.css page */
 	.CodeMirror-linewidget .applies-to
 	{
 		background-color: var(--second-background) !important;
@@ -1016,7 +1016,7 @@
 		outline-color: var(--main-color) !important;
 	}
 
-	/*Checkboxes*/
+	/* Checkboxes */
 	input[type="checkbox"], input[type="checkbox"]:not(.slider)
 	{
 		border-color: var(--hover-background) !important;
@@ -1039,13 +1039,12 @@
 		border-color: var(--main-color) !important;
 	}
 	/* This fixes the misalignment between:
-	* [ ] Turn all styles off checkbox and label
-	*/
+	 * [ ] Turn all styles off checkbox and label */
 	#disableAll
 	{
 		margin-top: 2px !important;
 	}
-	/* This fixes the disable all checkbox bg being too bright on hover	 */
+	/* This fixes the disable all checkbox bg being too bright on hover	*/
 	#disableAll:hover
 	{
 		border-color: var(--warning-disable-all) !important;
@@ -1057,9 +1056,8 @@
 	}
 
 	/* Colorpicker
-	* This prevents the format change arrow from being cut off to the right,
-	* and in addition when hovering/focus we get the nice --main-color.
-	*/
+	 * This prevents the format change arrow from being cut off to the right,
+	 * and in addition when hovering/focus we get the nice --main-color. */
 	.colorpicker-format-change
 	{
 		top: 3px;
