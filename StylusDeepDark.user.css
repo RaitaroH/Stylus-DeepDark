@@ -772,6 +772,20 @@
 		border: 1px solid var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
 	}
+	#save-button:hover, #beautify:hover, #cancel-button:hover,
+	#from-mozilla:hover, #to-mozilla:hover, #editor\.keyMap:hover,
+	#editor\.theme:hover, #editor\.matchHighlight:hover, #editor\.tabSize:hover,
+	.applies-type.style-contributor:hover, .add-section:hover,
+	.beautify-section:hover, .test-regexp:hover, .remove-applies-to:hover,
+	.add-applies-to:hover, option:hover, #check-all-updates:hover,
+	#add-style-label:hover, #manage-options-button:hover, button:hover,
+	#file-all-styles:hover, #unfile-all-styles:hover,
+	#manage\.newUI\.targets:hover, #updateInterval:hover, #popupWidth:hover,
+	#editor\.linter:hover, #options button:hover, #manage\.newUI\.sort:hover
+	{
+		color: var(--main-color) !important;
+		border: 1px solid var(--main-color) !important;
+	}
 	#options button
 	{
 		background-image: none !important;
@@ -786,20 +800,6 @@
 	{
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
-	}
-	#save-button:hover, #beautify:hover, #cancel-button:hover,
-	#from-mozilla:hover, #to-mozilla:hover, #editor\.keyMap:hover,
-	#editor\.theme:hover, #editor\.matchHighlight:hover, #editor\.tabSize:hover,
-	.applies-type.style-contributor:hover, .add-section:hover,
-	.beautify-section:hover, .test-regexp:hover, .remove-applies-to:hover,
-	.add-applies-to:hover, option:hover, #check-all-updates:hover,
-	#add-style-label:hover, #manage-options-button:hover, button:hover,
-	#file-all-styles:hover, #unfile-all-styles:hover,
-	#manage\.newUI\.targets:hover, #updateInterval:hover, #popupWidth:hover,
-	#editor\.linter:hover, #options button:hover, #manage\.newUI\.sort:hover
-	{
-		color: var(--main-color) !important;
-		border: 1px solid var(--main-color) !important;
 	}
 	#stylus button[disabled]
 	{
