@@ -503,11 +503,7 @@
 	{
 		color: var(--main-text) !important;
 	}
-	#header summary h2:hover
-	{
-		color: var(--main-color) !important;
-	}
-	#header summary h2:hover
+	#header summary:hover h2, #header summary h2:hover
 	{
 		color: var(--main-color) !important;
 	}
