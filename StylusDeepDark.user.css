@@ -1005,6 +1005,11 @@
 	{
 		color: var(--main-color) !important;
 	}
+	/* userCSS button */
+	.install.reinstall
+	{
+		background: var(--hover-background) !important;
+	}
 	.header
 	{
 		border-color: var(--hover-background) !important;
