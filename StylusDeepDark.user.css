@@ -1022,7 +1022,8 @@
 		border-color: var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
 	}
-	input[type="checkbox"]:hover, input[type="checkbox"]:not(.slider):hover
+	input[type="checkbox"]:hover, input[type="checkbox"]:not(.slider):hover,
+	.filter-selection:hover input[type="checkbox"]
 	{
 		border-color: var(--main-color) !important;
 	}
