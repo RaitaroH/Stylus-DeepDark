@@ -770,7 +770,7 @@
 	{
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
-		border: 1px solid transparent !important;
+		border: 1px solid var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
 	}
 	#options button
@@ -800,6 +800,7 @@
 	#editor\.linter:hover, #options button:hover, #manage\.newUI\.sort:hover
 	{
 		color: var(--main-color) !important;
+		border: 1px solid var(--main-color) !important;
 	}
 	#stylus button[disabled]
 	{
