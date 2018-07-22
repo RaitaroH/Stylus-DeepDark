@@ -759,6 +759,10 @@
 	}
 
 	/* Buttons */
+	button
+	{
+		transition: color .25s, border-color .25s;
+	}
 	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla,
 	#editor\.keyMap, #editor\.theme, #editor\.matchHighlight, #editor\.tabSize,
 	.applies-type.style-contributor, .add-section, .beautify-section,
