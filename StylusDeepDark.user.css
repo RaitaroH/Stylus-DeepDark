@@ -705,19 +705,22 @@
 
 	/* Text fields */
 	#name, .applies-to li .applies-value, #search, .keymap-list input,
-	.config-value, #sort-select, .sorter-selection select
+	.config-value, #sort-select, .sorter-selection select,
+	body#stylus-options #message-box input
 	{
 		background-color: var(--hover-background) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
-	input:not([type]), #search, #sort-select, .sorter-selection select
+	input:not([type]), #search, #sort-select, .sorter-selection select,
+	body#stylus-options #message-box input
 	{
 		color: var(--main-text) !important;
 	}
 	#name:hover, .applies-to li .applies-value:hover, #search:hover,
 	.keymap-list input:hover, #name:active, .applies-to li .applies-value:active,
 	#search:active, .keymap-list input:active, #name:focus,
-	.applies-to li .applies-value:focus, #search:focus, .keymap-list input:focus
+	.applies-to li .applies-value:focus, #search:focus, .keymap-list input:focus,
+	body#stylus-options #message-box input:not(:invalid):focus
 	{
 		border: 1px solid var(--main-color) !important;
 	}
