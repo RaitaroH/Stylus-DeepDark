@@ -448,21 +448,21 @@
 		filter: brightness(110%) !important;
 	}
 
-	.disabled h2::after, .entry.usercss .style-name-link::after,
-	.search-result, .search-result-meta
+	.disabled h2::after, .search-result, .search-result-meta,
+	.entry.usercss .style-name-link:after
 	{
 		background-color: var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
+	}
+	.entry.usercss .style-name-link:after
+	{
+		color: var(--main-color) !important;
 	}
 	/* fix tab naviagation hovering */
 	.disabled h2:focus-within .style-name-link,
 	.entry.disabled:hover .style-name-link
 	{
 		opacity: .8;
-	}
-	.entry.usercss .style-name-link::after
-	{
-		color: var(--main-color) !important;
 	}
 
 	#filters label:hover, #filters .filter-selection:hover,
