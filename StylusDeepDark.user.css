@@ -533,6 +533,26 @@
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
+	::-webkit-selection
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	::placeholder
+	{
+		color: var(--dimmer-text) !important;
+		opacity: .9;
+	}
+	::-webkit-input-placeholder
+	{
+		color: var(--dimmer-text) !important;
+		opacity: .9;
+	}
+	::-moz-placeholder
+	{
+		color: var(--dimmer-text) !important;
+		opacity: .9;
+	}
 
 	/* To be commented out in case you want a stylus theme */
 	.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection,
