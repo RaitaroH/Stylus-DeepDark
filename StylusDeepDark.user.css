@@ -448,7 +448,7 @@
 		filter: brightness(110%) !important;
 	}
 
-	.disabled h2::after, .search-result, .search-result-meta,
+	.disabled h2:after, .search-result, .search-result-meta,
 	.entry.usercss .style-name-link:after
 	{
 		background-color: var(--hover-background) !important;
@@ -486,7 +486,7 @@
 		border: 1px solid var(--second-background) !important;
 		box-shadow: inset 0 1px 0 0 var(--second-background) !important;
 	}
-	.newUI .entry .style-name:hover::before
+	.newUI .entry .style-name:hover:before
 	{
 		filter: grayscale(1);
 	}
@@ -683,7 +683,7 @@
 	}
 
 	/* Update warning */
-	.newUI .updater-icons > :not(.check-update)::after
+	.newUI .updater-icons > :not(.check-update):after
 	{
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
@@ -702,8 +702,8 @@
 		border-color: var(--main-color) !important;
 	}
 
-	body.all-styles-hidden-by-filters::before,
-	body.all-styles-hidden-by-filters::after
+	body.all-styles-hidden-by-filters:before,
+	body.all-styles-hidden-by-filters:after
 	{
 		color: var(--main-color) !important;
 		opacity: .5;
@@ -1020,15 +1020,13 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	.config-dialog select,
-	.beautify-options select
+	.config-dialog select, .beautify-options select
 	{
 		background-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
-	.config-dialog select:hover,
-	.beautify-options select:hover
+	.config-dialog select:hover, .beautify-options select:hover
 	{
 		color: var(--main-color) !important;
 	}
