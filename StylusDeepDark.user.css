@@ -677,6 +677,7 @@
 	.help-text mark
 	{
 		background: var(--hover-background) !important;
+		border: 1px solid var(--odd-entry-background) !important;
 	}
 
 	/* Update warning */
