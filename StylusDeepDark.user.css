@@ -198,15 +198,12 @@
 	"Jisho_夜明け": "#EF7D6C",
 	"Terminal": "#04f911",
 }
-
 ==/UserStyle== */
 @-moz-document regexp("moz-extension://.*"), regexp("chrome-extension://.*") {
-
-/*Theme made by RaitaroH @https://github.com/RaitaroH/Stylus-DeepDark*/
-
-/*GNU General Public License v3.0*/
-
 /*1.5.0*/
+	/* Author : Theme made by RaitaroH and https://github.com/RaitaroH/Stylus-DeepDark/graphs/contributors */
+	/* Home   : https://github.com/RaitaroH/Stylus-DeepDark */
+	/* Licence: GNU General Public License v3.0 */
 
 	/*Main color variables*/
 	:root
