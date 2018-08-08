@@ -738,7 +738,8 @@
 	.keymap-list input:hover, #name:active, .applies-to li .applies-value:active,
 	#search:active, .keymap-list input:active, #name:focus,
 	.applies-to li .applies-value:focus, #search:focus, .keymap-list input:focus,
-	body#stylus-options #message-box input:not(:invalid):focus
+	body#stylus-options #message-box input:not(:invalid):focus,
+	body#stylus-options #message-box input:not(:invalid):hover
 	{
 		border: 1px solid var(--main-color) !important;
 	}
@@ -965,9 +966,19 @@
 	/* fix: Stylus remove that unsightly white border in input */
 	body:not(#stylus-options) input
 	{
-		background-color: var(--second-background);
+		background-color: var(--hover-background);
 		border: 1px solid var(--hover-background);
 		color: var(--main-text);
+	}
+	body:not(#stylus-options) input:not(:invalid):focus,
+	body:not(#stylus-options) input:not(:invalid):hover
+	{
+			border: 1px solid var(--main-color);
+	}
+	body:not(#stylus-options) input:invalid
+	{
+		border-color: var(--warning-disable-all);
+		color: var(--warning-disable-all);
 	}
 	fieldset, [style-id], .disabled
 	{
