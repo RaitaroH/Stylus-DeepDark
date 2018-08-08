@@ -477,9 +477,12 @@
 		transition: none !important;
 	}
 
+	/* This .entry selector affects the old UI layout and also affects popup
+	 * Popup entries all align consistently like this. Old UI is also good.
+	 */
 	.entry
 	{
-		border: 1px solid var(--second-background) !important;
+		border-color: var(--second-background) !important;
 		box-shadow: inset 0 1px 0 0 var(--second-background) !important;
 	}
 	.newUI .entry .style-name:hover:before
