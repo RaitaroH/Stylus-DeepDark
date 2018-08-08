@@ -1061,6 +1061,7 @@
 	/* Checkboxes */
 	input[type="checkbox"], input[type="checkbox"]:not(.slider)
 	{
+		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
 	}
