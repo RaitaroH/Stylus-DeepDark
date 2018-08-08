@@ -420,8 +420,7 @@
 		border: 1px solid var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
-	#hotkey-info[data-active],
-	#hotkey-info > div
+	#hotkey-info[data-active], #hotkey-info > div
 	{
 		background: var(--main-background) !important;
 		border: 1px solid var(--second-background) !important;
@@ -628,7 +627,7 @@
 		fill: var(--main-text) !important;
 	}
 	.svg-icon.info:hover, .svg-icon:hover, a:hover .svg-icon,
-	.newUI .entry:hover .svg-icon:hover
+	.newUI .entry:hover .svg-icon:hover, .svg-icon.checked
 	{
 		fill: var(--main-color) !important;
 	}
@@ -1067,8 +1066,7 @@
 	{
 		border-color: var(--main-color) !important;
 	}
-	input[type="checkbox"]:checked:not(.slider) + .svg-icon.checked,
-	svg[class="svg-icon checked"]
+	input[type="checkbox"]:checked:not(.slider) + .svg-icon.checked
 	{
 		fill: var(--main-color) !important;
 	}
