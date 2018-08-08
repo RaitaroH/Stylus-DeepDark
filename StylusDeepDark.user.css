@@ -781,7 +781,7 @@
 	}
 
 	/* Buttons */
-	button
+	button, .remove-applies-to, .add-applies-to
 	{
 		transition: color .25s, border-color .25s;
 	}
@@ -791,7 +791,8 @@
 	.test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates,
 	#add-style-label, #manage-options-button, button, #file-all-styles,
 	#unfile-all-styles, #manage\.newUI\.targets, #badgeNormal, #badgeDisabled,
-	#updateInterval, #popupWidth, #editor\.linter, #options button, #manage\.newUI\.sort
+	#updateInterval, #popupWidth, #editor\.linter, #options button, #manage\.newUI\.sort,
+	#message-box-contents select, a.remove-applies-to, a.add-applies-to
 	{
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
@@ -807,7 +808,8 @@
 	#add-style-label:hover, #manage-options-button:hover, button:hover,
 	#file-all-styles:hover, #unfile-all-styles:hover,
 	#manage\.newUI\.targets:hover, #updateInterval:hover, #popupWidth:hover,
-	#editor\.linter:hover, #options button:hover, #manage\.newUI\.sort:hover
+	#editor\.linter:hover, #options button:hover, #manage\.newUI\.sort:hover,
+	#message-box-contents select:hover, a.remove-applies-to:hover, a.add-applies-to:hover
 	{
 		color: var(--main-color) !important;
 		border: 1px solid var(--main-color) !important;
