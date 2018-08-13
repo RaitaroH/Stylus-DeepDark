@@ -770,11 +770,6 @@
 	{
 		color: var(--main-text) !important;
 	}
-	/* fix: dont allow UserCSS option names to wrap */
-	.config-name
-	{
-		white-space: nowrap !important;
-	}
 
 	/* editor line tweak */
 	#sections > div:not(:first-of-type)
