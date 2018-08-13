@@ -1053,8 +1053,14 @@
 		outline-color: var(--main-color) !important;
 	}
 
-	/* Checkboxes */
-	input[type="checkbox"], input[type="checkbox"]:not(.slider)
+	/* Checkboxes *
+	* input[type="checkbox"] cant have a bg, else .onoffswitch goes square */
+	input[type="checkbox"]
+	{
+		border-color: var(--hover-background) !important;
+		box-shadow: var(--shadow) !important;
+	}
+	input[type="checkbox"]:not(.slider)
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
