@@ -948,7 +948,6 @@
 	.cm-s-default span.cm-keyword:not(.colorview-swatch) { color: var(--main-color); filter: invert(100%); }
 	.cm-s-default span.cm-error { border-bottom: var(--hover-background); color: var(--main-text); }
 	.cm-s-default span.cm-qualifier { color: var(--main-text); }
-	.cm-s-default span.cm-keyword.colorview:after { filter: invert(100%); }
 
 	.cm-s-default .CodeMirror-activeline-background { background: var(--select-background); }
 	.cm-s-default .CodeMirror-matchingbracket { color: var(--main-color); }
