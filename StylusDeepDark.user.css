@@ -934,13 +934,13 @@
 	.cm-s-default span.cm-string.cm-property { color: var(--main-text); }
 
 	.cm-s-default span.cm-variable { color: var(--main-text); }
-	.cm-s-default span.cm-variable-2 { color: var(--main-color); opacity: .6; }
+	.cm-s-default span.cm-variable-2 { color: var(--main-color); opacity: .7; }
 
 	.cm-s-default .cm-variable-3,
 	.cm-s-default .cm-type { color: var(--main-color); filter: hue-rotate(280deg); }
 	.cm-s-default span.cm-def { color: var(--main-text); }
 	.cm-s-default span.cm-bracket { color: var(--main-text); font-weight: bold; }
-	.cm-s-default span.cm-tag { color: var(--main-color); opacity: .6; }
+	.cm-s-default span.cm-tag { color: var(--main-color); opacity: .7; }
 	.cm-s-default span.cm-link, .cm-s-default span.cm-keyword { color: var(--main-color); }
 	.cm-s-default span.cm-keyword:not(.colorview-swatch),
 	.cm-s-default span.cm-string { color: var(--main-color); filter: hue-rotate(60deg); }
