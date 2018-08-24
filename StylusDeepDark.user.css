@@ -927,7 +927,7 @@
 	.cm-s-default .CodeMirror-cursor { border-left: var(--cursor-width) solid var(--cursor-color); }
 
 	.cm-s-default span.cm-comment { color: var(--dimmer-text); }
-	.cm-s-default span.cm-atom, .cm-s-default span.cm-number { color: var(--main-color); opacity: .6; }
+	.cm-s-default span.cm-atom, .cm-s-default span.cm-number { color: var(--main-color); }
 
 	.cm-s-default span.cm-property, .cm-s-default span.cm-attribute { color: var(--main-color); opacity: 1; }
 	.cm-s-default span.cm-keyword, .cm-s-default span.cm-string { color: var(--main-color); }
@@ -942,10 +942,10 @@
 	.cm-s-default span.cm-bracket { color: var(--main-text); font-weight: bold; }
 	.cm-s-default span.cm-tag { color: var(--main-color); opacity: .6; }
 	.cm-s-default span.cm-link, .cm-s-default span.cm-keyword { color: var(--main-color); }
-	.cm-s-default span.cm-keyword:not(.cm-colorview),
+	.cm-s-default span.cm-keyword:not(.colorview-swatch),
 	.cm-s-default span.cm-string { color: var(--main-color); filter: hue-rotate(60deg); }
 	.cm-s-default span.cm-link,
-	.cm-s-default span.cm-keyword:not(.cm-colorview) { color: var(--main-color); filter: invert(100%); }
+	.cm-s-default span.cm-keyword:not(.colorview-swatch) { color: var(--main-color); filter: invert(100%); }
 	.cm-s-default span.cm-error { border-bottom: var(--hover-background); color: var(--main-text); }
 	.cm-s-default span.cm-qualifier { color: var(--main-text); }
 	.cm-s-default span.cm-keyword.colorview:after { filter: invert(100%); }
