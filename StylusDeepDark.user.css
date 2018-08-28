@@ -797,6 +797,12 @@
 	{
 		color: var(--main-text) !important;
 	}
+	/* prevent sliders from breaking in usercss config */
+	#message-box input.slider
+	{
+		background: none !important;
+		border: 0 !important;
+	}
 
 	/* editor line tweak */
 	#sections > div:not(:first-of-type)
