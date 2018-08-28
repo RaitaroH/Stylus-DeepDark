@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace github.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://github.com/RaitaroH/Stylus-DeepDark
-@version 1.5.4
+@version 1.5.5
 @updateURL https://raw.githubusercontent.com/RaitaroH/Stylus-DeepDark/master/StylusDeepDark.user.css
 @description Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 @author RaitaroH and contributors
@@ -26,8 +26,11 @@
 	"Ubuntu_grey": "#EF7847",
 	"Ubuntu_purple": "#EF7847",
 	"Orange": "#ff6905",
-	"Jisho_夜明け": "#EF7D6C"
+	"Jisho_夜明け": "#EF7D6C",
+	"Custom": "/*[[custom-main-color]]*\/"
 }
+@var color custom-main-color "Custom main color" #00adee"
+
 @var select mainBackground 'Main background color' {
 	"DeepDark": "#111111",
 	"BreezeDark": "#232629",
@@ -45,8 +48,11 @@
 	"Ubuntu_grey": "#312D2A",
 	"Ubuntu_purple": "#2C071A",
 	"Orange": "#0a0400",
-	"Jisho_夜明け": "#332222"
+	"Jisho_夜明け": "#332222",
+	"Custom": "/*[[custom-main-background]]*\/"
 }
+@var color custom-main-background "Custom main background" "#111111"
+
 @var select secondBackground 'Second background color' {
 	"DeepDark": "#181818",
 	"BreezeDark": "#2a2e32",
@@ -65,7 +71,10 @@
 	"Ubuntu_purple": "#430B28",
 	"Orange": "#0e0702",
 	"Jisho_夜明け": "#2A1B1B",
+	"Custom": "/*[[custom-second-background]]*\/"
 }
+@var color custom-second-background "Custom second background" "#181818"
+
 @var select hoverBackground 'Hover background color' {
 	"DeepDark": "#232323",
 	"BreezeDark": "#31363b",
@@ -83,8 +92,11 @@
 	"Ubuntu_grey": "#59564D",
 	"Ubuntu_purple": "#520D30",
 	"Orange": "#110903",
-	"Jisho_夜明け": "#863B2F"
+	"Jisho_夜明け": "#863B2F",
+	"Custom": "/*[[custom-hover-background]]*\/"
 }
+@var color custom-hover-background "Custom hover background" "#232323"
+
 @var select mainText 'Main text color' {
 	"DeepDark": "#eff0f1",
 	"BreezeDark": "#eff0f1",
@@ -102,9 +114,12 @@
 	"Ubuntu_grey": "#F2F1EF",
 	"Ubuntu_purple": "#F2F1EF",
 	"Orange": "#fff9f5",
-	"Jisho_夜明け": "#EFB26C"
+	"Jisho_夜明け": "#EFB26C",
+	"Custom": "/*[[custom-main-text]]*\/"
 }
-@var select dimmerText 'Second text color' {
+@var color custom-main-text "Costom main text" "#eff0f1"
+
+@var select dimmerText 'Secondary text color' {
 	"DeepDark": "#CCCCCC",
 	"BreezeDark": "#bdc3c7",
 	"Vertex Dark": "#AEAFB0",
@@ -121,8 +136,11 @@
 	"Ubuntu_grey": "#E6E5E3",
 	"Ubuntu_purple": "#E6E5E3",
 	"Orange": "#ffede1",
-	"Jisho_夜明け": "#986E3F"
+	"Jisho_夜明け": "#986E3F",
+	"Custom": "/*[[custom-dimmer-text]]*\/"
 }
+@var color custom-dimmer-text "Costom second text" "#CCCCCC"
+
 @var select editorBackground 'Editor background' {
 	"DeepDark": "#181818",
 	"BreezeDark": "#2a2e32",
@@ -142,7 +160,10 @@
 	"Orange": "#0e0702",
 	"Jisho_夜明け": "#2A1B1B",
 	"Twilight": "#141414",
+	"Custom": "/*[[custom-editor-background]]*\/"
 }
+@var color custom-editor-background "Custom editor background" "#181818"
+
 @var select selectBackground 'Selection background' {
 	"DeepDark": "#232323",
 	"BreezeDark": "#31363b",
@@ -165,8 +186,11 @@
 	"Shadowfox": "#353B48",
 	"Midnight": "#314d67",
 	"Twilight": "#323232",
-	"Night": "#447"
+	"Night": "#447",
+	"Custom": "/*[[custom-select-background]]*\/"
 }
+@var color custom-select-background "Custom selection background" "#232323"
+
 @var select fontSize 'Editor font size' {
 	"Normal 14px": "14px",
 	"Large 15px": "15px",
@@ -197,13 +221,16 @@
 	"Orange": "#ff6905",
 	"Jisho_夜明け": "#EF7D6C",
 	"Terminal": "#04f911",
+	"Custom": "/*[[custom-cursor-color]]*\/"
 }
+@var color custom-cursor-color "Custom cursor color" "#00adee"
 ==/UserStyle== */
+
 @-moz-document regexp("moz-extension://.*"), regexp("chrome-extension://.*") {
 	/* Author : Theme made by RaitaroH and https://github.com/RaitaroH/Stylus-DeepDark/graphs/contributors */
 	/* Home   : https://github.com/RaitaroH/Stylus-DeepDark */
 	/* Licence: GNU General Public License v3.0 */
-	/* Version: 1.5.4*/
+	/* Version: 1.5.5*/
 
 	/*Main color variables*/
 	:root
