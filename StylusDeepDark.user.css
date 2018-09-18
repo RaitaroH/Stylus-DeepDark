@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace gitlab.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/Stylus-DeepDark
-@version 1.5.6
+@version 1.5.7
 @updateURL https://gitlab.com/RaitaroH/Stylus-DeepDark/raw/master/StylusDeepDark.user.css
 @description Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 @author RaitaroH and contributors
@@ -160,6 +160,11 @@
 	"Orange": "#0e0702",
 	"Jisho_夜明け": "#2A1B1B",
 	"Twilight": "#141414",
+	"Adapta Nokto": "#263238",
+	"Solarized Dark": "#03303C",
+	"Solarized Light": "#F5EFDC",
+	"Gruvbox Dark": "#282828",
+	"Gruvbox Light": "#fbf1c7",
 	"Custom": "/*[[custom-editor-background]]*\/"
 }
 @var color custom-editor-background "Custom editor background" "#181818"
@@ -187,9 +192,26 @@
 	"Midnight": "#314d67",
 	"Twilight": "#323232",
 	"Night": "#447",
+	"Adapta Nokto": "#2a353b",
+	"Solarized Dark": "#002B36",
+	"Solarized Light": "#EEE8D5",
+	"Gruvbox Dark": "#3c3836",
+	"Gruvbox Light": "#ebdbb2",
 	"Custom": "/*[[custom-select-background]]*\/"
 }
 @var color custom-select-background "Custom selection background" "#232323"
+
+@var select colorShadow 'Shadow color' {
+	"Default": "rgba(0,0,0,.13)",
+	"Custom": "/*[[custom-color-shadow]]*\/"
+}
+@var color custom-color-shadow "Custom shadow color" "rgba(0,0,0,.13)"
+
+@var select colorOddEntry 'Odd entry shadow color' {
+	"Default": "rgba(0,0,0,.16)",
+	"Custom": "/*[[custom-color-odd]]*\/"
+}
+@var color custom-color-odd "Custom shadow color" "rgba(0,0,0,.16)"
 
 @var select fontSize 'Editor font size' {
 	"Normal 14px": "14px",
@@ -221,6 +243,11 @@
 	"Orange": "#ff6905",
 	"Jisho_夜明け": "#EF7D6C",
 	"Terminal": "#04f911",
+	"Adapta Nokto": "#00bcd4",
+	"Adapta Breath Nokto": "#1abc9c",
+	"Solarized": "#268BD2",
+	"Gruvbox Dark": "#fe8019",
+	"Gruvbox Light": "#af3a03",
 	"Custom": "/*[[custom-cursor-color]]*\/"
 }
 @var color custom-cursor-color "Custom cursor color" "#00adee"
@@ -254,13 +281,15 @@
 
 		/*These are must have static colors*/
 		/*Disable all color/warning Breeze Dark*/
-		--warning-disable-all: #DA4453;
+		--red: #DA4453; /*added for easy change with my swicher*/
+		--warning-disable-all: var(--red);
 		/*No match regex color from Breeze Dark*/
-		--no-match: #FDBC4B;
+		--yellow: #FDBC4B;
+		--no-match: var(--yellow); /*added for easy change with my swicher*/
 		/*Shadow*/
-		--shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+		--shadow: 0 1px 0.5px /*[[colorShadow]]*/;
 		/*Odd entry background*/
-		--odd-entry-background: rgba(0, 0, 0, .16);
+		--odd-entry-background: /*[[colorOddEntry]]*/;
 
 		/*DeepDark colors*/
 		/*
