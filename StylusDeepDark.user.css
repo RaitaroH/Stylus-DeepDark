@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace gitlab.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/Stylus-DeepDark
-@version 1.5.8
+@version 1.5.9
 @updateURL https://gitlab.com/RaitaroH/Stylus-DeepDark/raw/master/StylusDeepDark.user.css
 @description Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 @author RaitaroH and contributors
@@ -258,7 +258,7 @@
 	/* Co-authors : https://gitlab.com/RaitaroH/Stylus-DeepDark/graphs/contributors */
 	/* Home       : https://gitlab.com/RaitaroH/Stylus-DeepDark */
 	/* Licence    : GNU General Public License v3.0 */
-	/* Version    : 1.5.8 */
+	/* Version    : 1.5.9 */
 
 	/*Main color variables*/
 	:root
@@ -853,7 +853,7 @@
 	#add-style-label, #manage-options-button, button, #file-all-styles,
 	#unfile-all-styles, #manage\.newUI\.targets, #badgeNormal, #badgeDisabled,
 	#updateInterval, #popupWidth, #editor\.linter, #options button, #manage\.newUI\.sort,
-	#message-box-contents select, a.remove-applies-to, a.add-applies-to
+	#message-box-contents select, a.remove-applies-to, a.add-applies-to, #backup-buttons .dropdown-content a
 	{
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
@@ -870,7 +870,8 @@
 	#file-all-styles:hover, #unfile-all-styles:hover,
 	#manage\.newUI\.targets:hover, #updateInterval:hover, #popupWidth:hover,
 	#editor\.linter:hover, #options button:hover, #manage\.newUI\.sort:hover,
-	#message-box-contents select:hover, a.remove-applies-to:hover, a.add-applies-to:hover
+	#message-box-contents select:hover, a.remove-applies-to:hover, a.add-applies-to:hover,
+	#backup-buttons .dropdown-content a:hover
 	{
 		color: var(--main-color) !important;
 		border: 1px solid var(--main-color) !important;
