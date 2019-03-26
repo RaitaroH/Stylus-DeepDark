@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace gitlab.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/Stylus-DeepDark
-@version 1.6.1
+@version 1.6.2
 @updateURL https://gitlab.com/RaitaroH/Stylus-DeepDark/raw/master/StylusDeepDark.user.css
 @description Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 @author RaitaroH and contributors
@@ -259,7 +259,7 @@
 	/* Co-authors : https://gitlab.com/RaitaroH/Stylus-DeepDark/graphs/contributors */
 	/* Home       : https://gitlab.com/RaitaroH/Stylus-DeepDark */
 	/* Licence    : GNU General Public License v3.0 */
-	/* Version    : 1.6.1 */
+	/* Version    : 1.6.2 */
 
 	/*Main color variables*/
 	:root
@@ -578,6 +578,10 @@
 	{
 		border-color: var(--odd-entry-background) !important;
 	}
+	.CodeMirror-scrollbar-filler
+	{
+		background: var(--odd-entry-background) !important;
+	}
 
 	/* Changed text highlight */
 	::selection
@@ -851,15 +855,30 @@
 	#editor\.keyMap, #editor\.theme, #editor\.matchHighlight, #editor\.tabSize,
 	.applies-type.style-contributor, .add-section, .beautify-section,
 	.test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates,
-	#add-style-label, #manage-options-button, button, #file-all-styles,
-	#unfile-all-styles, #manage\.newUI\.targets, #badgeNormal, #badgeDisabled,
+	#add-style-label, #manage-options-button, button, #manage\.newUI\.targets, #badgeNormal, #badgeDisabled,
 	#updateInterval, #popupWidth, #editor\.linter, #options button, #manage\.newUI\.sort,
-	#message-box-contents select, a.remove-applies-to, a.add-applies-to, #backup-buttons .dropdown-content a
+	#message-box-contents select, a.remove-applies-to, a.add-applies-to
 	{
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
 		border: 1px solid var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
+	}
+	#backup-buttons .dropdown-content, #unfile-all-styles, #file-all-styles,
+	#sync-dropbox-import, #sync-dropbox-export {
+		background: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	#backup-buttons .dropdown-content a:hover, #unfile-all-styles:hover,
+	#file-all-styles:hover, #sync-dropbox-import:hover,
+	#file-all-styles:hover, #unfile-all-styles:hover
+	{
+		background: var(--main-background) !important;
+	}
+	#sync-dropbox-import:hover, #sync-dropbox-export:hover,
+	#file-all-styles:hover, #unfile-all-styles:hover, #file-all-styles:hover
+	{
+		color: var(--main-color) !important;
 	}
 	#save-button:hover, #beautify:hover, #cancel-button:hover,
 	#from-mozilla:hover, #to-mozilla:hover, #editor\.keyMap:hover,
@@ -868,11 +887,9 @@
 	.beautify-section:hover, .test-regexp:hover, .remove-applies-to:hover,
 	.add-applies-to:hover, option:hover, #check-all-updates:hover,
 	#add-style-label:hover, #manage-options-button:hover, button:hover,
-	#file-all-styles:hover, #unfile-all-styles:hover,
 	#manage\.newUI\.targets:hover, #updateInterval:hover, #popupWidth:hover,
 	#editor\.linter:hover, #options button:hover, #manage\.newUI\.sort:hover,
-	#message-box-contents select:hover, a.remove-applies-to:hover, a.add-applies-to:hover,
-	#backup-buttons .dropdown-content a:hover
+	#message-box-contents select:hover, a.remove-applies-to:hover, a.add-applies-to:hover
 	{
 		color: var(--main-color) !important;
 		border: 1px solid var(--main-color) !important;
