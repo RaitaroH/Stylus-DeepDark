@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace gitlab.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/Stylus-DeepDark
-@version 1.6.2
+@version 1.6.3
 @updateURL https://gitlab.com/RaitaroH/Stylus-DeepDark/raw/master/StylusDeepDark.user.css
 @description Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 @author RaitaroH and contributors
@@ -259,7 +259,7 @@
 	/* Co-authors : https://gitlab.com/RaitaroH/Stylus-DeepDark/graphs/contributors */
 	/* Home       : https://gitlab.com/RaitaroH/Stylus-DeepDark */
 	/* Licence    : GNU General Public License v3.0 */
-	/* Version    : 1.6.2 */
+	/* Version    : 1.6.3 */
 
 	/*Main color variables*/
 	:root
@@ -564,6 +564,10 @@
 	{
 		color: var(--main-color) !important;
 	}
+	#header summary:hover h2
+	{
+		border-color: var(--main-color) !important;
+	}
 	#linter-label
 	{
 		white-space: nowrap !important;
@@ -865,7 +869,8 @@
 		box-shadow: var(--shadow) !important;
 	}
 	#backup-buttons .dropdown-content, #unfile-all-styles, #file-all-styles,
-	#sync-dropbox-import, #sync-dropbox-export {
+	#sync-dropbox-import, #sync-dropbox-export
+	{
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
