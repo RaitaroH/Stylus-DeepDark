@@ -639,6 +639,10 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
+	.CodeMirror .cm-meta
+	{
+		background: var(--hover-background) !important;
+	}
 	/* end of area to be commented out */
 
 	/* dont uncomment anything below */
