@@ -2,7 +2,7 @@
 @name Stylus DeepDark
 @namespace gitlab.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/Stylus-DeepDark
-@version 1.6.4
+@version 1.6.5
 @updateURL https://gitlab.com/RaitaroH/Stylus-DeepDark/raw/master/StylusDeepDark.user.css
 @description Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 @author RaitaroH and contributors
@@ -259,7 +259,7 @@
 	/* Co-authors : https://gitlab.com/RaitaroH/Stylus-DeepDark/graphs/contributors */
 	/* Home       : https://gitlab.com/RaitaroH/Stylus-DeepDark */
 	/* Licence    : GNU General Public License v3.0 */
-	/* Version    : 1.6.4 */
+	/* Version    : 1.6.5 */
 
 	/*Main color variables*/
 	:root
@@ -670,6 +670,12 @@
 		color: var(--warning-disable-all) !important;
 		 -webkit-text-fill-color: var(--warning-disable-all) !important;
 		font-weight: 900 !important;
+	}
+	.CodeMirror-foldmarker
+	{
+		color: var(--main-text) !important;
+		text-shadow: none !important;
+		font-size: 18px !important;
 	}
 
 	/* Cursor width and color setting implementation */
