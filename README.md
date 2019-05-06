@@ -38,3 +38,16 @@ Code colors also change depending on the palette used. No user changes required.
 ![alt tag](./Images/BreezeDarkCode.png)
 ![alt tag](./Images/DeepDarkCode.png)
 ![alt tag](./Images/Mint-Y-DarkCode.png)
+
+
+### Development Scripts
+
+Install node.js (if not installed already) and run `npm install` to install dependencies.
+
+* `npm run major`: Creates a semantic major release + tags and signs commit if setup.
+* `npm run minor`: Creates a semantic minor release + tags and signs commit if setup.
+* `npm run patch`: Creates a semantic patch release + tags and signs commit if setup.
+
+> Note: Releases are created internally, when submitting a PR do not include any. 
+
+* `npm run update`: Update development dependencies.

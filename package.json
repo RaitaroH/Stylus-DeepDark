@@ -1,0 +1,16 @@
+{
+  "name": "Stylus-DeepDark",
+  "version": "1.6.4",
+  "repository": "RaitaroH/Stylus-DeepDark",
+  "homepage": "https://gitlab.com/RaitaroH/Stylus-DeepDark",
+  "devDependencies": {
+    "ver": "^4.3.0",
+    "updates": "^8.0.2"
+  },
+  "scripts": {
+    "patch": "npx ver -p patch StylusDeepDark.user.css",
+    "minor": "npx ver -p minor StylusDeepDark.user.css",
+    "major": "npx ver -p major StylusDeepDark.user.css",
+    "update": "npx updates -cu && npm install"
+  }
+}
