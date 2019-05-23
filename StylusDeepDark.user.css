@@ -568,7 +568,7 @@
 	{
 		border-color: var(--main-color) !important;
 	}
-	#linter-label
+	[lang*="en-"] #linter-label
 	{
 		white-space: nowrap !important;
 	}
@@ -852,6 +852,19 @@
 	{
 		background: none !important;
 		border: 0 !important;
+	}
+	/* resize FF color swatch in Stylus options - similar to G-Chrome */
+	@supports (-moz-appearance: none)
+	{
+		input[type="color"]
+		{
+			padding: 2px 4px 2px !important;
+		}
+	}
+	/* add option color swatch hover style to clearly indicate editable field */
+	input[type="color"]:hover
+	{
+		outline: 1px solid var(--main-color) !important;
 	}
 
 	/* editor line tweak */
