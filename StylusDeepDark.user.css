@@ -866,6 +866,11 @@
 	{
 		outline: 1px solid var(--main-color) !important;
 	}
+	/* style the confirm delete popup border-color as red to show this is a danger area */
+	#stylus-popup #confirm div
+	{
+		border-color: var(--red) !important;
+	}
 
 	/* editor line tweak */
 	#sections > div:not(:first-of-type)
