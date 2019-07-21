@@ -694,7 +694,7 @@
 	{
 		background-color: var(--second-background) !important;
 	}
-	#confirm > div
+	#confirm > div, .menu-items-wrapper
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
