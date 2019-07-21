@@ -4,8 +4,8 @@
   "repository": "RaitaroH/Stylus-DeepDark",
   "homepage": "https://gitlab.com/RaitaroH/Stylus-DeepDark",
   "devDependencies": {
-    "ver": "^4.3.0",
-    "updates": "^8.0.2"
+    "ver": "^5.1.2",
+    "updates": "^8.5.1"
   },
   "scripts": {
     "patch": "npx ver -p patch StylusDeepDark.user.css",
