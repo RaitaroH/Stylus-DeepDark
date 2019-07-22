@@ -606,17 +606,17 @@
 	::placeholder
 	{
 		color: var(--dimmer-text) !important;
-		opacity: .9;
+		opacity: .5;
 	}
 	::-webkit-input-placeholder
 	{
 		color: var(--dimmer-text) !important;
-		opacity: .9;
+		opacity: .5;
 	}
 	::-moz-placeholder
 	{
 		color: var(--dimmer-text) !important;
-		opacity: .9;
+		opacity: .5;
 	}
 
 	/* To be commented out in case you want a stylus theme */
