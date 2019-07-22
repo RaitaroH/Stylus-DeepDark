@@ -1005,6 +1005,13 @@
 	{
 		border-color: var(--main-color) !important;
 	}
+	/* this hack prevents Ubuntu Firefox from showing a scrollbar when using
+	 * Global Overlay Scrollbars styles
+	 */
+	.CodeMirror-search-field
+	{
+		overflow: hidden !important;
+	}
 
 	/* Autocomplete hints */
 	.CodeMirror-hints
