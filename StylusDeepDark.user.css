@@ -953,47 +953,29 @@
 
 	/* Search
 	 * Fixed search including replace and match highlight */
-	#search-replace-dialog .CodeMirror-search-field,
-	#search-replace-dialog [data-action="clear"],
 	#search-replace-dialog
 	{
-		background: var(--second-background);
+		background: var(--second-background) !important;
 	}
-	.cm-searching
+	body.find-open .search-target-editor.CodeMirror-active
 	{
-		background-color: var(--warning-disable-all);
-		color: var(--main-text);
+		outline-color: var(--main-text) !important;
 	}
-	.cm-searching.cm-matchhighlight
+	body.find-open .cm-searching
 	{
-		/* tokens found by manual search should not animate by cm-matchhighlight */
-		animation-name: search-and-match-highlighter;
+		background-color: var(--warning-disable-all) !important;
+		color: var(--main-text) !important;
 	}
-	@keyframes search-and-match-highlighter
+	body.find-open .cm-searching.search-target-match
 	{
-		from
-		{
-			background-color: var(--warning-disable-all); /* search color */
-			color: var(--main-text);
-		}
-		to
-		{
-			background-color: var(--dimmer-text); /* search + highlight */
-			color: var(--main-background);
-		}
+		background-color: var(--no-match) !important;
+		color: var(--main-background) !important;
 	}
-	/* .CodeMirror-search selector doesnt exist in Stylus source so, be gone */
-	.CodeMirror-search-match
+	body.find-open .CodeMirror-search-match
 	{
 		background: var(--main-color) !important;
 		border-top: 1px solid var(--no-match) !important;
 		border-bottom: 1px solid var(--no-match) !important;
-		opacity: 1;
-	}
-	#stylus .search-target-match
-	{
-		background-color: var(--no-match) !important;
-		color: var(--main-background) !important;
 	}
 
 	.CodeMirror-dialog, .CodeMirror-dialog input
