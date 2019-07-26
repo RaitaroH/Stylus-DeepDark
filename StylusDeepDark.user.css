@@ -376,6 +376,7 @@
 @var color color-shadow "Custom shadow color" "rgba(0,0,0,.13)"
 @var color color-odd "Custom odd color" "rgba(0,0,0,.16)"
 
+@var checkbox use-modified-default "Adaptive syntax highlighting" 1 {}
 
 @var select fontSize 'Editor font size' {
 	"Normal 14px": "14px",
@@ -1017,51 +1018,54 @@
 		background: var(--hover-background) !important;
 		color: var(--main-color) !important;
 	}
+	if use-modified-default {
+		/* Default theme overwritten with adjusted colors */
+		.cm-s-default.CodeMirror { background: var(--second-background); color: var(--main-text); }
+		.cm-s-default div.CodeMirror-selected { background: var(--select-background); }
 
-	/* Default theme overwritten with adjusted colors */
-	.cm-s-default.CodeMirror { background: var(--second-background); color: var(--main-text); }
-	.cm-s-default div.CodeMirror-selected { background: var(--select-background); }
+		.cm-s-default .CodeMirror-line::selection, .cm-s-default .CodeMirror-line > span::selection,
+		.cm-s-default .CodeMirror-line > span > span::selection { background: var(--select-background); }
+		.cm-s-default .CodeMirror-line::-moz-selection, .cm-s-default .CodeMirror-line > span::-moz-selection,
+		.cm-s-default .CodeMirror-line > span > span::-moz-selection { background-color: var(--select-background); }
 
-	.cm-s-default .CodeMirror-line::selection, .cm-s-default .CodeMirror-line > span::selection,
-	.cm-s-default .CodeMirror-line > span > span::selection { background: var(--select-background); }
-	.cm-s-default .CodeMirror-line::-moz-selection, .cm-s-default .CodeMirror-line > span::-moz-selection,
-	.cm-s-default .CodeMirror-line > span > span::-moz-selection { background-color: var(--select-background); }
+		.cm-s-default .CodeMirror-gutters { background: var(--hover-background); border-right: 0px; }
+		.cm-s-default .CodeMirror-guttermarker { color: var(--main-text); }
+		.cm-s-default .CodeMirror-guttermarker-subtle,
+		.cm-s-default .CodeMirror-linenumber { color: var(--dimmer-text); }
+		.cm-s-default .CodeMirror-linenumber:hover, .cm-s-default .CodeMirror-foldgutter-open:hover,
+		.cm-s-default .CodeMirror-foldgutter-folded:hover { color: initial; }
+		.cm-s-default .CodeMirror-cursor { border-left: var(--cursor-width) solid var(--cursor-color); }
 
-	.cm-s-default .CodeMirror-gutters { background: var(--hover-background); border-right: 0px; }
-	.cm-s-default .CodeMirror-guttermarker { color: var(--main-text); }
-	.cm-s-default .CodeMirror-guttermarker-subtle,
-	.cm-s-default .CodeMirror-linenumber { color: var(--dimmer-text); }
-	.cm-s-default .CodeMirror-cursor { border-left: var(--cursor-width) solid var(--cursor-color); }
+		.cm-s-default span.cm-comment { color: var(--dimmer-text); }
+		.cm-s-default span.cm-atom, .cm-s-default span.cm-number { color: var(--main-color); }
 
-	.cm-s-default span.cm-comment { color: var(--dimmer-text); }
-	.cm-s-default span.cm-atom, .cm-s-default span.cm-number { color: var(--main-color); }
+		.cm-s-default span.cm-property, .cm-s-default span.cm-attribute { color: var(--main-color); opacity: 1; }
+		.cm-s-default span.cm-keyword, .cm-s-default span.cm-string { color: var(--main-color); }
+		.cm-s-default span.cm-string.cm-property { color: var(--main-text); }
 
-	.cm-s-default span.cm-property, .cm-s-default span.cm-attribute { color: var(--main-color); opacity: 1; }
-	.cm-s-default span.cm-keyword, .cm-s-default span.cm-string { color: var(--main-color); }
-	.cm-s-default span.cm-string.cm-property { color: var(--main-text); }
+		.cm-s-default span.cm-variable { color: var(--main-text); }
+		.cm-s-default span.cm-variable-2 { color: var(--main-color); opacity: .7; }
 
-	.cm-s-default span.cm-variable { color: var(--main-text); }
-	.cm-s-default span.cm-variable-2 { color: var(--main-color); opacity: .7; }
+		.cm-s-default .cm-variable-3,
+		.cm-s-default .cm-type { color: var(--main-color); filter: invert(100%); }
+		.cm-s-default span.cm-def { color: var(--main-text); }
+		.cm-s-default span.cm-bracket { color: var(--main-text); font-weight: bold; }
+		.cm-s-default span.cm-tag { color: var(--main-color); opacity: .7; }
+		.cm-s-default span.cm-link, .cm-s-default span.cm-keyword { color: var(--main-color); }
+		.cm-s-default span.cm-keyword:not(.colorview-swatch),
+		.cm-s-default span.cm-string { color: var(--main-color); filter: hue-rotate(60deg); }
+		.cm-s-default span.cm-link,
+		.cm-s-default span.cm-keyword:not(.colorview-swatch) { color: var(--main-color); filter: invert(100%); }
+		.cm-s-default span.cm-error { border-bottom: var(--hover-background); color: var(--main-text); }
+		.cm-s-default span.cm-qualifier { color: var(--main-text); }
 
-	.cm-s-default .cm-variable-3,
-	.cm-s-default .cm-type { color: var(--main-color); filter: hue-rotate(280deg); }
-	.cm-s-default span.cm-def { color: var(--main-text); }
-	.cm-s-default span.cm-bracket { color: var(--main-text); font-weight: bold; }
-	.cm-s-default span.cm-tag { color: var(--main-color); opacity: .7; }
-	.cm-s-default span.cm-link, .cm-s-default span.cm-keyword { color: var(--main-color); }
-	.cm-s-default span.cm-keyword:not(.colorview-swatch),
-	.cm-s-default span.cm-string { color: var(--main-color); filter: hue-rotate(60deg); }
-	.cm-s-default span.cm-link,
-	.cm-s-default span.cm-keyword:not(.colorview-swatch) { color: var(--main-color); filter: invert(100%); }
-	.cm-s-default span.cm-error { border-bottom: var(--hover-background); color: var(--main-text); }
-	.cm-s-default span.cm-qualifier { color: var(--main-text); }
+		.cm-s-default .CodeMirror-activeline-background { background: var(--select-background); }
+		.cm-s-default .CodeMirror-matchingbracket { color: var(--main-color); }
+		.cm-s-default .CodeMirror-matchingtag { background: var(--dimmer-text); }
 
-	.cm-s-default .CodeMirror-activeline-background { background: var(--select-background); }
-	.cm-s-default .CodeMirror-matchingbracket { color: var(--main-color); }
-	.cm-s-default .CodeMirror-matchingtag { background: var(--dimmer-text); }
-
-	.cm-s-default .cm-builtin { color: var(--main-color); }
-	.cm-s-default .cm-meta { color: var(--dimmer-text); }
+		.cm-s-default .cm-builtin { color: var(--main-color); }
+		.cm-s-default .cm-meta { color: var(--dimmer-text); }
+	}
 
 	/* Stylish in chrome specific */
 	:focus
