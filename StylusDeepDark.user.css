@@ -134,8 +134,8 @@
 			--dimmer-text: #ccc;
 			--editor-background: #181818;
 			--select-background: #232323;
-			--shadow: 0 1px 0.5px rgba(0,0,0,.13);
-			--odd-entry-background: rgba(0,0,0,.16);
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+			--odd-entry-background: rgba(0, 0, 0, .16);
 		}
 		else if stylus-deepdark-style == "Breeze-Dark" {
 			--main-color: #3daee9;
