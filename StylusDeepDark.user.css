@@ -377,6 +377,7 @@
 @var color color-odd "Custom odd color" "rgba(0,0,0,.16)"
 
 @var checkbox use-modified-default "Adaptive syntax highlighting" 1 {}
+@var checkbox stylus-syntax-theme  "Stylus syntax highlighting" 1 {}
 
 @var select fontSize 'Editor font size' {
 	"Normal 14px": "14px",
@@ -621,31 +622,31 @@
 		opacity: .5;
 	}
 
-	/* To be commented out in case you want a stylus theme */
-	.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection,
-	.CodeMirror-line > span > span::-moz-selection, .CodeMirror-selected,
-	.CodeMirror-focused .CodeMirror-selected, .CodeMirror-activeline-background
-	{
-		background-color: var(--select-background) !important;
+	if not stylus-syntax-theme {
+		.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection,
+		.CodeMirror-line > span > span::-moz-selection, .CodeMirror-selected,
+		.CodeMirror-focused .CodeMirror-selected, .CodeMirror-activeline-background
+		{
+			background-color: var(--select-background) !important;
+		}
+		.CodeMirror, .CodeMirror-code, .CodeMirror-code
+		{
+			color: var(--main-text) !important;
+			background: var(--editor-background) !important;
+		}
+		.cm-s-mbo.CodeMirror
+		{
+			background-color: var(--second-background) !important;
+		}
+		.CodeMirror-gutters
+		{
+			background-color: var(--hover-background) !important;
+		}
+		.CodeMirror .cm-meta
+		{
+			background: var(--hover-background) !important;
+		}
 	}
-	.CodeMirror, .CodeMirror-code, .CodeMirror-code
-	{
-		color: var(--main-text) !important;
-		background-color: var(--editor-background) !important;
-	}
-	.cm-s-mbo.CodeMirror
-	{
-		background-color: var(--second-background) !important;
-	}
-	.CodeMirror-gutters
-	{
-		background-color: var(--hover-background) !important;
-	}
-	.CodeMirror .cm-meta
-	{
-		background: var(--hover-background) !important;
-	}
-	/* end of area to be commented out */
 
 	/* dont uncomment anything below */
 	.CodeMirror
