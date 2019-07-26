@@ -9,210 +9,373 @@
 +co-authors  https://gitlab.com/RaitaroH/Stylus-DeepDark/graphs/contributors
 @license     GNU-V3.0
 
-@preprocessor uso
-@var select mainColor 'Main color' {
-	"DeepDark": "#00adee",
-	"BreezeDark": "#3DAEE9",
-	"Vertex Dark": "#4080fb",
-	"Arc Dark": "#5294E2",
-	"Firefox Dark": "#5675B9",
-	"Firefox57": "#4080FB",
-	"Discord": "#7289DA",
-	"YouTubeDark": "#E52117",
-	"Mint-Y-Dark": "#9AB87C",
-	"9anime": "#723f8c",
-	"Black&White": "#ffffff",
-	"Yellow_petrocompletions": "#FFC700",
-	"Yellow2": "#FFC700",
-	"Ubuntu_grey": "#EF7847",
-	"Ubuntu_purple": "#EF7847",
-	"Orange": "#ff6905",
-	"Jisho_夜明け": "#EF7D6C",
-	"Custom": "/*[[custom-main-color]]*\/"
-}
-@var color custom-main-color "Custom main color" "#00adee"
+@preprocessor stylus
 
-@var select mainBackground 'Main background color' {
-	"DeepDark": "#111111",
-	"BreezeDark": "#232629",
-	"Vertex Dark": "#2B2B2C",
-	"Arc Dark": "#343944",
-	"Firefox Dark": "#272B35",
-	"Firefox57": "#0C0C0D",
-	"Discord": "#1E2124",
-	"YouTubeDark": "#111111",
-	"Mint-Y-Dark": "#2F2F2F",
-	"9anime": "#0B0A0D",
-	"Black&White": "#000000",
-	"Yellow_petrocompletions": "#141414",
-	"Yellow2": "#0a0800",
-	"Ubuntu_grey": "#312D2A",
-	"Ubuntu_purple": "#2C071A",
-	"Orange": "#0a0400",
-	"Jisho_夜明け": "#332222",
-	"Custom": "/*[[custom-main-background]]*\/"
+@advanced dropdown stylus-deepdark-style "Stylus DeepDark Style" {
+	Deep-Dark "Deep-Dark" <<<EOT
+	/*! Deep-Dark *\/:root {
+		--main-color: #00adee;
+		--main-background: #111111;
+		--second-background: #181818;
+		--hover-background: #232323;
+		--main-text: #eff0f1;
+		--dimmer-text: #ccc;
+		--editor-background: #181818;
+		--select-background: #232323;
+		--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		--odd-entry-background: rgba(0, 0, 0, .16);
+	} EOT;
+	Inspired-Dark "Inspired-Dark" <<<EOT
+	/*! Inspired-Dark *\/:root {
+		--main-color: #5e8acc;
+		--main-background: #232629;
+		--second-background: #181818;
+		--hover-background: #515254;
+		--main-text: #eff0f1;
+		--dimmer-text: #ccc;
+		--editor-background: #181818;
+		--select-background: #232323;
+		--shadow: 0 1px 0.5px rgba(0,0,0,.13);
+		--odd-entry-background: rgba(0,0,0,.16);
+	} EOT;
+	Breeze-Dark "Breeze-Dark" <<<EOT
+	/*! Breeze-Dark *\/:root {
+		--main-color: #3daee9;
+		--main-background: #232629;
+		--second-background: #2a2e32;
+		--hover-background: #31363b;
+		--main-text: #eff0f1;
+		--dimmer-text: #bdc3c7;
+		--editor-background: #2a2e32;
+		--select-background: #31363b;
+		--shadow: 0 1px 0.5px rgba(0,0,0,.13);
+		--odd-entry-background: rgba(0,0,0,.16);
+	} EOT;
+	Vertex-Dark "Vertex-Dark" <<<EOT
+	/*! Vertex-Dark *\/:root {
+		--main-color: #4080fb;
+		--main-background: #2b2b2c;
+		--second-background: #353638;
+		--hover-background: #515254;
+		--main-text: #F3F3F5;
+		--dimmer-text: #aeafb0;
+		--editor-background: #2b2b2c;
+		--select-background: #515254;
+		--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		--odd-entry-background: rgba(0, 0, 0, .2);
+	} EOT;
+	Arc-Dark "Arc-Dark" <<<EOT
+	/*! Arc-Dark *\/:root {
+		--main-color: #5294e2;
+		--main-background: #343944;
+		--second-background: #383c4a;
+		--hover-background: #414a59;
+		--main-text: #c1c8d1;
+		--dimmer-text: #b3bac5;
+		--editor-background: #343944;
+		--select-background: #414a59;
+		--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		--odd-entry-background: rgba(0, 0, 0, .16);
+	} EOT;
+	Firefox-Dark "Firefox-Dark" <<<EOT
+	/*! Firefox-Dark *\/:root{
+		--main-color: #5675b9;
+		--main-background: #272b35;
+		--second-background: #181d20;
+		--hover-background: #353a44;
+		--main-text: #E3eeF9;
+		--dimmer-text: #606376;
+		--editor-background: #181d20;
+		--select-background: #353a44;
+		--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		--odd-entry-background: rgba(0, 0, 0, .16);
+	} EOT;
+	Firefox-57 "Firefox-57" <<<EOT
+	/*! Firefox-57 *\/:root {
+		--main-color: #4080fb;
+		--main-background: #0c0c0d;
+		--second-background: #252526;
+		--hover-background: #323234;
+		--main-text: #f9f9fa;
+		--dimmer-text: #d0d0d0;
+		--editor-background: #252526;
+		--select-background: #323234;
+		--shadow: 0 1px 0.5px rgba(54, 54, 54, .2);
+		--odd-entry-background: rgba(54, 54, 54, .4);
+	} EOT;
+	Discord "Discord" <<<EOT
+	/*! Discord *\/:root {
+		--main-color: #7289da;
+		--main-background: #1e2124;
+		--second-background: #2f3136;
+		--hover-background: #484b51;
+		--main-text: #fff;
+		--dimmer-text: #ada8aa;
+		--editor-background: #2f3136;
+		--select-background: #484b51;
+		--shadow: 0 1px 0.5px rgba(47, 49, 54, .23);
+		--odd-entry-background: rgba(47, 49, 54, .49);
+	} EOT;
+	YouTube-Dark "YouTube-Dark" <<<EOT
+	/*! YouTube-Dark *\/:root {
+		--main-color: #e52117;
+		--main-background: #111;
+		--second-background: #232323;
+		--hover-background: #343434;
+		--main-text: #e1e1e1;
+		--dimmer-text: #7f7f7f;
+		--editor-background: #111;
+		--select-background: #343434;
+		--shadow: 0 1px 0.5px rgba(54, 54, 54, .2);
+		--odd-entry-background: rgba(54, 54, 54, .4);
+	} EOT;
+	Mint-Y-Dark "Mint-Y-Dark" <<<EOT
+	/*! Mint-Y-Dark *\/:root {
+		--main-color: #9ab87c;
+		--main-background: #2f2f2f;
+		--second-background: #383838;
+		--hover-background: #404040;
+		--main-text: #fff;
+		--dimmer-text: #d5dada;
+		--editor-background: #2f2f2f;
+		--select-background: #404040;
+		--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+		--odd-entry-background: rgba(0, 0, 0, .23);
+	} EOT;
+	9anime "9anime" <<<EOT
+	/*! 9anime *\/:root {
+		--main-color: #723f8c;
+		--main-background: #0b0a0d;
+		--second-background: #17151c;
+		--hover-background: #1E1c25;
+		--main-text: #f9f6fb;
+		--dimmer-text: #cac0cf;
+		--editor-background: #17151c;
+		--select-background: rgba(180, 180, 180, .1);
+		--shadow: 0 1px 0.5px rgba(54, 54, 54, .13);
+		--odd-entry-background: rgba(54, 54, 54, .36);
+	} EOT;
+	Black-&-White "Black-&-White" <<<EOT
+	/*! Black-&-White *\/:root {
+		--main-color: #fff;
+		--main-background: #000;
+		--second-background: #1e1e1e
+		--hover-background: #313131;
+		--main-text: #fff;
+		--dimmer-text: #aaa;
+		--editor-background: #0a0a0a;
+		--select-background: #222;
+		--shadow: 0 1px 0.5px rgba(54 ,54 ,54, .2);
+		--odd-entry-background: rgba(54 ,54 ,54, .4);
+	} EOT;
+	Yellow "Yellow" <<<EOT
+	/*! Yellow *\/:root {
+		--main-color: #ffc700;
+		--main-background: #141414;
+		--second-background: #202222;
+		--hover-background: #353838;
+		--main-text: #eff0f1;
+		--dimmer-text: #9f9999;
+		--editor-background: #202222;
+		--select-background: #353838;
+		--shadow: 0 1px 0.5px rgba(34, 34, 34, .2);
+		--odd-entry-background: rgba(34, 34, 34, 1);
+	} EOT;
+	Yellow-2 "Yellow-2" <<<EOT
+	/*! Yellow-2 *\/:root {
+		--main-color: #ffc700;
+		--main-background: #0a0800;
+		--second-background: #0c0a04;
+		--hover-background: #0f0d05;
+		--main-text: #fffdf5;
+		--dimmer-text: #fff8e1;
+		--editor-background: rgba(12, 10, 4, .2);
+		--select-background: rgba(255, 253, 245, .1);
+		--shadow: 0 1px 0.5px rgba(34, 34, 34, .2);
+		--odd-entry-background: rgba(34, 34, 34, 1);
+	} EOT;
+	Ubuntu-Grey "Ubuntu-Grey" <<<EOT
+	/*! Ubuntu-Grey *\/:root {
+		--main-color: #ef7847;
+		--main-background: #312d2a;
+		--second-background: #3d3c38;
+		--hover-background: #59564d;
+		--main-text: #f2f1ef;
+		--dimmer-text: #e6e5e3;
+		--editor-background: #312d2a;
+		--select-background: #59564d;
+		--shadow: 0 1px 0.5px rgba(89, 86, 77, .12);
+		--odd-entry-background: rgba(89, 86, 77, .21);
+	} EOT;
+	Ubuntu-Purple "Ubuntu-Purple" <<<EOT
+	/*! Ubuntu-Purple *\/:root {
+		--main-color: #EF7847;
+		--main-background: #2C071A;
+		--second-background: #430B28;
+		--hover-background: #520D30;
+		--main-text: #F2F1EF;
+		--dimmer-text: #E6E5E3;
+		--editor-background: #430B28;
+		--select-background: #520D30;
+		--shadow: 0 1px 0.5px rgba(82, 13, 48, .2);
+		--odd-entry-background: rgba(82, 13, 48, .5);
+	} EOT;
+	Orange "Orange" <<<EOT
+	/*! Orange *\/:root {
+		--main-color: #ff6905;
+		--main-background: #0a0400;
+		--second-background: #0e0702;
+		--hover-background: #110903;
+		--main-text: #fff9f5;
+		--dimmer-text: #ffede1;
+		--editor-background: #110903;
+		--select-background: #47250a;
+		--shadow: 0 1px 0.5px rgba(255, 105, 5, .1);
+		--odd-entry-background: rgba(255, 105, 5, .1);
+	} EOT;
+	Jisho "Jisho" <<<EOT
+	/*! Jisho *\/:root {
+		--main-color: #ff6905;
+		--main-background: #0a0400;
+		--second-background: #0e0702;
+		--hover-background: #110903;
+		--main-text: #fff9f5;
+		--dimmer-text: #ffede1;
+		--editor-background: #0e0702;
+		--select-background: #291607;
+		--shadow: 0 1px 0.5px rgba(37, 19, 5, .19);
+		--odd-entry-background: rgba(37, 19, 5, .29);
+	} EOT;
+	Adapta-Nokto "Adapta-Nokto" <<<EOT
+	/*! Adapta-Nokto *\/:root {
+		--main-color: #00bcd4;
+		--main-background: #222d32;
+		--second-background: #263238;
+		--hover-background: #2a353b;
+		--main-text: #fff;
+		--dimmer-text: #9b9b9b;
+		--editor-background: #263238;
+		--select-background: #3d4d56;
+		--shadow: 0 1px 0.5px  rgba(61, 77, 86, .2);
+		--odd-entry-background: rgba(61, 77, 86, .3);
+	} EOT;
+	Adapta-Breath-Nokto "Adapta-Breath-Nokto" <<<EOT
+	/*! Adapta-Breath-Nokto *\/:root {
+		--main-color: #1abc9c;
+		--main-background: #222d32;
+		--second-background: #263238;
+		--hover-background: #2a353b;
+		--main-text: #fff;
+		--dimmer-text: #9b9b9b;
+		--editor-background: #263238;
+		--select-background: #2a353b;
+		--shadow: 0 1px 0.5px  rgba(42, 53, 59, .32);
+		--odd-entry-background: rgba(42, 53, 59, .62);
+	} EOT;
+	Solarized-Dark "Solarized-Dark" <<<EOT
+	/*! Solarized-Dark *\/:root {
+		--main-color: #268bd2;
+		--main-background: #073642;
+		--second-background: #03303c;
+		--hover-background: #002b36;
+		--main-text: #fdf6E3;
+		--dimmer-text: #eee8d5;
+		--editor-background: #073642;
+		--select-background: #002b36;
+		--shadow: 0 1px 0.5px  rgba(0, 43, 54, .3);
+		--odd-entry-background: rgba(0, 43, 54, .5);
+	} EOT;
+	Solarized-Light "Solarized-Light" <<<EOT
+	/*! Solarized-Light *\/:root {
+		--main-color: #268bd2;
+		--main-background: #fdf6e3;
+		--second-background: #f5efdc;
+		--hover-background: #eee8d5;
+		--main-text: #073642;
+		--dimmer-text: #586e75;
+		--editor-background: #f5efdc;
+		--select-background: #ded8c4;
+		--shadow: 0 1px 0.5px  rgba(222, 216, 196, .2);
+		--odd-entry-background: rgba(222, 216, 196, .3);
+	} EOT;
+	Gruvbox-Dark "Gruvbox-Dark" <<<EOT
+	/*! Gruvbox-Dark *\/:root {
+		--main-color: #fe8019;
+		--main-background: #1d2021;
+		--second-background: #282828;
+		--hover-background: #3c3836;
+		--main-text: #fbf1c7;
+		--dimmer-text: #ebdbb2;
+		--editor-background: #282828;
+		--select-background: #3c3836;
+		--shadow: 0 1px 0.5px  rgba(60, 56, 54, .22);
+		--odd-entry-background: rgba(60, 56, 54, .33);
+	} EOT;
+	Gruvbox-Light "Gruvbox-Light" <<<EOT
+	/*! Gruvbox-Light *\/:root {
+		--main-color: #af3a03;
+		--main-background: #f9f5d7;
+		--second-background: #fbf1c7;
+		--hover-background: #ebdbb2;
+		--main-text: #282828;
+		--dimmer-text: #3c3836;
+		--editor-background: #f9f5d7;
+		--select-background: #ebdbb2;
+		--shadow: 0 1px 0.5px  rgba(235, 219, 178, .33);
+		--odd-entry-background: rgba(235, 219, 178, .36);
+	} EOT;
+	NierAutomata-Dark "NierAutomata-Dark" <<<EOT
+	/*! NierAutomata-Dark *\/:root {
+		--main-color: #fe8019;
+		--main-background: #33302a;
+		--second-background: #48453c;
+		--hover-background: #7c6f64;
+		--main-text: #dad4bb;
+		--dimmer-text: #bab5a1;
+		--editor-background: #33302a;
+		--select-background: #7c6f64;
+		--shadow: 0 1px 0.5px  rgba(124, 111, 100, .15);
+		--odd-entry-background: rgba(124, 111, 100, .21);
+	} EOT;
+	NierAutomata-Light "NierAutomata-Light" <<<EOT
+	/*! NierAutomata-Light *\/:root {
+		--main-color: #fe8019;
+		--main-background: #d1cdb7;
+		--second-background: #dcd8c0;
+		--hover-background: #bab5a1;
+		--main-text: #48453c;
+		--dimmer-text: #33302a;
+		--editor-background: #dcd8c0;
+		--select-background: #bab5a1;
+		--shadow: 0 1px 0.5px rgba(186, 181, 161, 2);
+		--odd-entry-background: rgba(186, 181, 161, .3);
+	} EOT;
+	custom "Custom" <<<EOT
+	/*! Custom *\/:root {
+		--main-color: var(--cMainColor);
+		--main-background: var(--cMainBackground);
+		--second-background: var(--cSecondBackground);
+		--hover-background: var(--cHoverBackground);
+		--main-text: var(--cMainText);
+		--dimmer-text: var(--cDimmerText);
+		--editor-background: var(--cEditorBackground);
+		--select-background: var(--cSelectBackground);
+		--shadow: 0 1px 0.5px var(--cColorShadow);
+		--odd-entry-background: var(--cColorOddEntry);
+	} EOT;
 }
-@var color custom-main-background "Custom main background" "#111111"
 
-@var select secondBackground 'Second background color' {
-	"DeepDark": "#181818",
-	"BreezeDark": "#2a2e32",
-	"Vertex Dark": "#353638",
-	"Arc Dark": "#383C4A",
-	"Firefox Dark": "#181D20",
-	"Firefox57": "#252526",
-	"Discord": "#2F3136",
-	"YouTubeDark": "#232323",
-	"Mint-Y-Dark": "#383838",
-	"9anime": "#17151C",
-	"Black&White": "#0a0a0a",
-	"Yellow_petrocompletions": "#202222",
-	"Yellow2": "#0c0a04",
-	"Ubuntu_grey": "#3D3C38",
-	"Ubuntu_purple": "#430B28",
-	"Orange": "#0e0702",
-	"Jisho_夜明け": "#2A1B1B",
-	"Custom": "/*[[custom-second-background]]*\/"
-}
-@var color custom-second-background "Custom second background" "#181818"
+@var color mainColor "Custom main color" "#00adee"
+@var color mainBackground "Custom main background" "#111111"
+@var color secondBackground "Custom second background" "#181818"
+@var color hoverBackground "Custom hover background" "#232323"
+@var color mainText "Custom main text" "#eff0f1"
+@var color dimmerText "Custom second text" "#ccc"
+@var color editorBackground "Custom editor background" "#181818"
+@var color selectBackground "Custom selection background" "#232323"
+@var color color-shadow "Custom shadow color" "rgba(0,0,0,.13)"
+@var color color-odd "Custom odd color" "rgba(0,0,0,.16)"
 
-@var select hoverBackground 'Hover background color' {
-	"DeepDark": "#232323",
-	"BreezeDark": "#31363b",
-	"Vertex Dark": "#515254",
-	"Arc Dark": "#414A59",
-	"Firefox Dark": "#353A44",
-	"Firefox57": "#323234",
-	"Discord": "#484B51",
-	"YouTubeDark": "#343434",
-	"Mint-Y-Dark": "#404040",
-	"9anime": "#1E1C25",
-	"Black&White": "#0f0f0f",
-	"Yellow_petrocompletions": "#353838",
-	"Yellow2": "#0f0d05",
-	"Ubuntu_grey": "#59564D",
-	"Ubuntu_purple": "#520D30",
-	"Orange": "#110903",
-	"Jisho_夜明け": "#863B2F",
-	"Custom": "/*[[custom-hover-background]]*\/"
-}
-@var color custom-hover-background "Custom hover background" "#232323"
-
-@var select mainText 'Main text color' {
-	"DeepDark": "#eff0f1",
-	"BreezeDark": "#eff0f1",
-	"Vertex Dark": "#F3F3F5",
-	"Arc Dark": "#C1C8D1",
-	"Firefox Dark": "#E3EEF9",
-	"Firefox57": "#F9F9FA",
-	"Discord": "#FFFFFF",
-	"YouTubeDark": "#E1E1E1",
-	"Mint-Y-Dark": "#FFFFFF",
-	"9anime": "#B4B4B4",
-	"Black&White": "#b4b4b4",
-	"Yellow_petrocompletions": "#EFF0F1",
-	"Yellow2": "#fffdf5",
-	"Ubuntu_grey": "#F2F1EF",
-	"Ubuntu_purple": "#F2F1EF",
-	"Orange": "#fff9f5",
-	"Jisho_夜明け": "#EFB26C",
-	"Custom": "/*[[custom-main-text]]*\/"
-}
-@var color custom-main-text "Costom main text" "#eff0f1"
-
-@var select dimmerText 'Secondary text color' {
-	"DeepDark": "#CCCCCC",
-	"BreezeDark": "#bdc3c7",
-	"Vertex Dark": "#AEAFB0",
-	"Arc Dark": "#B3BAC5",
-	"Firefox Dark": "#606376",
-	"Firefox57": "#D0D0D0",
-	"Discord": "#ADA8AA",
-	"YouTubeDark": "#7F7F7F",
-	"Mint-Y-Dark": "#D5DADA",
-	"9anime": "#747474",
-	"Black&White": "#828282",
-	"Yellow_petrocompletions": "#9F9999",
-	"Yellow2": "#fff8e1",
-	"Ubuntu_grey": "#E6E5E3",
-	"Ubuntu_purple": "#E6E5E3",
-	"Orange": "#ffede1",
-	"Jisho_夜明け": "#986E3F",
-	"Custom": "/*[[custom-dimmer-text]]*\/"
-}
-@var color custom-dimmer-text "Costom second text" "#CCCCCC"
-
-@var select editorBackground 'Editor background' {
-	"DeepDark": "#181818",
-	"BreezeDark": "#2a2e32",
-	"Vertex Dark": "#353638",
-	"Arc Dark": "#383C4A",
-	"Firefox Dark": "#181D20",
-	"Firefox57": "#252526",
-	"Discord": "#2F3136",
-	"YouTubeDark": "#232323",
-	"Mint-Y-Dark": "#383838",
-	"9anime": "#17151C",
-	"Black&White": "#0a0a0a",
-	"Yellow_petrocompletions": "#202222",
-	"Yellow2": "#0c0a04",
-	"Ubuntu_grey": "#3D3C38",
-	"Ubuntu_purple": "#430B28",
-	"Orange": "#0e0702",
-	"Jisho_夜明け": "#2A1B1B",
-	"Twilight": "#141414",
-	"Adapta Nokto": "#263238",
-	"Solarized Dark": "#03303C",
-	"Solarized Light": "#F5EFDC",
-	"Gruvbox Dark": "#282828",
-	"Gruvbox Light": "#fbf1c7",
-	"Custom": "/*[[custom-editor-background]]*\/"
-}
-@var color custom-editor-background "Custom editor background" "#181818"
-
-@var select selectBackground 'Selection background' {
-	"DeepDark": "#232323",
-	"BreezeDark": "#31363b",
-	"Vertex Dark": "#515254",
-	"Arc Dark": "#414A59",
-	"Firefox Dark": "#353A44",
-	"Firefox57": "#323234",
-	"Discord": "#484B51",
-	"YouTubeDark": "#343434",
-	"Mint-Y-Dark": "#404040",
-	"9anime": "#1E1C25",
-	"Black&White": "#0f0f0f",
-	"Yellow_petrocompletions": "#353838",
-	"Yellow2": "#0f0d05",
-	"Ubuntu_grey": "#59564D",
-	"Ubuntu_purple": "#520D30",
-	"Orange": "#110903",
-	"Jisho_夜明け": "#863B2F",
-	"Lesser Dark": "#45443b",
-	"Shadowfox": "#353B48",
-	"Midnight": "#314d67",
-	"Twilight": "#323232",
-	"Night": "#447",
-	"Adapta Nokto": "#2a353b",
-	"Solarized Dark": "#002B36",
-	"Solarized Light": "#EEE8D5",
-	"Gruvbox Dark": "#3c3836",
-	"Gruvbox Light": "#ebdbb2",
-	"Custom": "/*[[custom-select-background]]*\/"
-}
-@var color custom-select-background "Custom selection background" "#232323"
-
-@var select colorShadow 'Shadow color' {
-	"Default": "rgba(0,0,0,.13)",
-	"Custom": "/*[[custom-color-shadow]]*\/"
-}
-@var color custom-color-shadow "Custom shadow color" "rgba(0,0,0,.13)"
-
-@var select colorOddEntry 'Odd entry shadow color' {
-	"Default": "rgba(0,0,0,.16)",
-	"Custom": "/*[[custom-color-odd]]*\/"
-}
-@var color custom-color-odd "Custom shadow color" "rgba(0,0,0,.16)"
 
 @var select fontSize 'Editor font size' {
 	"Normal 14px": "14px",
@@ -226,242 +389,80 @@
 	"Block 7px": "7px"
 }
 @var select cursorColor 'Cursor color' {
-	"DeepDark": "#00adee",
-	"BreezeDark": "#3DAEE9",
-	"Vertex Dark": "#4080fb",
-	"Arc Dark": "#5294E2",
-	"Firefox Dark": "#5675B9",
-	"Firefox57": "#4080FB",
+	"Deep-Dark": "#00adee",
+	"Inspired-Dark": "#5e8acc",
+	"Breeze-Dark": "#3daee9",
+	"Vertex-Dark": "#4080fb",
+	"Arc-Dark": "#5294E2",
+	"Firefox-Dark": "#5675B9",
+	"Firefox 57": "#4080FB",
 	"Discord": "#7289DA",
-	"YouTubeDark": "#E52117",
-	"Mint-Y-Dark": "#9AB87C",
+	"YouTube Dark": "#E52117",
+	"Mint-Y-Dark": "#9ab87c",
 	"9anime": "#723f8c",
-	"Black&White": "#ffffff",
-	"Yellow_petrocompletions": "#FFC700",
-	"Yellow2": "#FFC700",
-	"Ubuntu_grey": "#EF7847",
-	"Ubuntu_purple": "#EF7847",
+	"Black and White": "#ffffff",
+	"Yellow": "#FFC700",
+	"Yellow-2": "#FFC700",
+	"Ubuntu-Grey": "#EF7847",
+	"Ubuntu-Purple": "#EF7847",
 	"Orange": "#ff6905",
 	"Jisho_夜明け": "#EF7D6C",
-	"Terminal": "#04f911",
-	"Adapta Nokto": "#00bcd4",
-	"Adapta Breath Nokto": "#1abc9c",
+	"Adapta-Nokto": "#00bcd4",
+	"Adapta-Breath Nokto": "#1abc9c",
 	"Solarized": "#268BD2",
-	"Gruvbox Dark": "#fe8019",
-	"Gruvbox Light": "#af3a03",
-	"Custom": "/*[[custom-cursor-color]]*\/"
+	"Gruvbox-Dark": "#fe8019",
+	"Gruvbox-Light": "#af3a03",
+	"Terminal": "#04f911",
+	"Custom": "custom-cursor-color"
 }
-@var color custom-cursor-color "Custom cursor color" "#00adee"
+@var color custom-cursor-color "Custom cursor color" "#04f911"
 ==/UserStyle== */
-
-@-moz-document regexp("moz-extension://.*"), regexp("chrome-extension://.*") {
+@-moz-document regexp("moz-extension:\/\/.*"), regexp("chrome-extension:\/\/.*") {
 	/* Author     : Theme made by RaitaroH and contributors */
 	/* Co-authors : https://gitlab.com/RaitaroH/Stylus-DeepDark/graphs/contributors */
 	/* Home       : https://gitlab.com/RaitaroH/Stylus-DeepDark */
 	/* Licence    : GNU General Public License v3.0 */
 	/* Version    : 1.6.9 */
-
 	/*Main color variables*/
-	:root
-	{
-		/*User colors*/
-		--main-color: /*[[mainColor]]*/;
-		--main-background: /*[[mainBackground]]*/;
-		--second-background: /*[[secondBackground]]*/;
-		--hover-background: /*[[hoverBackground]]*/;
-		--main-text: /*[[mainText]]*/;
-		--dimmer-text: /*[[dimmerText]]*/;
-		--editor-background: /*[[editorBackground]]*/;
-		/*Selection/current line background*/
-		--select-background: /*[[selectBackground]]*/;
-
+	if stylus-deepdark-style {
+		:root {
+			/*CodeMirror font size*/
+			--font-size: fontSize;
+			/*Cursor width and color*/
+			--cursor-width: cursorWidth;
+    	--cursor-color: cursorColor;
+		}
+	}
+	if custom {
+		:root {
+			/*User colors*/
+			--cMainColor: mainColor;
+			--cMainBackground: mainBackground;
+			--cSecondBackground: secondBackground;
+			--cHoverBackground: hoverBackground;
+			--cMainText: mainText;
+			--cDimmerText: dimmerText;
+			--cEditorBackground: editorBackground;
+			/*Selection/current line background*/
+			--cSelectBackground: selectBackground;
+			--cColorShadow: 0 1px 0.5px colorShadow;
+			/*Odd entry background*/
+			--cColorOddEntry: colorOddEntry;
+		}
+	}
+	:root {
 		/*CodeMirror font size*/
-		--font-size: /*[[fontSize]]*/;
+		--font-size: fontSize;
 		/*Cursor width and color*/
-		--cursor-width: /*[[cursorWidth]]*/;
-		--cursor-color: /*[[cursorColor]]*/;
-
+		--cursor-width: cursorWidth;
+		--cursor-color: cursorColor;
 		/*These are must have static colors*/
 		/*Disable all color/warning Breeze Dark*/
-		--red: #DA4453; /*added for easy change with my swicher*/
+		--red: #da4453; /*added for easy change with my swicher*/
 		--warning-disable-all: var(--red);
 		/*No match regex color from Breeze Dark*/
-		--yellow: #FDBC4B;
+		--yellow: #fdbc4b;
 		--no-match: var(--yellow); /*added for easy change with my swicher*/
-		/*Shadow*/
-		--shadow: 0 1px 0.5px /*[[colorShadow]]*/;
-		/*Odd entry background*/
-		--odd-entry-background: /*[[colorOddEntry]]*/;
-
-		/*DeepDark colors*/
-		/*
-		--main-color: #00adee;
-		--main-background: #111111;
-		--second-background: #181818;
-		--hover-background: #232323;
-		--main-text: #eff0f1;
-		--dimmer-text: #CCCCCC;
-		*/
-
-		/*KDE colors*/
-		/*
-		--main-color: #3DAEE9;
-		--main-background: #232629;
-		--second-background: #2a2e32;
-		--hover-background: #31363b;
-		--main-text: #eff0f1;
-		--dimmer-text: #bdc3c7;
-		*/
-
-		/*Vertex Dark colors*/
-		/*
-		--main-color: #4080fb;
-		--main-background: #2B2B2C;
-		--second-background: #353638;
-		--hover-background: #515254;
-		--main-text: #F3F3F5;
-		--dimmer-text: #AEAFB0;
-		*/
-
-		/*Arc Dark colors*/
-		/*
-		--main-color: #5294E2;
-		--main-background: #343944;
-		--second-background: #383C4A;
-		--hover-background: #414A59;
-		--main-text: #C1C8D1;
-		--dimmer-text: #B3BAC5;
-		*/
-
-		/*Firefox Dark colors*/
-		/*
-		--main-color: #5675B9;
-		--main-background: #272B35;
-		--second-background: #181D20;
-		--hover-background: #353A44;
-		--main-text: #E3EEF9;
-		--dimmer-text: #606376;
-		*/
-
-		/*Firefox57 Dark colors*/
-		/*
-		--main-color: #4080FB;
-		--main-background: #0C0C0D;
-		--second-background: #252526;
-		--hover-background: #323234;
-		--main-text: #F9F9FA;
-		--dimmer-text: #D0D0D0;
-		*/
-
-		/*Discord colors*/
-		/*
-		--main-color: #7289DA;
-		--main-background: #1E2124;
-		--second-background: #2F3136;
-		--hover-background: #484B51;
-		--main-text: #FFFFFF;
-		--dimmer-text: #ADA8AA;
-		*/
-
-		/*YouTube dark colors*/
-		/*
-		--main-color: #E52117;
-		--main-background: #111111;
-		--second-background: #232323;
-		--hover-background: #343434;
-		--main-text: #E1E1E1;
-		--dimmer-text: #7F7F7F;
-		*/
-
-		/*Mint-Y-Dark colors*/
-		/*
-		--main-color: #9AB87C;
-		--main-background: #2F2F2F;
-		--second-background: #383838;
-		--hover-background: #404040;
-		--main-text: #FFFFFF;
-		--dimmer-text: #D5DADA;
-		*/
-
-		/*9anime colors*/
-		/*
-		--main-color: #723f8c;
-		--main-background: #0B0A0D;
-		--second-background: #17151C;
-		--hover-background: #1E1C25;
-		--main-text: #B4B4B4;
-		--dimmer-text: #747474;
-		*/
-
-		/*Black and white*/
-		/*
-		--main-color: #ffffff;
-		--main-background: #000000;
-		--second-background: #0a0a0a;
-		--hover-background: #0f0f0f;
-		--main-text: #b4b4b4;
-		--dimmer-text: #828282;
-		*/
-
-		/*Yellow (colors from petrocompletions)*/
-		/*
-		--main-color: #FFC700;
-		--main-background: #141414;
-		--second-background: #202222;
-		--hover-background: #353838;
-		--main-text: #EFF0F1;
-		--dimmer-text: #9F9999;
-		*/
-
-		/*Yellow 2*/
-		/*
-		--main-color: #ffc700;
-		--main-background: #0a0800;
-		--second-background: #0c0a04;
-		--hover-background: #0f0d05;
-		--main-text: #fffdf5;
-		--dimmer-text: #fff8e1;
-		*/
-
-		/*Ubuntu grey colors*/
-		/*
-		--main-color: #EF7847;
-		--main-background: #312D2A;
-		--second-background: #3D3C38;
-		--hover-background: #59564D;
-		--main-text: #F2F1EF;
-		--dimmer-text: #E6E5E3;
-		*/
-
-		/*Ubuntu purple colors*/
-		/*
-		--main-color: #EF7847;
-		--main-background: #2C071A;
-		--second-background: #430B28;
-		--hover-background: #520D30;
-		--main-text: #F2F1EF;
-		--dimmer-text: #E6E5E3;
-		*/
-
-		/*Orange*/
-		/*
-		--main-color: #ff6905;
-		--main-background: #0a0400;
-		--second-background: #0e0702;
-		--hover-background: #110903;
-		--main-text: #fff9f5;
-		--dimmer-text: #ffede1;
-		*/
-
-		/*Jisho 夜明け colors https://userstyles.org/styles/115621/jisho*/
-		/*
-		--main-color: #EF7D6C;
-		--main-background: #332222;
-		--second-background: #2A1B1B;
-		--hover-background: #863B2F;
-		--main-text: #EFB26C;
-		--dimmer-text: #986E3F;
-		*/
 	}
 	html
 	{
