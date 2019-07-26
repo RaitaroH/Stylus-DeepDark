@@ -1265,9 +1265,13 @@
 	}
 	/* This fixes the misalignment between:
 	 * [ ] Turn all styles off checkbox and label */
-	#disableAll
+	#disableAll, #find-styles-inline-group label input[type="checkbox"]:not(.slider)
 	{
 		margin-top: 2px !important;
+	}
+	#find-styles-inline-group .checked
+	{
+		padding-top: 2px !important;
 	}
 	/* This fixes the disable all checkbox bg being too bright on hover	*/
 	#stylus-popup input#disableAll[type="checkbox"]:not(.slider):hover,
