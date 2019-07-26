@@ -582,11 +582,16 @@
 	}
 	.CodeMirror
 	{
-		border-color: var(--odd-entry-background) !important;
+		border: 1px solid var(--hover-background) !important;
 	}
 	.CodeMirror-scrollbar-filler
 	{
 		background: var(--odd-entry-background) !important;
+	}
+	/* fix wrong background color when CodeMirror is empty */
+	.CodeMirror-active.CodeMirror-focused
+	{
+		outline-color: var(--main-color) !important;
 	}
 
 	/* Changed text highlight */
@@ -1217,11 +1222,6 @@
 	.header
 	{
 		border-color: var(--hover-background) !important;
-	}
-	/* fix wrong background color when CodeMirror is empty */
-	.CodeMirror-focused
-	{
-		outline-color: var(--main-color) !important;
 	}
 
 	/* Checkboxes *
