@@ -50,17 +50,17 @@
 	"Custom"
 ]
 @var color mainColor "Custom main color" "#5e8acc"
-@var color mainBackground "Custom main background" "#111111"
-@var color secondBackground "Custom second background" "#181818"
+@var color mainBackground "Custom main background" "#222"
+@var color secondBackground "Custom second background" "#111"
 @var color hoverBackground "Custom hover background" "#232323"
-@var color mainText "Custom main text" "#eff0f1"
+@var color mainText "Custom main text" "#eee"
 @var color dimmerText "Custom second text" "#ccc"
 @var color editorBackground "Custom editor background" "#181818"
 @var color selectBackground "Custom selection background" "#232323"
-@var color color-shadow "Custom shadow color" "rgba(0,0,0,.13)"
-@var color color-odd "Custom odd color" "rgba(0,0,0,.16)"
+@var color color-shadow "Custom shadow color" "rgba(0, 0, 0, .2)"
+@var color color-odd "Custom odd color" "rgba(0, 0, 0, .8)"
 @var color colorRed "Custom red color" "#da4453"
-@var color colorYellow "Custom yellow color" "#FDBC4B"
+@var color colorYellow "Custom yellow color" "#fdbc4b"
 
 @var checkbox use-modified-default "Adaptive syntax highlighting" 1 {}
 @var checkbox stylus-syntax-theme  "Stylus syntax highlighting" 1 {}
@@ -115,7 +115,7 @@
   :root {
 		if stylus-deepdark-style == "Deep-Dark" {
 			--main-color: #00adee;
-			--main-background: #111111;
+			--main-background: #111;
 			--second-background: #181818;
 			--hover-background: #232323;
 			--main-text: #eff0f1;
@@ -130,7 +130,7 @@
 			--main-background: #232629;
 			--second-background: #181818;
 			--hover-background: #515254;
-			--main-text: #eff0f1;
+			--main-text: #eee;
 			--dimmer-text: #ccc;
 			--editor-background: #181818;
 			--select-background: #232323;
@@ -146,8 +146,8 @@
 			--dimmer-text: #bdc3c7;
 			--editor-background: #2a2e32;
 			--select-background: #31363b;
-			--shadow: 0 1px 0.5px rgba(0,0,0,.13);
-			--odd-entry-background: rgba(0,0,0,.16);
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+			--odd-entry-background: rgba(0, 0, 0, .16);
 		}
 		else if stylus-deepdark-style == "Vertex-Dark" {
 			--main-color: #4080fb;
@@ -178,7 +178,7 @@
 			--main-background: #272b35;
 			--second-background: #181d20;
 			--hover-background: #353a44;
-			--main-text: #E3eeF9;
+			--main-text: #e3eeF9;
 			--dimmer-text: #606376;
 			--editor-background: #181d20;
 			--select-background: #353a44;
@@ -294,14 +294,14 @@
 			--odd-entry-background: rgba(89, 86, 77, .21);
 		}
 		else if stylus-deepdark-style == "Ubuntu-Purple" {
-			--main-color: #EF7847;
-			--main-background: #2C071A;
-			--second-background: #430B28;
+			--main-color: #ef7847;
+			--main-background: #2c071a;
+			--second-background: #430b28;
 			--hover-background: #520D30;
-			--main-text: #F2F1EF;
-			--dimmer-text: #E6E5E3;
-			--editor-background: #430B28;
-			--select-background: #520D30;
+			--main-text: #f2f1ef;
+			--dimmer-text: #e6e5e3;
+			--editor-background: #430b28;
+			--select-background: #520d30;
 			--shadow: 0 1px 0.5px rgba(82, 13, 48, .2);
 			--odd-entry-background: rgba(82, 13, 48, .5);
 		}
@@ -439,7 +439,6 @@
 			/*Odd entry background*/
 			--odd-entry-background: colorOddEntry;
 		}
-
 		/*CodeMirror font size*/
 		--font-size: fontSize;
 		/*Cursor width and color*/
@@ -447,7 +446,7 @@
 		--cursor-color: cursorColor;
 		/*These are must have static colors*/
 		/*Disable all color/warning Breeze Dark*/
-		if colorRY == "Default"               { --red: #da4453; --yellow: #FDBC4B; }
+		if colorRY == "Default"               { --red: #da4453; --yellow: #fdbc4b; }
 		if colorRY == "Solarized"             { --red: #dc322f; --yellow: #b58900; }
 		if colorRY == "Gruvbox Dark"          { --red: #cc241d; --yellow: #d79921; }
 		if colorRY == "Gruvbox Dark Intense"  { --red: #fb4934; --yellow: #fabd2f; }
@@ -457,7 +456,8 @@
 
 		--warning-disable-all: var(--red);
 		/*No match regex color from Breeze Dark*/
-		--no-match: var(--yellow); /*added for easy change with my swicher*/
+		/*added for easy change with swicher*/
+		--no-match: var(--yellow);
 	}
 	html
 	{
