@@ -471,7 +471,7 @@
 		text-rendering: optimizeLegibility !important;
 		-webkit-font-smoothing: antialiased !important;
 	}
-	html.newUI .entry.odd, .keymap-list > tbody > tr:nth-child(odd), .entry.odd
+	html.newUI .entry.odd, .keymap-list > tbody > tr:nth-child(odd), [id*="style-"] .entry.odd
 	{
 		background-color: var(--odd-entry-background) !important;
 	}
@@ -486,7 +486,7 @@
 		background: var(--main-background) !important;
 		border: 1px solid var(--second-background) !important;
 	}
-	#stylus-edit, body, html, #notes, #header, .CodeMirror, #actions
+	#stylus-edit, body, html, #notes, #header, #actions
 	{
 		background-color: var(--main-background) !important;
 		color: var(--dimmer-text) !important;
@@ -499,10 +499,11 @@
 	/* fix tab navigation hovering */
 	a:hover, .style-name-link:hover, a:focus-within,
 	.style-name-link:focus-within, h2:focus-within .style-name-link,
-	.entry:hover .style-name-link
+	.entry:hover .style-name-link, .style-name-link a.delete:hover,
+	.style-name-link a.homepage:hover
 	{
 		opacity: 1;
-		filter: brightness(110%) !important;
+		filter: brightness(115%) !important;
 	}
 
 	.disabled h2:after, .search-result, .search-result-meta,
@@ -524,6 +525,7 @@
 
 	#filters label:hover, #filters .filter-selection:hover,
 	#filters label:hover select, #filters .filter-selection:hover select
+	#filters .filter-selection:focus-within select
 	{
 		background-color: transparent !important;
 		color: var(--main-color) !important;
@@ -711,7 +713,10 @@
 		fill: var(--main-text) !important;
 	}
 	.svg-icon.info:hover, .svg-icon:hover, a:hover .svg-icon,
-	.newUI .entry:hover .svg-icon:hover, .svg-icon.checked
+	.newUI .entry:hover .svg-icon:hover, .svg-icon.checked,
+	a.homepage:focus-within .svg-icon, a.delete:focus-within .svg-icon,
+	a.check-update:focus-within .svg-icon, a.configure-usercss:focus-within .svg-icon,
+	a:focus-within .svg-icon
 	{
 		fill: var(--main-color) !important;
 	}
@@ -805,6 +810,21 @@
 	}
 
 	/* Text fields */
+	option[disabled]
+	{
+		color: var(--hover-background) !important;
+	}
+	select
+	{
+		background-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+		border-color: var(--hover-background) !important;
+	}
+	select:hover
+	{
+		border-color: var(--main-color) !important;
+		color: var(--main-color) !important;
+	}
 	#name, .applies-to li .applies-value, #search, .keymap-list input,
 	.config-value, #sort-select, .sorter-selection select,
 	body#stylus-options #message-box input
@@ -813,7 +833,7 @@
 		border: 1px solid var(--hover-background) !important;
 	}
 	input:not([type]), #search, #sort-select, .sorter-selection select,
-	body#stylus-options #message-box input
+	body#stylus-options #message-box input, .applies-to label
 	{
 		color: var(--main-text) !important;
 	}
@@ -867,7 +887,7 @@
 		}
 	}
 	/* add option color swatch hover style to clearly indicate editable field */
-	input[type="color"]:hover
+	input[type="color"]:hover, .color-swatch:hover
 	{
 		outline: 1px solid var(--main-color) !important;
 	}
@@ -889,11 +909,12 @@
 		transition: color .25s, border-color .25s;
 	}
 	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla,
-	#editor\.keyMap, #editor\.theme, #editor\.matchHighlight, #editor\.tabSize,
+	#editor\.keyMap, #editor\.theme, #editor\.matchHighlight,
 	.applies-type.style-contributor, .add-section, .beautify-section,
 	.test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates,
-	#add-style-label, #manage-options-button, button, #manage\.newUI\.targets, #badgeNormal, #badgeDisabled,
-	#updateInterval, #popupWidth, #editor\.linter, #options button, #manage\.newUI\.sort,
+	#add-style-label, #manage-options-button, button, #manage\.newUI\.targets,
+	#badgeNormal, #badgeDisabled, #updateInterval, #popupWidth,
+	#editor\.linter, #options button, #manage\.newUI\.sort,
 	#message-box-contents select, a.remove-applies-to, a.add-applies-to
 	{
 		background: var(--second-background) !important;
@@ -914,22 +935,38 @@
 		background: var(--main-background) !important;
 	}
 	#sync-dropbox-import:hover, #sync-dropbox-export:hover,
-	#file-all-styles:hover, #unfile-all-styles:hover, #file-all-styles:hover
+	#file-all-styles:hover, #unfile-all-styles:hover, #file-all-styles:hover,
+	#options .option label:focus-within, #newUIoptions div label:hover,
+	#newUIoptions div label:focus-within, #options label:focus-within span,
+	#options input:focus-within, #options label span:hover
 	{
 		color: var(--main-color) !important;
 	}
 	#save-button:hover, #beautify:hover, #cancel-button:hover,
 	#from-mozilla:hover, #to-mozilla:hover, #editor\.keyMap:hover,
-	#editor\.theme:hover, #editor\.matchHighlight:hover, #editor\.tabSize:hover,
+	#editor\.theme:hover, #editor\.matchHighlight:hover,
 	.applies-type.style-contributor:hover, .add-section:hover,
 	.beautify-section:hover, .test-regexp:hover, .remove-applies-to:hover,
 	.add-applies-to:hover, option:hover, #check-all-updates:hover,
-	#add-style-label:hover, #manage-options-button:hover, button:hover,
+	button#add-style-label:hover, #manage-options-button:hover, button:hover,
 	#manage\.newUI\.targets:hover, #updateInterval:hover, #popupWidth:hover,
 	#editor\.linter:hover, #options button:hover, #manage\.newUI\.sort:hover,
-	#message-box-contents select:hover, a.remove-applies-to:hover, a.add-applies-to:hover
+	#message-box-contents select:hover, a.remove-applies-to:hover,
+	#stylus-popup #popup-manage-button:focus-within, a.add-applies-to:hover,
+	#stylus-popup #popup-options-button:focus-within,
+	#stylus-popup #popup-wiki-button:focus-within,
+	#header button#save-button:focus-within, #header button#beautify:focus-within,
+	#header button#cancel-button:focus-within, #header button:focus-within,
+	#manage\.newUI\.sort:focus-within, a#find-editor-styles:focus-within button,
+	#check-all-updates:focus-within,
+	a[href="edit.html"]:focus-within button#add-style-label
 	{
 		color: var(--main-color) !important;
+		border: 1px solid var(--main-color) !important;
+	}
+	#stylus .options-column .option input#editor\.tabSize:focus-within
+	#stylus .options-column .option select:focus-within,
+	{
 		border: 1px solid var(--main-color) !important;
 	}
 	#options button
@@ -961,6 +998,10 @@
 	#search-replace-dialog
 	{
 		background: var(--second-background) !important;
+	}
+	#search-replace-dialog textarea, #search-replace-dialog [data-action="clear"]
+	{
+		background: var(--main-background) !important;
 	}
 	body.find-open .search-target-editor.CodeMirror-active
 	{
@@ -1021,6 +1062,11 @@
 		background: var(--hover-background) !important;
 		color: var(--main-color) !important;
 	}
+	.CodeMirror-linenumber:hover, .CodeMirror-foldgutter-open:hover,
+	.CodeMirror-foldgutter-folded:hover
+	{
+		color: inherit !important;
+	}
 	if use-modified-default {
 		/* Default theme overwritten with adjusted colors */
 		.cm-s-default.CodeMirror { background: var(--second-background); color: var(--main-text); }
@@ -1071,21 +1117,23 @@
 	}
 
 	/* Stylish in chrome specific */
-	:focus
-	{
-		outline-color: var(--main-color);
-	}
 	/* fix: Stylus remove that unsightly white border in input */
-	body:not(#stylus-options) input
+	body:not(#stylus-options) input,
+	#stylus-options label input[type=number]#popupWidth,
+	#stylus-options input[type="number"]#updateInterval,
+	#stylus .options-column .option input#editor\.tabSize
 	{
-		background-color: var(--hover-background);
-		border: 1px solid var(--hover-background);
-		color: var(--main-text);
+		background-color: var(--hover-background) !important;
+		border: 1px solid var(--hover-background) !important;
+		color: var(--main-text) !important;
 	}
 	body:not(#stylus-options) input:not(:invalid):focus,
-	body:not(#stylus-options) input:not(:invalid):hover
+	body:not(#stylus-options) input:not(:invalid):hover,
+	#stylus .options-column .option input#editor\.tabSize:hover,
+	#stylus-options label input[type=number]#popupWidth:hover,
+	#stylus-options input[type="number"]#updateInterval:hover
 	{
-		border: 1px solid var(--main-color);
+		border: 1px solid var(--main-color) !important;
 	}
 	body:not(#stylus-options) input:invalid
 	{
@@ -1116,7 +1164,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	.block
+	.block, .color-swatch
 	{
 		border-color: var(--hover-background) !important;
 	}
@@ -1133,7 +1181,7 @@
 		color: var(--main-text) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
-	.applies-type:hover
+	.applies-type:hover, #options .option label:hover
 	{
 		color: var(--main-color) !important;
 	}
@@ -1180,7 +1228,8 @@
 		box-shadow: var(--shadow) !important;
 	}
 	input[type="checkbox"]:hover, input[type="checkbox"]:not(.slider):hover,
-	.filter-selection:hover input[type="checkbox"]
+	.filter-selection:hover input[type="checkbox"],
+	#enabled-label input[type="checkbox"]:not(.slider).style-contributor:hover
 	{
 		border-color: var(--main-color) !important;
 	}
@@ -1188,11 +1237,27 @@
 	{
 		fill: var(--main-color) !important;
 	}
-	/* fixes the popup checkbox hover */
+	/* fixes the popup/manager elsewhere checkbox hover */
 	.style-name:hover input[type="checkbox"]:not(.slider),
-	.disabled .style-name:hover input[type="checkbox"]:not(.slider)
+	#stylus-popup .entry.disabled .style-name:hover input[type="checkbox"]:not(.slider),
+	#stylus-popup .entry.enabled .style-name:hover input[type="checkbox"]:not(.slider),
+	#stylus-manage .style-name:hover .checker[type="checkbox"],
+	#options label input[type="checkbox"]:not(.slider):hover,
+	#options label:focus-within input[type="checkbox"]:not(.slider),
+	#basic-info-enabled input[type="checkbox"]:not(.slider):focus-within,
+	#filters .filter-selection input[type="checkbox"]:not(.slider):focus-within,
+	#filters .filter-selection input[type="checkbox"]:not(.slider):hover,
+	#filters .filter-selection:focus-within input[type="checkbox"]:not(.slider),
+	#filters .filter-selection:hover input[type="checkbox"]:not(.slider),
+	.entry .style-name:focus-within input[type="checkbox"]:not(.slider),
+	#stylus-manage .style-name:focus-within input[type="checkbox"]:not(.slider),
+	#stylus-popup #find-styles-inline-group:focus-within input[type="checkbox"]:not(.slider),
+	#stylus-popup #find-styles-inline-group:hover input[type="checkbox"]:not(.slider),
+	#stylus-popup #installed .style-name:focus-within input[type="checkbox"]:not(.slider),
+	#stylus-popup #installed .style-name:hover input[type="checkbox"]:not(.slider)
 	{
 		border-color: var(--main-color) !important;
+		background-color: var(--main-background) !important;
 	}
 	/* This fixes the misalignment between:
 	 * [ ] Turn all styles off checkbox and label */
@@ -1201,12 +1266,15 @@
 		margin-top: 2px !important;
 	}
 	/* This fixes the disable all checkbox bg being too bright on hover	*/
-	#disableAll:hover
+	#stylus-popup input#disableAll[type="checkbox"]:not(.slider):hover,
+	#stylus-popup input#disableAll[type="checkbox"]:not(.slider):focus,
+	#stylus-popup input#disableAll[type="checkbox"]:not(.slider):focus-within,
 	{
 		border-color: var(--warning-disable-all) !important;
 		background-color: var(--second-background) !important;
 	}
-	#disableAll-label:hover
+	#stylus-popup #disableAll-label:hover,
+	#stylus-popup #disableAll-label:focus-within
 	{
 		color: var(--warning-disable-all) !important;
 	}
