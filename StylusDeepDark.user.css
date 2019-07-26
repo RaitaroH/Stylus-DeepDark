@@ -682,10 +682,12 @@
 	}
 
 	/* Cursor width and color setting implementation */
-	.CodeMirror div.CodeMirror-cursor
-	{
-		border-left-width: var(--cursor-width) !important;
-		border-color: var(--cursor-color) !important;
+	if cursor-color || cursor-width {
+		.CodeMirror div.CodeMirror-cursor
+		{
+			border-left-width: var(--cursor-width) !important;
+			border-color: var(--cursor-color) !important;
+		}
 	}
 
 	/* Popup */
