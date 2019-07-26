@@ -57,8 +57,8 @@
 @var color dimmerText "Custom second text" "#ccc"
 @var color editorBackground "Custom editor background" "#181818"
 @var color selectBackground "Custom selection background" "#232323"
-@var color color-shadow "Custom shadow color" "rgba(0, 0, 0, .2)"
-@var color color-odd "Custom odd color" "rgba(0, 0, 0, .8)"
+@var color colorShadow "Custom shadow color" "rgba(0, 0, 0, .2)"
+@var color colorOddEntry "Custom odd color" "rgba(0, 0, 0, .8)"
 @var color colorRed "Custom red color" "#da4453"
 @var color colorYellow "Custom yellow color" "#fdbc4b"
 
