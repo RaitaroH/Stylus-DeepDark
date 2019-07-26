@@ -569,7 +569,7 @@
 	{
 		color: var(--main-color) !important;
 	}
-	#header summary:hover h2
+	#header summary:hover h2, #search-replace-dialog [data-action="case"][data-enabled]:after
 	{
 		border-color: var(--main-color) !important;
 	}
