@@ -573,6 +573,10 @@
 	{
 		border-color: var(--main-color) !important;
 	}
+	/* make manage text items fit into header without wrapping */
+	#manage-text span {
+	  font-size: 11px !important;
+	}
 	[lang*="en-"] #linter-label
 	{
 		white-space: nowrap !important;
