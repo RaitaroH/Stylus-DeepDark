@@ -3,6 +3,29 @@
   "version": "1.6.9",
   "repository": "RaitaroH/Stylus-DeepDark",
   "homepage": "https://gitlab.com/RaitaroH/Stylus-DeepDark",
+  "author": "Raitaroh | the-j0k3r | Mottie",
+  "contributors": [
+    {
+      "name": "Raitaroh",
+      "email": "",
+      "url": "https://gitlab.com/RaitaroH"
+    },
+    {
+      "name": "the-j0k3r",
+      "email": "",
+      "url": "https://github.com/the-j0k3r"
+    },
+    {
+      "name": "Mottie",
+      "email": "",
+      "url": "https://github.com/Mottie"
+    },
+    {
+      "name": "The Community Contributors",
+      "url": "https://gitlab.com/RaitaroH/Stylus-DeepDark/-/graphs/master"
+    }
+  ],
+  "license": "GPL-3.0-or-later",
   "devDependencies": {
     "ver": "^5.1.2",
     "updates": "^8.5.1"
