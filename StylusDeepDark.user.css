@@ -1027,6 +1027,19 @@
 		border-top: 1px solid var(--no-match) !important;
 		border-bottom: 1px solid var(--no-match) !important;
 	}
+	/* match highlighter is too dark for dark themes so we tweak that also */
+	@keyframes fadein-match-highlighter {
+		from
+		{
+			background-color: transparent;
+			color: transparent;
+		}
+		to
+		{
+			background-color: var(--main-color);
+			color: var(--second-background);
+		}
+	}
 
 	.CodeMirror-dialog, .CodeMirror-dialog input
 	{
