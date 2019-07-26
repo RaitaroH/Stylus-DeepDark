@@ -59,6 +59,8 @@
 @var color selectBackground "Custom selection background" "#232323"
 @var color color-shadow "Custom shadow color" "rgba(0,0,0,.13)"
 @var color color-odd "Custom odd color" "rgba(0,0,0,.16)"
+@var color colorRed "Custom red color" "#da4453"
+@var color colorYellow "Custom yellow color" "#FDBC4B"
 
 @var checkbox use-modified-default "Adaptive syntax highlighting" 1 {}
 @var checkbox stylus-syntax-theme  "Stylus syntax highlighting" 1 {}
@@ -445,10 +447,16 @@
 		--cursor-color: cursorColor;
 		/*These are must have static colors*/
 		/*Disable all color/warning Breeze Dark*/
-		--red: #da4453; /*added for easy change with my swicher*/
+		if colorRY == "Default"               { --red: #da4453; --yellow: #FDBC4B; }
+		if colorRY == "Solarized"             { --red: #dc322f; --yellow: #b58900; }
+		if colorRY == "Gruvbox Dark"          { --red: #cc241d; --yellow: #d79921; }
+		if colorRY == "Gruvbox Dark Intense"  { --red: #fb4934; --yellow: #fabd2f; }
+		if colorRY == "Gruvbox Light"         { --red: #cc241d; --yellow: #d79921; }
+		if colorRY == "Gruvbox Light Intense" { --red: #9d0006; --yellow: #b57614; }
+		if colorRY == "Custom"                { --red: colorRed; --yellow: coloYellow; }
+
 		--warning-disable-all: var(--red);
 		/*No match regex color from Breeze Dark*/
-		--yellow: #fdbc4b;
 		--no-match: var(--yellow); /*added for easy change with my swicher*/
 	}
 	html
