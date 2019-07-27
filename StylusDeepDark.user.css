@@ -583,7 +583,7 @@
 	}
 	.CodeMirror
 	{
-		border: 1px solid var(--hover-background) !important;
+		border: 1px solid var(--hover-background);
 	}
 	.CodeMirror-scrollbar-filler
 	{
