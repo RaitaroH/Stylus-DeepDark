@@ -687,7 +687,7 @@
 	}
 
 	/* Cursor width and color setting implementation */
-	if cursor-color || cursor-width {
+	if cursorColor || cursorWidth {
 		.CodeMirror div.CodeMirror-cursor
 		{
 			border-left-width: var(--cursor-width) !important;
