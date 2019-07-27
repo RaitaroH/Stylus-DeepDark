@@ -113,7 +113,7 @@
 	/* Licence    : GNU General Public License v3.0 */
 	/* Version    : 2.0.1 */
 	/*Main color variables*/
-  :root {
+	:root {
 		if stylus-deepdark-style == "Deep-Dark" {
 			--main-color: #00adee;
 			--main-background: #111;
@@ -155,7 +155,7 @@
 			--main-background: #2b2b2c;
 			--second-background: #353638;
 			--hover-background: #515254;
-			--main-text: #F3F3F5;
+			--main-text: #f3f3f5;
 			--dimmer-text: #aeafb0;
 			--editor-background: #2b2b2c;
 			--select-background: #515254;
@@ -179,7 +179,7 @@
 			--main-background: #272b35;
 			--second-background: #181d20;
 			--hover-background: #353a44;
-			--main-text: #e3eeF9;
+			--main-text: #e3eef9;
 			--dimmer-text: #606376;
 			--editor-background: #181d20;
 			--select-background: #353a44;
