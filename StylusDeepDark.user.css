@@ -590,9 +590,9 @@
 		background: var(--odd-entry-background) !important;
 	}
 	/* fix wrong background color when CodeMirror is empty */
-	.CodeMirror-active.CodeMirror-focused
+	.CodeMirror-focused
 	{
-		outline-color: var(--main-color) !important;
+		outline: 1px auto var(--main-color);
 	}
 
 	/* Changed text highlight */
