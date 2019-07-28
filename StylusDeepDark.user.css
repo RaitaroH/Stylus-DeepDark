@@ -1135,7 +1135,7 @@
 
 	/* Stylish in chrome specific */
 	/* fix: Stylus remove that unsightly white border in input */
-	body:not(#stylus-options) input,
+	body:not(#stylus-options) input:not(.slider),
 	#stylus-options label input[type=number]#popupWidth,
 	#stylus-options input[type="number"]#updateInterval,
 	#stylus .options-column .option input#editor\.tabSize
@@ -1144,8 +1144,8 @@
 		border: 1px solid var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	body:not(#stylus-options) input:not(:invalid):focus,
-	body:not(#stylus-options) input:not(:invalid):hover,
+	body:not(#stylus-options) input:not(:invalid):not(.slider):focus,
+	body:not(#stylus-options) input:not(:invalid):not(.slider):hover,
 	#stylus .options-column .option input#editor\.tabSize:hover,
 	#stylus-options label input[type=number]#popupWidth:hover,
 	#stylus-options input[type="number"]#updateInterval:hover
