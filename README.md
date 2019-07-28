@@ -1,6 +1,8 @@
-# Stylus-DeepDark
-![alt tag](./Images/Stylus-DeepDark.png)
-Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
+
+<h1 align="center">Stylus-DeepDark</h1>
+<img src="./Images/Stylus-DeepDark.png">
+</h1>
+<p align="center">Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)</p>
 
 This is a dark theme for Stylus inspired by [FT DeepDark](https://addons.mozilla.org/en-US/firefox/addon/ft-deepdark/?src=search).
 
