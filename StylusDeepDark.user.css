@@ -1018,7 +1018,7 @@
 	body.find-open .cm-searching.search-target-match
 	{
 		background-color: var(--no-match) !important;
-		color: var(--main-background) !important;
+		color: var(--main-text) !important;
 	}
 	body.find-open .CodeMirror-search-match
 	{
