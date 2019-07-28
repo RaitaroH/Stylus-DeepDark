@@ -1030,13 +1030,14 @@
 	@keyframes fadein-match-highlighter {
 		from
 		{
-			background-color: transparent;
-			color: transparent;
+			background-color: inherit;
+			color: inherit;
 		}
 		to
 		{
 			background-color: var(--main-color);
-			color: var(--second-background);
+			color: var(--main-text);
+			opacity: .8;
 		}
 	}
 
