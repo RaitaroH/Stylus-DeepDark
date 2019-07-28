@@ -453,7 +453,7 @@
 		if colorRY == "Gruvbox Dark Intense"  { --red: #fb4934; --yellow: #fabd2f; }
 		if colorRY == "Gruvbox Light"         { --red: #cc241d; --yellow: #d79921; }
 		if colorRY == "Gruvbox Light Intense" { --red: #9d0006; --yellow: #b57614; }
-		if colorRY == "Custom"                { --red: colorRed; --yellow: coloYellow; }
+		if colorRY == "Custom"                { --red: colorRed; --yellow: colorYellow; }
 
 		--warning-disable-all: var(--red);
 		/*No match regex color from Breeze Dark*/
