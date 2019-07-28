@@ -6,7 +6,7 @@
 
 # About
 
-This is a dark theme for Stylus inspired by FT DeepDark, now defunct theme for Firefox. 
+This is a dark theme for Stylus inspired by FT DeepDark, now defunct theme for Firefox.
 
 Credit for some of the the color palettes in use. ([@KDE](https://github.com/KDE), [@horst3180](https://github.com/horst3180), [@linuxmint](https://github.com/linuxmint), [Firefox](https://www.mozilla.org/en-US/firefox/new/), [YouTube](https://www.youtube.com/) and [Discord](https://discordapp.com/))
 
@@ -22,32 +22,9 @@ Credit for some of the the color palettes in use. ([@KDE](https://github.com/KDE
 ### **You can also install all my themes at once from [here](https://gitlab.com/RaitaroH/Import-All-Deepdark).**
 
 # Screenshots
-Manage page
-![alt tag](./Images/Manage.png)
-The code and the popup menu themed
+![alt tag](./Images/manager.gif)
 
-A popup window example
-![alt tag](./Images/Code.png)
-
-# Colors
-Colors Showcase (the colors are available in the code; different colors can be used)
-![alt tag](./Images/ArcDarkColors.png)
-![alt tag](./Images/BreezeDarkColors.png)
-![alt tag](./Images/DeepDarkColors.png)
-![alt tag](./Images/DiscordColors.png)
-![alt tag](./Images/FirefoxDarkColors.png)
-![alt tag](./Images/Firefox57DarkColors.png)
-![alt tag](./Images/Mint-Y-DarkColors.png)
-![alt tag](./Images/VertexDarkColors.png)
-![alt tag](./Images/YoutubeColors.png)
-![alt tag](./Images/9animeColors.png)
-
-# Code colors
-Code colors also change depending on the palette used. No user changes required.
-![alt tag](./Images/BreezeDarkCode.png)
-![alt tag](./Images/DeepDarkCode.png)
-![alt tag](./Images/Mint-Y-DarkCode.png)
-
+![alt tag](./Images/editor.gif)
 
 ### Development Scripts
 
@@ -57,6 +34,6 @@ Install node.js (if not installed already) and run `npm install` to install depe
 * `npm run minor`: Creates a semantic minor release + tags and signs commit if setup.
 * `npm run patch`: Creates a semantic patch release + tags and signs commit if setup.
 
-> Note: Releases are created internally, when submitting a PR do not include any. 
+> Note: Releases are created internally, when submitting a PR do not include any.
 
 * `npm run update`: Update development dependencies.
