@@ -1280,7 +1280,13 @@
 	#stylus-popup #find-styles-inline-group:focus-within input[type="checkbox"]:not(.slider),
 	#stylus-popup #find-styles-inline-group:hover input[type="checkbox"]:not(.slider),
 	#stylus-popup #installed .style-name:focus-within input[type="checkbox"]:not(.slider),
-	#stylus-popup #installed .style-name:hover input[type="checkbox"]:not(.slider)
+	#stylus-popup #installed .style-name:hover input[type="checkbox"]:not(.slider),
+	#add-style-as-usercss-wrapper input#newStyleAsUsercss[type="checkbox"]:hover,
+	#add-style-as-usercss-wrapper input#newStyleAsUsercss[type="checkbox"]:focus-within,
+	label#enabled-label:hover input#enabled[type="checkbox"].style-contributor,
+	label#enabled-label:focus-within input#enabled[type="checkbox"].style-contributor,
+	label#preview-label:hover input#editor\.livePreview[type="checkbox"],
+	label#preview-label:focus-within input#editor\.livePreview[type="checkbox"]
 	{
 		border-color: var(--main-color) !important;
 		background-color: var(--main-background) !important;
@@ -1309,7 +1315,7 @@
 	}
 
 	/* This fixes the misalignment between:
-	 * [ ] Turn all styles off checkbox and label */
+	 * [ ] checkbox and label */
 	#disableAll, #find-styles-inline-group label input[type="checkbox"]:not(.slider)
 	{
 		margin-top: 2px !important;
