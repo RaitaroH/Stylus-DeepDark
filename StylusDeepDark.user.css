@@ -38,6 +38,7 @@
 	"Gruvbox-Light",
 	"NierAutomata-Dark",
 	"NierAutomata-Light",
+  "HavocOS",
 	"Custom"
 ]
 @var select colorRY "Red/Yellow color" [
@@ -425,6 +426,18 @@
 			--select-background: #bab5a1;
 			--shadow: 0 1px 0.5px rgba(186, 181, 161, 2);
 			--odd-entry-background: rgba(186, 181, 161, .3);
+		}
+		else if stylus-deepdark-style == "HavocOS" {
+			--main-color: #0794d4;
+			--main-background: #141618;
+			--second-background: #1c1e20;
+			--hover-background: #212528;
+			--main-text: #fff;
+			--dimmer-text: #b9baba;
+			--editor-background: #1c1e20;
+			--select-background: #212528;
+			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+			--odd-entry-background: rgba(0, 0, 0, .16);
 		}
 		else if stylus-deepdark-style == "Custom" {
 			--main-color: mainColor;
