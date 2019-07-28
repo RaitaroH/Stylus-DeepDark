@@ -22,6 +22,7 @@ Credit for some of the the color palettes in use. ([@KDE](https://github.com/KDE
 ### **You can also install all my themes at once from [here](https://gitlab.com/RaitaroH/Import-All-Deepdark).**
 
 # Screenshots
+
 ![alt tag](./Images/manager.gif)
 
 ![alt tag](./Images/editor.gif)
