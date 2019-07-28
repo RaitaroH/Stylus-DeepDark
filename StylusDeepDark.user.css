@@ -1271,6 +1271,29 @@
 		border-color: var(--main-color) !important;
 		background-color: var(--main-background) !important;
 	}
+
+	/* override the browser built in style for checkbox sliders */
+	.onoffswitch span
+	{
+		border-color: var(--main-color);
+	}
+	.onoffswitch span:before
+	{
+		background: var(--hover-background);
+	}
+	.onoffswitch input:checked + span
+	{
+		background-color: var(--dimmer-text);
+	}
+	.onoffswitch input:checked + span, .onoffswitch input:checked + span:before
+	{
+		border-color: var(--dimmer-text);
+	}
+	.onoffswitch input:checked + span:before
+	{
+		background-color: var(--main-color);
+	}
+
 	/* This fixes the misalignment between:
 	 * [ ] Turn all styles off checkbox and label */
 	#disableAll, #find-styles-inline-group label input[type="checkbox"]:not(.slider)
