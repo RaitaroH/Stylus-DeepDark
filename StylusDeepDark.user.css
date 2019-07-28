@@ -52,16 +52,16 @@
 ]
 @var color mainColor "Custom main color" "#367bf0"
 @var color mainBackground "Custom main background" "#22242d"
-@var color secondBackground "Custom second background" "#383c4a"
+@var color secondBackground "Custom second background" "#242730"
 @var color hoverBackground "Custom hover background" "#4e5467"
 @var color mainText "Custom main text" "#eee"
 @var color dimmerText "Custom second text" "#ccc"
 @var color editorBackground "Custom editor background" "#2f343f"
 @var color selectBackground "Custom selection background" "#3c4150"
 @var color colorShadow "Custom shadow color" "rgba(56, 60, 74, .3)"
-@var color colorOddEntry "Custom odd color" "rgba(56, 60, 74, .5)"
-@var color colorRed "Custom red color" "#d31919"
-@var color colorYellow "Custom yellow color" "#ac5219"
+@var color colorEvenEntry "Custom even color" "rgba(56, 60, 74, .4)"
+@var color colorRed "Custom red color" "#ff6666"
+@var color colorYellow "Custom yellow color" "#ffb266"
 
 @var checkbox use-modified-default "Adaptive syntax highlighting" 1
 @var checkbox stylus-syntax-theme  "Stylus syntax highlighting" 1
