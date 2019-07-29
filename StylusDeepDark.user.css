@@ -447,10 +447,8 @@
 			--main-text: mainText;
 			--dimmer-text: dimmerText;
 			--editor-background: editorBackground;
-			/*Selection/current line background*/
 			--select-background: selectBackground;
 			--shadow: 0 1px 0.5px colorShadow;
-			/*Odd entry background*/
 			--even-entry-background: colorEvenEntry;
 		}
 		/*CodeMirror font size*/
@@ -582,7 +580,8 @@
 		border-color: var(--main-color) !important;
 	}
 	/* make manage text items fit into header without wrapping */
-	#manage-text span {
+	#manage-text span
+	{
 	  font-size: 11px !important;
 	}
 	[lang*="en-"] #linter-label
