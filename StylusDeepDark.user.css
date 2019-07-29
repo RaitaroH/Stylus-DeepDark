@@ -923,6 +923,7 @@
 	button, .remove-applies-to, .add-applies-to, #backup-buttons .dropdown-content a
 	{
 		transition: color .25s, border-color .25s;
+		transition: background-color .25s, border-color .25s;
 	}
 	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla,
 	#editor\.keyMap, #editor\.theme, #editor\.matchHighlight,
@@ -933,7 +934,7 @@
 	#editor\.linter, #options button, #manage\.newUI\.sort,
 	#message-box-contents select, a.remove-applies-to, a.add-applies-to
 	{
-		background: var(--second-background) !important;
+		background-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 		border: 1px solid var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
@@ -985,7 +986,7 @@
 	{
 		border: 1px solid var(--main-color) !important;
 	}
-	#options button
+	button
 	{
 		background-image: none !important;
 		text-shadow: none !important;
