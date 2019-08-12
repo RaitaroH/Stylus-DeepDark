@@ -1286,7 +1286,8 @@
 	label#enabled-label:hover input#enabled[type="checkbox"].style-contributor,
 	label#enabled-label:focus-within input#enabled[type="checkbox"].style-contributor,
 	label#preview-label:hover input#editor\.livePreview[type="checkbox"],
-	label#preview-label:focus-within input#editor\.livePreview[type="checkbox"]
+	label#preview-label:focus-within input#editor\.livePreview[type="checkbox"],
+	input#enabled[type="checkbox"]:hover, #basic-info-enabled input[type="checkbox"]:not(.slider):hover
 	{
 		border-color: var(--main-color) !important;
 		background-color: var(--main-background) !important;
