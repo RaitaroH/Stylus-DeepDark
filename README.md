@@ -1,5 +1,5 @@
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 <h1 align="center">Stylus-DeepDark</h1>
 <img src="./Images/Stylus-DeepDark.png">
 </h1>
@@ -49,6 +49,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://github.com/the-j0k3r"><img src="https://avatars0.githubusercontent.com/u/31389848?v=4" width="100px;" alt="the-j0k3r"/><br /><sub><b>the-j0k3r</b></sub></a><br /><a href="https://github.com/RaitaroH/Stylus-DeepDark/issues?q=author%3Athe-j0k3r" title="Bug reports">🐛</a> <a href="https://github.com/RaitaroH/Stylus-DeepDark/commits?author=the-j0k3r" title="Code">💻</a> <a href="#design-the-j0k3r" title="Design">🎨</a> <a href="#ideas-the-j0k3r" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-the-j0k3r" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="http://wowmotty.blogspot.com/"><img src="https://avatars2.githubusercontent.com/u/136959?v=4" width="100px;" alt="Rob Garrison"/><br /><sub><b>Rob Garrison</b></sub></a><br /><a href="https://github.com/RaitaroH/Stylus-DeepDark/issues?q=author%3AMottie" title="Bug reports">🐛</a> <a href="https://github.com/RaitaroH/Stylus-DeepDark/commits?author=Mottie" title="Code">💻</a> <a href="#design-Mottie" title="Design">🎨</a></td>
   </tr>
 </table>
 
