@@ -29,6 +29,8 @@
   "devDependencies": {
     "ver": "^5.1.2",
     "updates": "^8.5.1"
+    "updates": "^9.0.0",
+    "ver": "^5.1.4"
   },
   "scripts": {
     "patch": "npx ver -p patch StylusDeepDark.user.css",
