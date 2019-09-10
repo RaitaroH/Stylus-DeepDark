@@ -17,6 +17,17 @@
         "ideas",
         "maintenance"
       ]
+    },
+    {
+      "login": "Mottie",
+      "name": "Rob Garrison",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/136959?v=4",
+      "profile": "http://wowmotty.blogspot.com/",
+      "contributions": [
+        "bug",
+        "code",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
