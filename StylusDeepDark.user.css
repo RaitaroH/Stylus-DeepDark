@@ -582,7 +582,7 @@
 	/* make manage text items fit into header without wrapping */
 	#manage-text span
 	{
-	  font-size: 11px !important;
+	  font-size: 80% !important;
 	}
 	[lang*="en-"] #linter-label
 	{
