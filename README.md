@@ -1,4 +1,5 @@
 
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 <h1 align="center">Stylus-DeepDark</h1>
 <img src="./Images/Stylus-DeepDark.png">
 </h1>
@@ -38,3 +39,19 @@ Install node.js (if not installed already) and run `npm install` to install depe
 > Note: Releases are created internally, when submitting a PR do not include any.
 
 * `npm run update`: Update development dependencies.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/the-j0k3r"><img src="https://avatars0.githubusercontent.com/u/31389848?v=4" width="100px;" alt="the-j0k3r"/><br /><sub><b>the-j0k3r</b></sub></a><br /><a href="https://github.com/RaitaroH/Stylus-DeepDark/issues?q=author%3Athe-j0k3r" title="Bug reports">🐛</a> <a href="https://github.com/RaitaroH/Stylus-DeepDark/commits?author=the-j0k3r" title="Code">💻</a> <a href="#design-the-j0k3r" title="Design">🎨</a> <a href="#ideas-the-j0k3r" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-the-j0k3r" title="Maintenance">🚧</a></td>
+  </tr>
+</table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
