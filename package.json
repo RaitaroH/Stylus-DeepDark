@@ -1,6 +1,6 @@
 {
   "name": "Stylus-DeepDark",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "repository": "RaitaroH/Stylus-DeepDark",
   "homepage": "https://gitlab.com/RaitaroH/Stylus-DeepDark",
   "author": "Raitaroh | the-j0k3r | Mottie",
@@ -27,8 +27,9 @@
   ],
   "license": "GPL-3.0-or-later",
   "devDependencies": {
-    "ver": "^5.1.2",
-    "updates": "^8.5.1"
+    "prettier": "^1.18.2",
+    "stylelint": "^10.1.0",
+    "stylelint-prettier": "^1.1.1",
     "updates": "^9.0.0",
     "ver": "^5.1.4"
   },
@@ -36,6 +37,10 @@
     "patch": "npx ver -p patch StylusDeepDark.user.css",
     "minor": "npx ver -p minor StylusDeepDark.user.css",
     "major": "npx ver -p major StylusDeepDark.user.css",
-    "update": "npx updates -cu && npm install"
+    "update": "npx updates -cu && npm install",
+    "cleanup": "stylelint --fix --color StylusDeepDark.user.css"
+  },
+  "dependencies": {
+    "stylelint-config-prettier": "^5.2.0"
   }
 }
