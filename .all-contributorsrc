@@ -1,0 +1,27 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "the-j0k3r",
+      "name": "the-j0k3r",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/31389848?v=4",
+      "profile": "https://github.com/the-j0k3r",
+      "contributions": [
+        "bug",
+        "code",
+        "design",
+        "ideas",
+        "maintenance"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "Stylus-DeepDark",
+  "projectOwner": "RaitaroH",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
