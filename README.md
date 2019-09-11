@@ -3,7 +3,7 @@
 </h1>
 <p align="center">
   <a href="https://github.com/RaitaroH/Stylus-DeepDark/#contributors">
-    <img src="https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square" alt="All Contributors">
+    <img src="https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square" alt="All Contributors">
   </a>
 </p>
 <p align="center">Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)</p>
@@ -51,9 +51,10 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore -->
 <table>
   <tr>
+    <td align="center"><a href="https://userstyles.org/users/377182"><img src="https://avatars1.githubusercontent.com/u/19552720?v=4" width="100px;" alt="RaitaroHikami"/><br /><sub><b>RaitaroHikami</b></sub></a><br /><a href="https://github.com/RaitaroH/Stylus-DeepDark/issues?q=author%3ARaitaroH" title="Bug reports">🐛</a> <a href="https://github.com/RaitaroH/Stylus-DeepDark/commits?author=RaitaroH" title="Code">💻</a> <a href="#design-RaitaroH" title="Design">🎨</a> <a href="https://github.com/RaitaroH/Stylus-DeepDark/commits?author=RaitaroH" title="Documentation">📖</a> <a href="#ideas-RaitaroH" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-RaitaroH" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/the-j0k3r"><img src="https://avatars0.githubusercontent.com/u/31389848?v=4" width="100px;" alt="the-j0k3r"/><br /><sub><b>the-j0k3r</b></sub></a><br /><a href="https://github.com/RaitaroH/Stylus-DeepDark/issues?q=author%3Athe-j0k3r" title="Bug reports">🐛</a> <a href="https://github.com/RaitaroH/Stylus-DeepDark/commits?author=the-j0k3r" title="Code">💻</a> <a href="#design-the-j0k3r" title="Design">🎨</a> <a href="#ideas-the-j0k3r" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-the-j0k3r" title="Maintenance">🚧</a></td>
     <td align="center"><a href="http://wowmotty.blogspot.com/"><img src="https://avatars2.githubusercontent.com/u/136959?v=4" width="100px;" alt="Rob Garrison"/><br /><sub><b>Rob Garrison</b></sub></a><br /><a href="https://github.com/RaitaroH/Stylus-DeepDark/issues?q=author%3AMottie" title="Bug reports">🐛</a> <a href="https://github.com/RaitaroH/Stylus-DeepDark/commits?author=Mottie" title="Code">💻</a> <a href="#design-Mottie" title="Design">🎨</a></td>
-    <td align="center"><a href="https://userstyles.org/users/377182"><img src="https://avatars1.githubusercontent.com/u/19552720?v=4" width="100px;" alt="RaitaroHikami"/><br /><sub><b>RaitaroHikami</b></sub></a><br /><a href="https://github.com/RaitaroH/Stylus-DeepDark/issues?q=author%3ARaitaroH" title="Bug reports">🐛</a> <a href="https://github.com/RaitaroH/Stylus-DeepDark/commits?author=RaitaroH" title="Code">💻</a> <a href="#design-RaitaroH" title="Design">🎨</a> <a href="https://github.com/RaitaroH/Stylus-DeepDark/commits?author=RaitaroH" title="Documentation">📖</a> <a href="#ideas-RaitaroH" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-RaitaroH" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://allcontributors.org"><img src="https://avatars1.githubusercontent.com/u/46410174?v=4" width="100px;" alt="All Contributors"/><br /><sub><b>All Contributors</b></sub></a><br /><a href="#design-all-contributors" title="Design">🎨</a> <a href="https://github.com/RaitaroH/Stylus-DeepDark/commits?author=all-contributors" title="Documentation">📖</a></td>
   </tr>
 </table>
 
