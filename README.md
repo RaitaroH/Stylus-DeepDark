@@ -3,7 +3,7 @@
 </h1>
 <p align="center">
   <a href="https://github.com/RaitaroH/Stylus-DeepDark/#contributors">
-    <img src="https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square" alt="All Contributors">
+    <img src="https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square" alt="All Contributors">
   </a>
 </p>
 <p align="center">Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)</p>
