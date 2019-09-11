@@ -28,6 +28,20 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "RaitaroH",
+      "name": "RaitaroHikami",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/19552720?v=4",
+      "profile": "https://userstyles.org/users/377182",
+      "contributions": [
+        "bug",
+        "code",
+        "design",
+        "doc",
+        "ideas",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
