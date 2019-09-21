@@ -124,7 +124,7 @@
 			--dimmer-text: #ccc;
 			--editor-background: #181818;
 			--select-background: #232323;
-			--shadow: 0 1px 0.5px rgba(0, 0, 0, .3);
+			--shadow: 0 1px .5px rgba(0, 0, 0, .3);
 			--even-entry-background: rgba(0, 0, 0, .6);
 		}
 		else if stylus-deepdark-style == "Inspired-Dark" {
@@ -136,7 +136,7 @@
 			--dimmer-text: #ccc;
 			--editor-background: #181818;
 			--select-background: #232323;
-			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+			--shadow: 0 1px .5px rgba(0, 0, 0, .13);
 			--even-entry-background: rgba(0, 0, 0, .16);
 		}
 		else if stylus-deepdark-style == "Breeze-Dark" {
@@ -148,7 +148,7 @@
 			--dimmer-text: #bdc3c7;
 			--editor-background: #2a2e32;
 			--select-background: #31363b;
-			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+			--shadow: 0 1px .5px rgba(0, 0, 0, .13);
 			--even-entry-background: rgba(0, 0, 0, .16);
 		}
 		else if stylus-deepdark-style == "Vertex-Dark" {
@@ -160,7 +160,7 @@
 			--dimmer-text: #aeafb0;
 			--editor-background: #2b2b2c;
 			--select-background: #515254;
-			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+			--shadow: 0 1px .5px rgba(0, 0, 0, .13);
 			--even-entry-background: rgba(0, 0, 0, .2);
 		}
 		else if stylus-deepdark-style == "Arc-Dark" {
@@ -172,7 +172,7 @@
 			--dimmer-text: #b3bac5;
 			--editor-background: #343944;
 			--select-background: #414a59;
-			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+			--shadow: 0 1px .5px rgba(0, 0, 0, .13);
 			--even-entry-background: rgba(0, 0, 0, .16);
 		}
 		else if stylus-deepdark-style == "Firefox-Dark" {
@@ -184,7 +184,7 @@
 			--dimmer-text: #bec0cc;
 			--editor-background: #181d20;
 			--select-background: #353a44;
-			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+			--shadow: 0 1px .5px rgba(0, 0, 0, .13);
 			--even-entry-background: rgba(0, 0, 0, .16);
 		}
 		else if stylus-deepdark-style == "Firefox-57" {
@@ -196,7 +196,7 @@
 			--dimmer-text: #d0d0d0;
 			--editor-background: #252526;
 			--select-background: #323234;
-			--shadow: 0 1px 0.5px rgba(54, 54, 54, .2);
+			--shadow: 0 1px .5px rgba(54, 54, 54, .2);
 			--even-entry-background: rgba(54, 54, 54, .4);
 		}
 		else if stylus-deepdark-style ==  "Discord" {
@@ -208,7 +208,7 @@
 			--dimmer-text: #ada8aa;
 			--editor-background: #2f3136;
 			--select-background: #484b51;
-			--shadow: 0 1px 0.5px rgba(47, 49, 54, .23);
+			--shadow: 0 1px .5px rgba(47, 49, 54, .23);
 			--even-entry-background: rgba(47, 49, 54, .49);
 		}
 		else if stylus-deepdark-style == "YouTube-Dark" {
@@ -220,7 +220,7 @@
 			--dimmer-text: #7f7f7f;
 			--editor-background: #111;
 			--select-background: #343434;
-			--shadow: 0 1px 0.5px rgba(54, 54, 54, .2);
+			--shadow: 0 1px .5px rgba(54, 54, 54, .2);
 			--even-entry-background: rgba(54, 54, 54, .4);
 		}
 		else if stylus-deepdark-style == "Mint-Y-Dark" {
@@ -232,7 +232,7 @@
 			--dimmer-text: #d5dada;
 			--editor-background: #2f2f2f;
 			--select-background: #404040;
-			--shadow: 0 1px 0.5px rgba(0, 0, 0, .13);
+			--shadow: 0 1px .5px rgba(0, 0, 0, .13);
 			--even-entry-background: rgba(0, 0, 0, .23);
 		}
 		else if stylus-deepdark-style == "9anime" {
@@ -244,7 +244,7 @@
 			--dimmer-text: #cac0cf;
 			--editor-background: #17151c;
 			--select-background: rgba(180, 180, 180, .1);
-			--shadow: 0 1px 0.5px rgba(54, 54, 54, .13);
+			--shadow: 0 1px .5px rgba(54, 54, 54, .13);
 			--even-entry-background: rgba(54, 54, 54, .36);
 		}
 		else if stylus-deepdark-style == "Black-and-White" {
@@ -256,7 +256,7 @@
 			--dimmer-text: #aaa;
 			--editor-background: #0a0a0a;
 			--select-background: #222;
-			--shadow: 0 1px 0.5px rgba(54 ,54 ,54, .2);
+			--shadow: 0 1px .5px rgba(54 ,54 ,54, .2);
 			--even-entry-background: rgba(54 ,54 ,54, .4);
 		}
 		else if stylus-deepdark-style == "Yellow" {
@@ -268,7 +268,7 @@
 			--dimmer-text: #9f9999;
 			--editor-background: #202222;
 			--select-background: #353838;
-			--shadow: 0 1px 0.5px rgba(34, 34, 34, .2);
+			--shadow: 0 1px .5px rgba(34, 34, 34, .2);
 			--even-entry-background: rgba(34, 34, 34, 1);
 		}
 		else if stylus-deepdark-style == "Yellow-2" {
@@ -280,7 +280,7 @@
 			--dimmer-text: #fff8e1;
 			--editor-background: rgba(12, 10, 4, .2);
 			--select-background: rgba(255, 253, 245, .1);
-			--shadow: 0 1px 0.5px rgba(34, 34, 34, .2);
+			--shadow: 0 1px .5px rgba(34, 34, 34, .2);
 			--even-entry-background: rgba(34, 34, 34, 1);
 		}
 		else if stylus-deepdark-style == "Ubuntu-Grey" {
@@ -292,7 +292,7 @@
 			--dimmer-text: #e6e5e3;
 			--editor-background: #312d2a;
 			--select-background: #59564d;
-			--shadow: 0 1px 0.5px rgba(89, 86, 77, .12);
+			--shadow: 0 1px .5px rgba(89, 86, 77, .12);
 			--even-entry-background: rgba(89, 86, 77, .21);
 		}
 		else if stylus-deepdark-style == "Ubuntu-Purple" {
@@ -304,7 +304,7 @@
 			--dimmer-text: #e6e5e3;
 			--editor-background: #430b28;
 			--select-background: #520d30;
-			--shadow: 0 1px 0.5px rgba(82, 13, 48, .2);
+			--shadow: 0 1px .5px rgba(82, 13, 48, .2);
 			--even-entry-background: rgba(82, 13, 48, .5);
 		}
 		else if stylus-deepdark-style == "Orange" {
@@ -316,19 +316,19 @@
 			--dimmer-text: #ffede1;
 			--editor-background: #110903;
 			--select-background: #47250a;
-			--shadow: 0 1px 0.5px rgba(255, 105, 5, .1);
+			--shadow: 0 1px .5px rgba(255, 105, 5, .1);
 			--even-entry-background: rgba(255, 105, 5, .1);
 		}
 		else if stylus-deepdark-style == "Jisho" {
 			--main-color: #ef7d6c;
-			--main-background: #332222;
+			--main-background: #322;
 			--second-background: #2a1b1b;
 			--hover-background: #863b2f;
 			--main-text: #efb26c;
 			--dimmer-text: #986e3f;
 			--editor-background: #2a1b1b;
 			--select-background: #863b2f;
-			--shadow: 0 1px 0.5px rgba(37, 19, 5, .19);
+			--shadow: 0 1px .5px rgba(37, 19, 5, .19);
 			--even-entry-background: rgba(37, 19, 5, .29);
 		}
 		else if stylus-deepdark-style == "Adapta-Nokto" {
@@ -340,7 +340,7 @@
 			--dimmer-text: #9b9b9b;
 			--editor-background: #263238;
 			--select-background: #3d4d56;
-			--shadow: 0 1px 0.5px  rgba(61, 77, 86, .2);
+			--shadow: 0 1px .5px  rgba(61, 77, 86, .2);
 			--even-entry-background: rgba(61, 77, 86, .3);
 		}
 		else if stylus-deepdark-style == "Adapta-Breath-Nokto" {
@@ -352,7 +352,7 @@
 			--dimmer-text: #9b9b9b;
 			--editor-background: #263238;
 			--select-background: #2a353b;
-			--shadow: 0 1px 0.5px  rgba(42, 53, 59, .32);
+			--shadow: 0 1px .5px  rgba(42, 53, 59, .32);
 			--even-entry-background: rgba(42, 53, 59, .62);
 		}
 		else if stylus-deepdark-style == "Solarized-Dark" {
@@ -364,7 +364,7 @@
 			--dimmer-text: #eee8d5;
 			--editor-background: #073642;
 			--select-background: #002b36;
-			--shadow: 0 1px 0.5px  rgba(0, 43, 54, .3);
+			--shadow: 0 1px .5px  rgba(0, 43, 54, .3);
 			--even-entry-background: rgba(0, 43, 54, .5);
 		}
 		else if stylus-deepdark-style == "Solarized-Light" {
@@ -376,7 +376,7 @@
 			--dimmer-text: #586e75;
 			--editor-background: #f5efdc;
 			--select-background: #ded8c4;
-			--shadow: 0 1px 0.5px  rgba(222, 216, 196, .2);
+			--shadow: 0 1px .5px  rgba(222, 216, 196, .2);
 			--even-entry-background: rgba(222, 216, 196, .3);
 		}
 		else if stylus-deepdark-style == "Gruvbox-Dark" {
@@ -388,7 +388,7 @@
 			--dimmer-text: #ebdbb2;
 			--editor-background: #282828;
 			--select-background: #3c3836;
-			--shadow: 0 1px 0.5px  rgba(60, 56, 54, .22);
+			--shadow: 0 1px .5px  rgba(60, 56, 54, .22);
 			--even-entry-background: rgba(60, 56, 54, .33);
 		}
 		else if stylus-deepdark-style == "Gruvbox-Light" {
@@ -400,7 +400,7 @@
 			--dimmer-text: #3c3836;
 			--editor-background: #f9f5d7;
 			--select-background: #ebdbb2;
-			--shadow: 0 1px 0.5px  rgba(235, 219, 178, .33);
+			--shadow: 0 1px .5px  rgba(235, 219, 178, .33);
 			--even-entry-background: rgba(235, 219, 178, .36);
 		}
 		else if stylus-deepdark-style == "NierAutomata-Dark" {
@@ -412,7 +412,7 @@
 			--dimmer-text: #bab5a1;
 			--editor-background: #33302a;
 			--select-background: #7c6f64;
-			--shadow: 0 1px 0.5px  rgba(124, 111, 100, .15);
+			--shadow: 0 1px .5px  rgba(124, 111, 100, .15);
 			--even-entry-background: rgba(124, 111, 100, .21);
 		}
 		else if stylus-deepdark-style == "NierAutomata-Light" {
@@ -424,7 +424,7 @@
 			--dimmer-text: #33302a;
 			--editor-background: #dcd8c0;
 			--select-background: #bab5a1;
-			--shadow: 0 1px 0.5px rgba(186, 181, 161, 2);
+			--shadow: 0 1px .5px rgba(186, 181, 161, 2);
 			--even-entry-background: rgba(186, 181, 161, .3);
 		}
 		else if stylus-deepdark-style == "HavocOS" {
@@ -436,7 +436,7 @@
 			--dimmer-text: #b9baba;
 			--editor-background: #1c1e20;
 			--select-background: #212528;
-			--shadow: 0 1px 0.5px rgba(185, 186, 186, .04);
+			--shadow: 0 1px .5px rgba(185, 186, 186, .04);
 			--even-entry-background: rgba(185, 186, 186, .05);
 		}
 		else if stylus-deepdark-style == "Custom" {
@@ -448,7 +448,7 @@
 			--dimmer-text: dimmerText;
 			--editor-background: editorBackground;
 			--select-background: selectBackground;
-			--shadow: 0 1px 0.5px colorShadow;
+			--shadow: 0 1px .5px colorShadow;
 			--even-entry-background: colorEvenEntry;
 		}
 		/*CodeMirror font size*/
@@ -664,8 +664,8 @@
 	/* dont uncomment anything below */
 	.CodeMirror
 	{
-		font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas',
-			'source-code-pro', monospace !important;
+		font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas",
+			"source-code-pro", monospace !important;
 		font-size: var(--font-size) !important;
 	}
 	.CodeMirror-lint-tooltip
@@ -894,7 +894,7 @@
 	{
 		input[type="color"]
 		{
-			padding: 2px 4px 2px !important;
+			padding: 2px 4px !important;
 		}
 	}
 	/* add option color swatch hover style to clearly indicate editable field */
@@ -1103,7 +1103,7 @@
 		.cm-s-default .CodeMirror-line::-moz-selection, .cm-s-default .CodeMirror-line > span::-moz-selection,
 		.cm-s-default .CodeMirror-line > span > span::-moz-selection { background-color: var(--select-background); }
 
-		.cm-s-default .CodeMirror-gutters { background: var(--hover-background); border-right: 0px; }
+		.cm-s-default .CodeMirror-gutters { background: var(--hover-background); border-right: 0; }
 		.cm-s-default .CodeMirror-guttermarker { color: var(--main-text); }
 		.cm-s-default .CodeMirror-guttermarker-subtle,
 		.cm-s-default .CodeMirror-linenumber { color: var(--dimmer-text); }

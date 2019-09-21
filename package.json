@@ -34,6 +34,7 @@
     "patch": "npx ver -p patch StylusDeepDark.user.css",
     "minor": "npx ver -p minor StylusDeepDark.user.css",
     "major": "npx ver -p major StylusDeepDark.user.css",
-    "update": "npx updates -cu && npm install"
+    "update": "npx updates -cu && npm install",
+    "lintfix": "npx stylelint --fix StylusDeepDark.user.css"
   }
 }
