@@ -67,6 +67,7 @@
 @var checkbox stylus-syntax-theme    "Stylus syntax highlighting" 1
 @var checkbox support_update-problem "Update problem tooltips" 1
 
+@var text custom_sidebar_width "Sidebar width" 280px
 @var text fontSize 'Editor font size' 12px
 @var select cursorWidth 'Cursor width' {
 	"Slim 1px": "1px",
@@ -453,6 +454,7 @@
 		/*Cursor width and color*/
 		--cursor-width: cursorWidth;
 		--cursor-color: cursorColor;
+		--sidebar_width: custom_sidebar_width;
 		/*These are must have static colors*/
 		/*Disable all color/warning Breeze Dark*/
 		if colorRY == "Default"               { --red: #da4453; --yellow: #fdbc4b; }
@@ -558,7 +560,7 @@
 
 	#header
 	{
-		width: 282px !important;
+		width: var(--sidebar_width) !important;
 	}
 	#header
 	{
