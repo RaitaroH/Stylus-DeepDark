@@ -66,7 +66,7 @@
 @var checkbox use-modified-default "Adaptive syntax highlighting" 1
 @var checkbox stylus-syntax-theme  "Stylus syntax highlighting" 1
 
-@var select fontSize 'Editor font size' 12px
+@var text fontSize 'Editor font size' 12px
 @var select cursorWidth 'Cursor width' {
 	"Slim 1px": "1px",
 	"Wider 2px": "2px",
