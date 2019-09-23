@@ -63,8 +63,8 @@
 @var color colorRed "Custom red color" "#ff6666"
 @var color colorYellow "Custom yellow color" "#ffb266"
 
-@var checkbox use-modified-default "Adaptive syntax highlighting" 1
-@var checkbox stylus-syntax-theme  "Stylus syntax highlighting" 1
+@var checkbox use-modified-default   "Adaptive syntax highlighting" 1
+@var checkbox stylus-syntax-theme    "Stylus syntax highlighting" 1
 @var checkbox support_update-problem "Update problem tooltips" 1
 
 @var text fontSize 'Editor font size' 12px
