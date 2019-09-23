@@ -75,7 +75,7 @@
 	"Wider+ 3px": "3px",
 	"Block 7px": "7px"
 }
-@var select cursorColor 'Cursor color' {
+@var select cursorColor "Cursor color" {
 	"Deep-Dark": "#00adee",
 	"Inspired-Dark": "#5e8acc",
 	"Breeze-Dark": "#3daee9",
