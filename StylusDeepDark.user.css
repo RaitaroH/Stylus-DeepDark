@@ -661,7 +661,7 @@
 	}
 
 	/* dont uncomment anything below */
-	.CodeMirror
+	.CodeMirror, .CodeMirror-hints
 	{
 		font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas",
 			"source-code-pro", monospace !important;
@@ -672,6 +672,11 @@
 		background-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
+	.CodeMirror-hint
+	{
+		background-color: var(--main-background);
+	}
+
 	/* fix the bracket matching actually working */
 	div.CodeMirror span.CodeMirror-matchingbracket
 	{
