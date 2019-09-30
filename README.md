@@ -42,6 +42,7 @@ Install node.js (if not installed already) and run `npm install` to install depe
 > Note: Releases are created internally, when submitting a PR do not include any.
 
 * `npm run update`: Update development dependencies.
+* `npm run lintfix`: Runs Stylelint with `--fix` switch on the  StylusDeepDark.user.css file.
 
 ## Contributors ✨
 
