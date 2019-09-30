@@ -1,8 +1,11 @@
 {
   "name": "Stylus-DeepDark",
-  "version": "2.0.5",
+  "version": "2.1.3",
   "repository": "RaitaroH/Stylus-DeepDark",
   "homepage": "https://gitlab.com/RaitaroH/Stylus-DeepDark",
+  "bugs": {
+    "url": "https://gitlab.com/RaitaroH/Stylus-DeepDark/issues"
+  },
   "author": "Raitaroh | the-j0k3r | Mottie",
   "contributors": [
     {
@@ -27,13 +30,15 @@
   ],
   "license": "GPL-3.0-or-later",
   "devDependencies": {
-    "ver": "^5.1.2",
-    "updates": "^8.5.1"
+    "updates": "^9.0.0",
+    "ver": "^5.1.4",
+    "stylelint": "^11.0.0"
   },
   "scripts": {
     "patch": "npx ver -p patch StylusDeepDark.user.css",
     "minor": "npx ver -p minor StylusDeepDark.user.css",
     "major": "npx ver -p major StylusDeepDark.user.css",
-    "update": "npx updates -cu && npm install"
+    "update": "npx updates -cu && npm install",
+    "lintfix": "stylelint --fix StylusDeepDark.user.css"
   }
 }

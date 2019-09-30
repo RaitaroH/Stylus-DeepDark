@@ -18,6 +18,41 @@
         "maintenance",
         "doc"
       ]
+    },
+    {
+      "login": "Mottie",
+      "name": "Rob Garrison",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/136959?v=4",
+      "profile": "http://wowmotty.blogspot.com/",
+      "contributions": [
+        "bug",
+        "code",
+        "design"
+      ]
+    },
+    {
+      "login": "RaitaroH",
+      "name": "RaitaroHikami",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/19552720?v=4",
+      "profile": "https://userstyles.org/users/377182",
+      "contributions": [
+        "bug",
+        "code",
+        "design",
+        "doc",
+        "ideas",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "all-contributors",
+      "name": "All Contributors",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/46410174?v=4",
+      "profile": "https://allcontributors.org",
+      "contributions": [
+        "design",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
