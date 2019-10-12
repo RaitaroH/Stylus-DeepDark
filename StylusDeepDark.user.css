@@ -1026,6 +1026,26 @@
 	{
 		color: var(--main-text) !important;
 	}
+	.install::before
+	{
+		box-shadow: var(--shadow);
+	}
+
+	.install.update::after
+	{
+		filter: none;
+	}
+	.install.update::before, .install.update:active::before,
+	.install.update:active:hover::before
+	{
+	  background-color: var(--hover-background);
+		opacity: .6;
+  }
+	.install.update:hover::before
+	{
+		background-color: var(--hover-background);
+		opacity: .9;
+	}
 
 	/* Search
 	 * Fixed search including replace and match highlight */
@@ -1058,7 +1078,8 @@
 		border-bottom: 1px solid var(--no-match) !important;
 	}
 	/* match highlighter is too dark for dark themes so we tweak that also */
-	@keyframes fadein-match-highlighter {
+	@keyframes fadein-match-highlighter
+	{
 		from
 		{
 			background-color: inherit;
