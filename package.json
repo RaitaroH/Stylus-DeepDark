@@ -28,16 +28,16 @@
       "url": "https://gitlab.com/RaitaroH/Stylus-DeepDark/-/graphs/master"
     }
   ],
-  "license": "GPL-3.0-or-later",
+  "license": "GPL-3.0-only",
   "devDependencies": {
     "updates": "^9.0.0",
     "ver": "^5.1.4",
     "stylelint": "^11.0.0"
   },
   "scripts": {
-    "patch": "npx ver -p patch StylusDeepDark.user.css",
-    "minor": "npx ver -p minor StylusDeepDark.user.css",
-    "major": "npx ver -p major StylusDeepDark.user.css",
+    "patch": "npx ver -p -d patch StylusDeepDark.user.css",
+    "minor": "npx ver -p -d minor StylusDeepDark.user.css",
+    "major": "npx ver -p -d major StylusDeepDark.user.css",
     "update": "npx updates -cu && npm install",
     "lintfix": "stylelint --fix StylusDeepDark.user.css"
   }
