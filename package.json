@@ -33,12 +33,13 @@
     "updates": "^9.0.0",
     "ver": "^5.1.4",
     "stylelint": "^11.0.0"
+    "versions": "^7.0.3",
   },
   "scripts": {
-    "patch": "npx ver -p -d patch StylusDeepDark.user.css",
-    "minor": "npx ver -p -d minor StylusDeepDark.user.css",
-    "major": "npx ver -p -d major StylusDeepDark.user.css",
-    "update": "npx updates -cu && npm install",
+    "patch": "versions -p -d -C patch StylusDeepDark.user.css",
+    "minor": "versions -p -d -C minor StylusDeepDark.user.css",
+    "major": "versions -p -d -C major StylusDeepDark.user.css",
+    "update": "updates -cu && npm install",
     "lintfix": "stylelint --fix StylusDeepDark.user.css"
   }
 }
