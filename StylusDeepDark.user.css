@@ -748,24 +748,6 @@
 		border-color: var(--warning-disable-all) !important;
 		color: var(--warning-disable-all) !important;
 	}
-	if support_update-problem
-	{
-		.newUI .update-problem .check-update::after
-		{
-			content: attr(title);
-			position: absolute;
-			margin-top: 18px;
-			margin-left: -36px;
-			padding: 1ex 1.5ex;
-			border-radius: 4px;
-			animation: fadeout 10s;
-			animation-fill-mode: none;
-			animation-fill-mode: both;
-			background: var(--second-background);
-			border: 1px solid var(--warning-disable-all);
-			color: var(--warning-disable-all);
-		}
-	}
 	.newUI .no-update:not(.update-problem):not(.update-done) .up-to-date:after,
 	.newUI .update:not(.update-problem) .update-done .up-to-date:after,
 	.newUI .entry .updated[title="Update completed."]:after,
@@ -807,7 +789,24 @@
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-
+	if support_update-problem
+	{
+		.newUI .update-problem .check-update::after
+		{
+			content: attr(title);
+			position: absolute;
+			margin-top: 18px;
+			margin-left: -36px;
+			padding: 1ex 1.5ex;
+			border-radius: 4px;
+			animation: fadeout 10s;
+			animation-fill-mode: none;
+			animation-fill-mode: both;
+			background: var(--second-background);
+			border: 1px solid var(--warning-disable-all);
+			color: var(--warning-disable-all);
+		}
+	}
 	/* Install warning */
 	.warnings
 	{
@@ -888,7 +887,8 @@
 	}
 	/* Revert opacity here else the hover will also be dimmer. */
 	#stylus-popup .entry:hover .style-name,
-	#stylus-popup .disabled:hover .style-name
+	#stylus-popup .disabled:hover .style-name,
+	a.expander
 	{
 		color: var(--main-text) !important;
 		opacity: 1;
