@@ -31,10 +31,9 @@
   ],
   "license": "GPL-3.0-only",
   "devDependencies": {
-    "updates": "^9.0.0",
-    "ver": "^5.1.4",
-    "stylelint": "^11.0.0"
+    "updates": "^9.1.0",
     "versions": "^7.0.3",
+    "stylelint": "^12.0.0"
   },
   "scripts": {
     "patch": "versions -p -d -C patch StylusDeepDark.user.css",
