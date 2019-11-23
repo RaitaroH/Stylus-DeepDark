@@ -634,7 +634,7 @@
 		opacity: .5;
 	}
 
-	if not stylus-syntax-theme {
+	if (!(stylus-syntax-theme)) {
 		.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection,
 		.CodeMirror-line > span > span::-moz-selection, .CodeMirror-selected,
 		.CodeMirror-focused .CodeMirror-selected, .CodeMirror-activeline-background
