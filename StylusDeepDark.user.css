@@ -597,7 +597,7 @@
 		background: var(--even-entry-background) !important;
 	}
 	/* fix wrong background color when CodeMirror is empty */
-	.CodeMirror-focused
+	.CodeMirror-focused, .CodeMirror-active
 	{
 		outline: 1px auto var(--main-color);
 	}
