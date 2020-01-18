@@ -66,6 +66,7 @@
 @var checkbox use-modified-default   "Adaptive syntax highlighting" 1
 @var checkbox stylus-syntax-theme    "Stylus syntax highlighting" 1
 @var checkbox support_update-problem "Update problem tooltips" 1
+@var checkbox wrap-lint-msgs         "Wrap lint messages" 1
 
 @var text custom_sidebar_width "Sidebar width" 280px
 @var text fontSize 'Editor font size' 12px
@@ -805,6 +806,13 @@
 			background: var(--second-background);
 			border: 1px solid var(--warning-disable-all);
 			color: var(--warning-disable-all);
+		}
+	}
+	if wrap-lint-msgs
+	{
+		#lint td[role="message"]
+		{
+			white-space: pre-wrap;
 		}
 	}
 	/* Install warning */
