@@ -67,6 +67,7 @@
 @var checkbox stylus-syntax-theme    "Stylus syntax highlighting" 1
 @var checkbox support_update-problem "Update problem tooltips" 1
 @var checkbox wrap-lint-msgs         "Wrap lint messages" 1
+@var checkbox hide-scrollbar         "Fix CM search scrollbar" 0
 
 @var text custom_sidebar_width "Sidebar width" 280px
 @var text fontSize 'Editor font size' 12px
@@ -1110,12 +1111,15 @@
 	{
 		border-color: var(--main-color) !important;
 	}
-	/* this hack prevents Ubuntu Firefox from showing a scrollbar when using
-	 * Global Overlay Scrollbars styles
-	 */
-	.CodeMirror-search-field
+	if hide-scrollbar
 	{
-		overflow: hidden !important;
+		/* this hack prevents Ubuntu Firefox from showing a scrollbar when using
+		 * Global Overlay Scrollbars styles
+		 */
+		 .CodeMirror-search-field
+		 {
+			 overflow: hidden !important;
+		 }
 	}
 
 	/* Autocomplete hints */
