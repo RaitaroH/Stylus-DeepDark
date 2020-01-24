@@ -1123,15 +1123,15 @@
 	}
 
 	/* Autocomplete hints */
-	.CodeMirror-hints
+	li.CodeMirror-hints
 	{
-		background: var(--main-background) !important;
+		background: var(--second-background) !important;
 		box-shadow: var(--shadow) !important;
 		border-color: var(--hover-background) !important;
 	}
-	.CodeMirror-hint
+	li.CodeMirror-hint
 	{
-		color: var(--main-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	li.CodeMirror-hint-active
 	{
@@ -1141,7 +1141,7 @@
 	li.CodeMirror-hint:hover
 	{
 		background: var(--hover-background) !important;
-		color: var(--main-color) !important;
+		color: var(--main-text) !important;
 	}
 	.CodeMirror-linenumber:hover, .CodeMirror-foldgutter-open:hover,
 	.CodeMirror-foldgutter-folded:hover
