@@ -1123,7 +1123,7 @@
 	}
 
 	/* Autocomplete hints */
-	li.CodeMirror-hints
+	.CodeMirror-hints
 	{
 		background: var(--second-background) !important;
 		box-shadow: var(--shadow) !important;
