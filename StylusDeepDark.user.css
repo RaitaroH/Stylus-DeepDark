@@ -1359,7 +1359,13 @@
 	label#enabled-label:focus-within input#enabled[type="checkbox"].style-contributor,
 	label#preview-label:hover input#editor\.livePreview[type="checkbox"],
 	label#preview-label:focus-within input#editor\.livePreview[type="checkbox"],
-	input#enabled[type="checkbox"]:hover, #basic-info-enabled input[type="checkbox"]:not(.slider):hover
+	input#enabled[type="checkbox"]:hover, #basic-info-enabled input[type="checkbox"]:not(.slider):hover,
+	body:not(#stylus-options) input.exclude-by-domain-checkbox:not(:invalid):not(.slider):focus,
+	body:not(#stylus-options) input.exclude-by-domain-checkbox:not(:invalid):not(.slider):focus-within,
+	body:not(#stylus-options) input.exclude-by-domain-checkbox:not(:invalid):not(.slider):hover,
+	body:not(#stylus-options) input.exclude-by-url-checkbox:not(:invalid):not(.slider):focus,
+	body:not(#stylus-options) input.exclude-by-url-checkbox:not(:invalid):not(.slider):focus-within,
+	body:not(#stylus-options) input.exclude-by-url-checkbox:not(:invalid):not(.slider):hover
 	{
 		border-color: var(--main-color) !important;
 		background-color: var(--main-background) !important;
