@@ -973,7 +973,7 @@
 	}
 	#backup-buttons .dropdown-content a:hover, #unfile-all-styles:hover,
 	#file-all-styles:hover, #sync-dropbox-import:hover,
-	#file-all-styles:hover, #unfile-all-styles:hover
+	#file-all-styles:hover, #unfile-all-styles:hover, #options
 	{
 		background: var(--main-background) !important;
 	}
@@ -1248,6 +1248,22 @@
 	.block, .color-swatch
 	{
 		border-color: var(--hover-background) !important;
+	}
+
+	@media screen and (-webkit-min-device-pixel-ratio: 0)
+	{
+		body #options-title
+		{
+			color: var(--main-background);
+		}
+		#options-close-icon svg path
+		{
+			fill: var(--main-background);
+		}
+		#options-close-icon:hover svg path
+		{
+			fill: var(--dimmer-text);
+		}
 	}
 
 	/* Install *.user.css page */
