@@ -928,6 +928,12 @@
 			padding: 2px 4px !important;
 		}
 	}
+  /* resize G-Chrome color swatch in Stylus options new chrome versions are squiched */
+  input[type="color"]:not(*:root)
+  {
+		padding: 0;
+		height: 28px;
+	}
 	/* add option color swatch hover style to clearly indicate editable field */
 	input[type="color"]:hover, .color-swatch:hover
 	{
