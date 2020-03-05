@@ -477,6 +477,10 @@
 		text-rendering: optimizeLegibility !important;
 		-webkit-font-smoothing: antialiased !important;
 	}
+	body, #options-title
+	{
+		border-color: var(--hover-background);
+	}
 	html.newUI .entry.even, .keymap-list > tbody > tr:nth-child(even),
 	#stylus-manage [id*="style-"].entry.even
 	{
@@ -1256,20 +1260,18 @@
 		border-color: var(--hover-background) !important;
 	}
 
-	@media screen and (-webkit-min-device-pixel-ratio: 0)
+	body #options-title
 	{
-		body #options-title
-		{
-			color: var(--main-background);
-		}
-		#options-close-icon svg path
-		{
-			fill: var(--main-background);
-		}
-		#options-close-icon:hover svg path
-		{
-			fill: var(--dimmer-text);
-		}
+		color: var(--main-text);
+		background: var(--hover-background);
+	}
+	#options-close-icon svg path
+	{
+		fill: var(--dimmer-text);
+	}
+	#options-close-icon:hover svg path
+	{
+		fill: var(--main-color);
 	}
 
 	/* Install *.user.css page */
