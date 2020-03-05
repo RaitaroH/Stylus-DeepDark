@@ -1,7 +1,7 @@
 {
   "name": "Stylus-DeepDark",
   "title": "Stylus DeepDark",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "repository": "RaitaroH/Stylus-DeepDark",
   "homepage": "https://gitlab.com/RaitaroH/Stylus-DeepDark",
   "bugs": {
@@ -41,5 +41,8 @@
     "major": "versions -p -d -C major StylusDeepDark.user.css",
     "update": "updates -cu && npm install",
     "lintfix": "stylelint --fix StylusDeepDark.user.css"
+  },
+  "dependencies": {
+    "p-finally": "^2.0.1"
   }
 }
