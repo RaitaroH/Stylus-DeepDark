@@ -1228,8 +1228,9 @@
 	}
 	body:not(#stylus-options) input:invalid
 	{
-		border-color: var(--warning-disable-all);
-		color: var(--warning-disable-all);
+		border-color: var(--warning-disable-all) !important;
+		color: var(--warning-disable-all) !important;
+		background-color: darken(colorRed, 80%) !important;
 	}
 	fieldset, [style-id], .disabled
 	{
