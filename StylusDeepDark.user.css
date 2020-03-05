@@ -1078,7 +1078,7 @@
 	}
 	body.find-open .search-target-editor.CodeMirror-active
 	{
-		outline-color: var(--main-text) !important;
+		outline-color: var(--main-color) !important;
 	}
 	body.find-open .cm-searching
 	{
