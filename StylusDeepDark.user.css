@@ -113,7 +113,7 @@
 	/* Home       : https://gitlab.com/RaitaroH/Stylus-DeepDark */
 	/* Licence    : GNU General Public License v3.0 */
 	/* Version    : 2.2.4 (2020-03-05) */
-	/*Main color variables*/
+	/* Main color variables */
 	:root {
 		if stylus-deepdark-style == "Deep-Dark" {
 			--main-color: #00adee;
@@ -199,7 +199,7 @@
 			--shadow: 0 1px .5px rgba(54, 54, 54, .2);
 			--even-entry-background: rgba(54, 54, 54, .4);
 		}
-		else if stylus-deepdark-style ==  "Discord" {
+		else if stylus-deepdark-style == "Discord" {
 			--main-color: #7289da;
 			--main-background: #1e2124;
 			--second-background: #2f3136;
@@ -256,8 +256,8 @@
 			--dimmer-text: #aaa;
 			--editor-background: #0a0a0a;
 			--select-background: #222;
-			--shadow: 0 1px .5px rgba(54 ,54 ,54, .2);
-			--even-entry-background: rgba(54 ,54 ,54, .4);
+			--shadow: 0 1px .5px rgba(54, 54, 54, .2);
+			--even-entry-background: rgba(54, 54, 54, .4);
 		}
 		else if stylus-deepdark-style == "Yellow" {
 			--main-color: #ffc700;
@@ -340,7 +340,7 @@
 			--dimmer-text: #9b9b9b;
 			--editor-background: #263238;
 			--select-background: #3d4d56;
-			--shadow: 0 1px .5px  rgba(61, 77, 86, .2);
+			--shadow: 0 1px .5px rgba(61, 77, 86, .2);
 			--even-entry-background: rgba(61, 77, 86, .3);
 		}
 		else if stylus-deepdark-style == "Adapta-Breath-Nokto" {
@@ -352,7 +352,7 @@
 			--dimmer-text: #9b9b9b;
 			--editor-background: #263238;
 			--select-background: #2a353b;
-			--shadow: 0 1px .5px  rgba(42, 53, 59, .32);
+			--shadow: 0 1px .5px rgba(42, 53, 59, .32);
 			--even-entry-background: rgba(42, 53, 59, .62);
 		}
 		else if stylus-deepdark-style == "Solarized-Dark" {
@@ -364,7 +364,7 @@
 			--dimmer-text: #eee8d5;
 			--editor-background: #073642;
 			--select-background: #002b36;
-			--shadow: 0 1px .5px  rgba(0, 43, 54, .3);
+			--shadow: 0 1px .5px rgba(0, 43, 54, .3);
 			--even-entry-background: rgba(0, 43, 54, .5);
 		}
 		else if stylus-deepdark-style == "Solarized-Light" {
@@ -376,7 +376,7 @@
 			--dimmer-text: #586e75;
 			--editor-background: #f5efdc;
 			--select-background: #ded8c4;
-			--shadow: 0 1px .5px  rgba(222, 216, 196, .2);
+			--shadow: 0 1px .5px rgba(222, 216, 196, .2);
 			--even-entry-background: rgba(222, 216, 196, .3);
 		}
 		else if stylus-deepdark-style == "Gruvbox-Dark" {
@@ -388,7 +388,7 @@
 			--dimmer-text: #ebdbb2;
 			--editor-background: #282828;
 			--select-background: #3c3836;
-			--shadow: 0 1px .5px  rgba(60, 56, 54, .22);
+			--shadow: 0 1px .5px rgba(60, 56, 54, .22);
 			--even-entry-background: rgba(60, 56, 54, .33);
 		}
 		else if stylus-deepdark-style == "Gruvbox-Light" {
@@ -400,7 +400,7 @@
 			--dimmer-text: #3c3836;
 			--editor-background: #f9f5d7;
 			--select-background: #ebdbb2;
-			--shadow: 0 1px .5px  rgba(235, 219, 178, .33);
+			--shadow: 0 1px .5px rgba(235, 219, 178, .33);
 			--even-entry-background: rgba(235, 219, 178, .36);
 		}
 		else if stylus-deepdark-style == "NierAutomata-Dark" {
@@ -412,7 +412,7 @@
 			--dimmer-text: #bab5a1;
 			--editor-background: #33302a;
 			--select-background: #7c6f64;
-			--shadow: 0 1px .5px  rgba(124, 111, 100, .15);
+			--shadow: 0 1px .5px rgba(124, 111, 100, .15);
 			--even-entry-background: rgba(124, 111, 100, .21);
 		}
 		else if stylus-deepdark-style == "NierAutomata-Light" {
@@ -451,354 +451,295 @@
 			--shadow: 0 1px .5px colorShadow;
 			--even-entry-background: colorEvenEntry;
 		}
-		/*CodeMirror font size*/
+		/* CodeMirror font size */
 		--font-size: fontSize;
-		/*Cursor width and color*/
+		/* Cursor width and color */
 		--cursor-width: cursorWidth;
 		--cursor-color: cursorColor;
 		--sidebar_width: custom_sidebar_width;
-		/*These are must have static colors*/
-		/*Disable all color/warning Breeze Dark*/
-		if colorRY == "Default"               { --red: #da4453; --yellow: #fdbc4b; }
-		if colorRY == "Solarized"             { --red: #dc322f; --yellow: #b58900; }
-		if colorRY == "Gruvbox Dark"          { --red: #cc241d; --yellow: #d79921; }
-		if colorRY == "Gruvbox Dark Intense"  { --red: #fb4934; --yellow: #fabd2f; }
-		if colorRY == "Gruvbox Light"         { --red: #cc241d; --yellow: #d79921; }
-		if colorRY == "Gruvbox Light Intense" { --red: #9d0006; --yellow: #b57614; }
-		if colorRY == "Custom"                { --red: colorRed; --yellow: colorYellow; }
+		/* These are must have static colors */
+		/* Disable all color/warning Breeze Dark */
+		if colorRY == "Default" {
+			--red: #da4453;
+			--yellow: #fdbc4b;
+		}
+		if colorRY == "Solarized" {
+			--red: #dc322f;
+			--yellow: #b58900;
+		}
+		if colorRY == "Gruvbox Dark" {
+			--red: #cc241d;
+			--yellow: #d79921;
+		}
+		if colorRY == "Gruvbox Dark Intense" {
+			--red: #fb4934;
+			--yellow: #fabd2f;
+		}
+		if colorRY == "Gruvbox Light" {
+			--red: #cc241d;
+			--yellow: #d79921;
+		}
+		if colorRY == "Gruvbox Light Intense" {
+			--red: #9d0006;
+			--yellow: #b57614;
+		}
+		if colorRY == "Custom" {
+			--red: colorRed;
+			--yellow: colorYellow;
+		}
 
 		--warning-disable-all: var(--red);
-		/*No match regex color from Breeze Dark*/
-		/*added for easy change with swicher*/
+		/* No match regex color from Breeze Dark */
+		/* added for easy change with swicher */
 		--no-match: var(--yellow);
 	}
-	html
-	{
+	html {
 		text-rendering: optimizeLegibility !important;
 		-webkit-font-smoothing: antialiased !important;
 	}
-	body, #options-title
-	{
+	body, #options-title {
 		border-color: var(--hover-background);
 	}
-	html.newUI .entry.even, .keymap-list > tbody > tr:nth-child(even),
-	#stylus-manage [id*="style-"].entry.even
-	{
+	html.newUI .entry.even, .keymap-list > tbody > tr:nth-child(even), #stylus-manage [id*="style-"].entry.even {
 		background-color: var(--even-entry-background) !important;
 	}
-	#hotkey-info mark
-	{
+	#hotkey-info mark {
 		background: var(--main-background) !important;
 		border: 1px solid var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
-	#hotkey-info[data-active], #hotkey-info > div
-	{
+	#hotkey-info[data-active], #hotkey-info > div {
 		background: var(--main-background) !important;
 		border: 1px solid var(--second-background) !important;
 	}
-	#stylus-edit, body, html, #notes, #header, #actions
-	{
+	#stylus-edit, body, html, #notes, #header, #actions {
 		background-color: var(--main-background) !important;
 		color: var(--dimmer-text) !important;
 	}
-	a, a:visited, .style-name-link
-	{
+	a, a:visited, .style-name-link {
 		color: var(--main-color) !important;
 		opacity: .9;
 	}
 	/* fix tab navigation hovering */
-	a:hover, .style-name-link:hover, a:focus-within,
-	.style-name-link:focus-within, h2:focus-within .style-name-link,
-	.entry:hover .style-name-link, .style-name-link a.delete:hover,
-	.style-name-link a.homepage:hover
-	{
+	a:hover, .style-name-link:hover, a:focus-within, .style-name-link:focus-within, h2:focus-within .style-name-link, .entry:hover .style-name-link, .style-name-link a.delete:hover, .style-name-link a.homepage:hover {
 		opacity: 1;
 		filter: brightness(115%) !important;
 	}
 
-	.disabled h2:after, .search-result, .search-result-meta,
-	.entry.usercss .style-name-link:after
-	{
+	.disabled h2::after, .search-result, .search-result-meta, .entry.usercss .style-name-link::after {
 		background-color: var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
 	}
-	.entry.usercss .style-name-link:after
-	{
+	.entry.usercss .style-name-link::after {
 		color: var(--main-color) !important;
 	}
 	/* fix tab naviagation hovering */
-	.disabled h2:focus-within .style-name-link,
-	.entry.disabled:hover .style-name-link
-	{
+	.disabled h2:focus-within .style-name-link, .entry.disabled:hover .style-name-link {
 		opacity: .8;
 	}
 
-	#filters label:hover, #filters .filter-selection:hover,
-	#filters label:hover select, #filters .filter-selection:hover select
-	#filters .filter-selection:focus-within select
-	{
+	#filters label:hover, #filters .filter-selection:hover, #filters label:hover select, #filters .filter-selection:hover select, #filters .filter-selection:focus-within select {
 		background-color: transparent !important;
 		color: var(--main-color) !important;
 	}
-	#filters label:hover .svg-icon.select-arrow,
-	#filters .filter-selection:hover .svg-icon.select-arrow
-	{
+	#filters label:hover .svg-icon.select-arrow, #filters .filter-selection:hover .svg-icon.select-arrow {
 		fill: var(--main-color) !important;
 	}
-	select, .svg-icon.select-arrow
-	{
+	select, .svg-icon.select-arrow {
 		transition: none !important;
 	}
 
 	/* This .entry selector affects the old UI layout and also affects popup
 	 * Popup entries all align consistently like this. Old UI is also good.
 	 */
-	.entry
-	{
+	.entry {
 		border-color: var(--second-background) !important;
 		box-shadow: inset 0 1px 0 0 var(--second-background) !important;
 	}
-	.newUI .entry .style-name:hover:before
-	{
+	.newUI .entry .style-name:hover::before {
 		filter: grayscale(1);
 	}
 
-	#header
-	{
+	#header {
 		width: var(--sidebar_width) !important;
 	}
-	#header
-	{
+	#header {
 		border-right: 1px solid var(--hover-background) !important;
 	}
-	#header h1
-	{
+	#header h1 {
 		color: var(--main-text) !important;
 	}
-	#header summary:hover h2, #header summary h2:hover
-	{
+	#header summary:hover h2, #header summary h2:hover {
 		color: var(--main-color) !important;
 	}
-	#header summary:hover h2, #search-replace-dialog [data-action="case"][data-enabled]:after
-	{
+	#header summary:hover h2, #search-replace-dialog [data-action="case"][data-enabled]::after {
 		border-color: var(--main-color) !important;
 	}
-	[lang*="en-"] #linter-label
-	{
+	[lang*="en-"] #linter-label {
 		white-space: nowrap !important;
 	}
 
-	.resize-grip
-	{
+	.resize-grip {
 		background-color: var(--hover-background) !important;
 		border-color: var(--main-background) !important;
 	}
-	.CodeMirror
-	{
+	.CodeMirror {
 		border: 1px solid var(--hover-background);
 	}
-	.CodeMirror-scrollbar-filler
-	{
+	.CodeMirror-scrollbar-filler {
 		background: var(--even-entry-background) !important;
 	}
 	/* fix wrong background color when CodeMirror is empty */
-	.CodeMirror-focused, .CodeMirror-active
-	{
+	.CodeMirror-focused, .CodeMirror-active {
 		outline: 1px auto var(--main-color);
 	}
 
 	/* Changed text highlight */
-	::selection
-	{
+	::selection {
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
-	::-moz-selection
-	{
+	::-moz-selection {
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
-	::-webkit-selection
-	{
+	::-webkit-selection {
 		background: var(--main-color) !important;
 		color: var(--main-text) !important;
 	}
-	::placeholder
-	{
+	::placeholder {
 		color: var(--dimmer-text) !important;
 		opacity: .5;
 	}
-	::-webkit-input-placeholder
-	{
+	::-webkit-input-placeholder {
 		color: var(--dimmer-text) !important;
 		opacity: .5;
 	}
-	::-moz-placeholder
-	{
+	::-moz-placeholder {
 		color: var(--dimmer-text) !important;
 		opacity: .5;
 	}
 
 	if (!(stylus-syntax-theme)) {
-		.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection,
-		.CodeMirror-line > span > span::-moz-selection, .CodeMirror-selected,
-		.CodeMirror-focused .CodeMirror-selected, .CodeMirror-activeline-background
-		{
+		.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection, .CodeMirror-selected, .CodeMirror-focused .CodeMirror-selected, .CodeMirror-activeline-background {
 			background-color: var(--select-background) !important;
 		}
-		.CodeMirror, .CodeMirror-code, .CodeMirror-code
-		{
+		.CodeMirror, .CodeMirror-code, .CodeMirror-code {
 			color: var(--main-text) !important;
 			background: var(--editor-background) !important;
 		}
-		.cm-s-mbo.CodeMirror
-		{
+		.cm-s-mbo.CodeMirror {
 			background-color: var(--second-background) !important;
 		}
-		.CodeMirror-gutters
-		{
+		.CodeMirror-gutters {
 			background-color: var(--hover-background) !important;
 		}
-		.CodeMirror .cm-meta
-		{
+		.CodeMirror .cm-meta {
 			background: var(--hover-background) !important;
 		}
 	}
 
 	/* dont uncomment anything below */
-	.CodeMirror, .CodeMirror-hints
-	{
-		font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas",
-			"source-code-pro", monospace !important;
+	.CodeMirror, .CodeMirror-hints {
+		font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro",
+			monospace !important;
 		font-size: var(--font-size) !important;
 	}
-	.CodeMirror-lint-tooltip
-	{
+	.CodeMirror-lint-tooltip {
 		background-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	.CodeMirror-hint
-	{
+	.CodeMirror-hint {
 		background-color: var(--main-background);
 	}
 
 	/* fix the bracket matching actually working */
-	div.CodeMirror span.CodeMirror-matchingbracket
-	{
+	div.CodeMirror span.CodeMirror-matchingbracket {
 		color: var(--main-color) !important;
 		-webkit-text-fill-color: var(--main-color) !important;
 		font-weight: 900 !important;
 		outline: none !important;
 	}
-	div.CodeMirror span.CodeMirror-nonmatchingbracket
-	{
+	div.CodeMirror span.CodeMirror-nonmatchingbracket {
 		color: var(--warning-disable-all) !important;
-		 -webkit-text-fill-color: var(--warning-disable-all) !important;
+		-webkit-text-fill-color: var(--warning-disable-all) !important;
 		font-weight: 900 !important;
 	}
-	.CodeMirror-foldmarker
-	{
+	.CodeMirror-foldmarker {
 		color: var(--main-text) !important;
 		text-shadow: none !important;
 		font-size: 18px !important;
 	}
 
 	/* Cursor width and color setting implementation */
-	if cursorColor || cursorWidth {
-		.CodeMirror div.CodeMirror-cursor
-		{
+	if cursorColor||cursorWidth {
+		.CodeMirror div.CodeMirror-cursor {
 			border-left-width: var(--cursor-width) !important;
 			border-color: var(--cursor-color) !important;
 		}
 	}
 
 	/* Popup */
-	.main-controls, .entry, .firefox body, #help-popup .title
-	{
+	.main-controls, .entry, .firefox body, #help-popup .title {
 		background-color: var(--main-background) !important;
 	}
-	#help-popup
-	{
+	#help-popup {
 		background-color: var(--second-background) !important;
 	}
-	#confirm > div, .menu-items-wrapper
-	{
+	#confirm > div, .menu-items-wrapper {
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 	}
 
 	/* Icons */
-	.svg-icon, .svg-icon.info, .newUI .entry .svg-icon
-	{
+	.svg-icon, .svg-icon.info, .newUI .entry .svg-icon {
 		fill: var(--main-text) !important;
 	}
-	.svg-icon.info:hover, .svg-icon:hover, a:hover .svg-icon,
-	.newUI .entry:hover .svg-icon:hover, .svg-icon.checked,
-	a.homepage:focus-within .svg-icon, a.delete:focus-within .svg-icon,
-	a.check-update:focus-within .svg-icon, a.configure-usercss:focus-within .svg-icon,
-	a:focus-within .svg-icon
-	{
+	.svg-icon.info:hover, .svg-icon:hover, a:hover .svg-icon, .newUI .entry:hover .svg-icon:hover, .svg-icon.checked, a.homepage:focus-within .svg-icon, a.delete:focus-within .svg-icon, a.check-update:focus-within .svg-icon, a.configure-usercss:focus-within .svg-icon, a:focus-within .svg-icon {
 		fill: var(--main-color) !important;
 	}
-	.newUI .can-update[data-details$="locally edited"] .update svg,
-	.newUI .update-problem .check-update svg
-	{
+	.newUI .can-update[data-details$="locally edited"] .update svg, .newUI .update-problem .check-update svg {
 		fill: var(--warning-disable-all) !important;
 	}
 	/* these entries works as intended */
-	.newUI .entry.can-update[data-error="may be locally edited"] .update:after,
-	.newUI .entry[data-error="locally edited"] .update:after
-	{
+	.newUI .entry.can-update[data-error="may be locally edited"] .update::after, .newUI .entry[data-error="locally edited"] .update::after {
 		background: var(--second-background) !important;
 		border-color: var(--warning-disable-all) !important;
 		color: var(--warning-disable-all) !important;
 	}
-	.newUI .no-update:not(.update-problem):not(.update-done) .up-to-date:after,
-	.newUI .update:not(.update-problem) .update-done .up-to-date:after,
-	.newUI .entry .updated[title="Update completed."]:after,
-	.newUI .entry .update[title="Install update"]:after
-	{
+	.newUI .no-update:not(.update-problem):not(.update-done) .up-to-date::after, .newUI .update:not(.update-problem) .update-done .up-to-date::after, .newUI .entry .updated[title="Update completed."]::after, .newUI .entry .update[title="Install update"]::after {
 		background-color: var(--second-background) !important;
 		border-color: var(--main-color) !important;
 		color: var(--main-color) !important;
 	}
 
 	/* History */
-	#message-box-title, #message-box-buttons
-	{
+	#message-box-title, #message-box-buttons {
 		background-color: var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
 	}
-	#message-box-contents
-	{
+	#message-box-contents {
 		background-color: var(--second-background) !important;
 	}
-	#message-box-close-icon .svg-icon
-	{
+	#message-box-close-icon .svg-icon {
 		fill: var(--dimmer-text) !important;
 	}
-	#message-box-close-icon:hover .svg-icon
-	{
+	#message-box-close-icon:hover .svg-icon {
 		fill: var(--main-color) !important;
 	}
 
-	.help-text mark
-	{
+	.help-text mark {
 		background: var(--hover-background) !important;
 		border: 1px solid var(--even-entry-background) !important;
 	}
 
 	/* Update warning */
-	.newUI .updater-icons > :not(.check-update):after
-	{
+	.newUI .updater-icons > :not(.check-update)::after {
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	if support_update-problem
-	{
-		.newUI .update-problem .check-update::after
-		{
+	if support_update-problem {
+		.newUI .update-problem .check-update::after {
 			content: attr(title);
 			position: absolute;
 			margin-top: 18px;
@@ -813,628 +754,506 @@
 			color: var(--warning-disable-all);
 		}
 	}
-	if wrap-lint-msgs
-	{
-		#lint td[role="message"]
-		{
+	if wrap-lint-msgs {
+		#lint td[role="message"] {
 			white-space: pre-wrap;
 		}
 	}
 	/* Install warning */
-	.warnings
-	{
+	.warnings {
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
 	}
 
-	#filters.active, .active #filters-stats
-	{
+	#filters.active, .active #filters-stats {
 		background-color: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 	}
 
-	body.all-styles-hidden-by-filters:before,
-	body.all-styles-hidden-by-filters:after
-	{
+	body.all-styles-hidden-by-filters::before, body.all-styles-hidden-by-filters::after {
 		color: var(--main-color) !important;
 		opacity: .5;
 	}
 
 	/* List of matching opened tabs */
-	.regexp-report details[data-type="full"]
-	{
+	.regexp-report details[data-type="full"] {
 		color: var(--main-color) !important;
 	}
-	.regexp-report details[data-type="none"]
-	{
+	.regexp-report details[data-type="none"] {
 		color: var(--no-match) !important;
 	}
-	.regexp-report details[data-type="invalid"]
-	{
+	.regexp-report details[data-type="invalid"] {
 		color: var(--warning-disable-all) !important;
 	}
 
 	/* Text fields */
-	option[disabled]
-	{
+	option[disabled] {
 		color: var(--hover-background) !important;
 	}
-	select
-	{
+	select {
 		background-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 		border-color: var(--hover-background) !important;
 	}
-	select:hover
-	{
+	select:hover {
 		border-color: var(--main-color) !important;
 		color: var(--main-color) !important;
 	}
-	#name, .applies-to li .applies-value, #search, .keymap-list input,
-	.config-value, #sort-select, .sorter-selection select,
-	body#stylus-options #message-box input
-	{
+	#name, .applies-to li .applies-value, #search, .keymap-list input, .config-value, #sort-select, .sorter-selection select, body#stylus-options #message-box input {
 		background-color: var(--hover-background) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
-	input:not([type]), #search, #sort-select, .sorter-selection select,
-	body#stylus-options #message-box input, .applies-to label
-	{
+	input:not([type]), #search, #sort-select, .sorter-selection select, body#stylus-options #message-box input, .applies-to label {
 		color: var(--main-text) !important;
 	}
-	#name:hover, .applies-to li .applies-value:hover, #search:hover,
-	.keymap-list input:hover, #name:active, .applies-to li .applies-value:active,
-	#search:active, .keymap-list input:active, #name:focus,
-	.applies-to li .applies-value:focus, #search:focus, .keymap-list input:focus,
-	body#stylus-options #message-box input:not(:invalid):focus,
-	body#stylus-options #message-box input:not(:invalid):hover
-	{
+	#name:hover, .applies-to li .applies-value:hover, #search:hover, .keymap-list input:hover, #name:active, .applies-to li .applies-value:active, #search:active, .keymap-list input:active, #name:focus, .applies-to li .applies-value:focus, #search:focus, .keymap-list input:focus, body#stylus-options #message-box input:not(:invalid):focus, body#stylus-options #message-box input:not(:invalid):hover {
 		border: 1px solid var(--main-color) !important;
 	}
 
 	/* Stylus popup fixes
 	 * Use opacity to solve disabled entries see #18 thx Mottie :) */
-	#stylus-popup .disabled .style-name
-	{
+	#stylus-popup .disabled .style-name {
 		opacity: .7;
 	}
 	/* Revert opacity here else the hover will also be dimmer. */
-	#stylus-popup .entry:hover .style-name,
-	#stylus-popup .disabled:hover .style-name,
-	a.expander
-	{
+	#stylus-popup .entry:hover .style-name, #stylus-popup .disabled:hover .style-name, a.expander {
 		color: var(--main-text) !important;
 		opacity: 1;
 	}
-	#stylus-popup #installed .entry:nth-child(even) .main-controls,
-	#stylus-popup #installed .entry:nth-child(even)
-	{
+	#stylus-popup #installed .entry:nth-child(even) .main-controls, #stylus-popup #installed .entry:nth-child(even) {
 		background-color: var(--even-entry-background) !important;
 		box-shadow: none !important;
 	}
 	/* Thx Mottie for solution see #18 */
-	#installed .entry.disabled:focus-within .style-name,
-	#installed .entry:focus-within .style-name
-	{
+	#installed .entry.disabled:focus-within .style-name, #installed .entry:focus-within .style-name {
 		color: var(--main-text) !important;
 	}
 	/* prevent sliders from breaking in usercss config */
-	#message-box input.slider
-	{
+	#message-box input.slider {
 		background: none !important;
 		border: 0 !important;
 	}
 	/* resize FF color swatch in Stylus options - similar to G-Chrome */
-	@supports (-moz-appearance: none)
-	{
-		input[type="color"]
-		{
+	@supports (-moz-appearance: none) {
+		input[type="color"] {
 			padding: 2px 4px !important;
 		}
 	}
-  /* resize G-Chrome color swatch in Stylus options new chrome versions are squiched */
-  input[type="color"]:not(*:root)
-  {
+	/* resize G-Chrome color swatch in Stylus options new chrome versions are squished */
+	input[type="color"]:not(*:root) {
 		padding: 0;
 		height: 28px;
 	}
 	/* add option color swatch hover style to clearly indicate editable field */
-	input[type="color"]:hover, .color-swatch:hover
-	{
+	input[type="color"]:hover, .color-swatch:hover {
 		outline: 1px solid var(--main-color) !important;
 	}
 	/* style the confirm delete popup border-color as red to show this is a danger area */
-	#stylus-popup #confirm div
-	{
+	#stylus-popup #confirm div {
 		border-color: var(--red) !important;
 	}
 
 	/* editor line tweak */
-	#sections > div:not(:first-of-type)
-	{
+	#sections > div:not(:first-of-type) {
 		border-top: 2px solid var(--second-background) !important;
 	}
 
 	/* Buttons */
-	button, .remove-applies-to, .add-applies-to, #backup-buttons .dropdown-content a
-	{
+	button, .remove-applies-to, .add-applies-to, #backup-buttons .dropdown-content a {
 		transition: color .25s, border-color .25s;
 		transition: background-color .25s, border-color .25s;
 	}
-	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla,
-	#editor\.keyMap, #editor\.theme, #editor\.matchHighlight,
-	.applies-type.style-contributor, .add-section, .beautify-section,
-	.test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates,
-	#add-style-label, #manage-options-button, button, #manage\.newUI\.targets,
-	#badgeNormal, #badgeDisabled, #updateInterval, #popupWidth,
-	#editor\.linter, #options button, #manage\.newUI\.sort,
-	#message-box-contents select, a.remove-applies-to, a.add-applies-to
-	{
+	#save-button, #beautify, #cancel-button, #from-mozilla, #to-mozilla, #editor\.keyMap, #editor\.theme, #editor\.matchHighlight, .applies-type.style-contributor, .add-section, .beautify-section, .test-regexp, .remove-applies-to, .add-applies-to, #check-all-updates, #add-style-label, #manage-options-button, button, #manage\.newUI\.targets, #badgeNormal, #badgeDisabled, #updateInterval, #popupWidth, #editor\.linter, #options button, #manage\.newUI\.sort, #message-box-contents select, a.remove-applies-to, a.add-applies-to {
 		background-color: var(--second-background) !important;
 		color: var(--main-text) !important;
 		border: 1px solid var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
 	}
-	#backup-buttons .dropdown-content, #unfile-all-styles, #file-all-styles,
-	#sync-dropbox-import, #sync-dropbox-export
-	{
+	#backup-buttons .dropdown-content, #unfile-all-styles, #file-all-styles, #sync-dropbox-import, #sync-dropbox-export {
 		background: var(--second-background) !important;
 		color: var(--main-text) !important;
 	}
-	#backup-buttons .dropdown-content a:hover, #unfile-all-styles:hover,
-	#file-all-styles:hover, #sync-dropbox-import:hover,
-	#file-all-styles:hover, #unfile-all-styles:hover, #options
-	{
+	#backup-buttons .dropdown-content a:hover, #unfile-all-styles:hover, #file-all-styles:hover, #sync-dropbox-import:hover, #file-all-styles:hover, #unfile-all-styles:hover, #options {
 		background: var(--main-background) !important;
 	}
-	#sync-dropbox-import:hover, #sync-dropbox-export:hover,
-	#file-all-styles:hover, #unfile-all-styles:hover, #file-all-styles:hover,
-	#options .option label:focus-within, #newUIoptions div label:hover,
-	#newUIoptions div label:focus-within, #options label:focus-within span,
-	#options input:focus-within, #options label span:hover
-	{
+	#sync-dropbox-import:hover, #sync-dropbox-export:hover, #file-all-styles:hover, #unfile-all-styles:hover, #file-all-styles:hover, #options .option label:focus-within, #newUIoptions div label:hover, #newUIoptions div label:focus-within, #options label:focus-within span, #options input:focus-within, #options label span:hover {
 		color: var(--main-color) !important;
 	}
-	#save-button:hover, #beautify:hover, #cancel-button:hover,
-	#from-mozilla:hover, #to-mozilla:hover, #editor\.keyMap:hover,
-	#editor\.theme:hover, #editor\.matchHighlight:hover,
-	.applies-type.style-contributor:hover, .add-section:hover,
-	.beautify-section:hover, .test-regexp:hover, .remove-applies-to:hover,
-	.add-applies-to:hover, option:hover, #check-all-updates:hover,
-	button#add-style-label:hover, #manage-options-button:hover, button:hover,
-	#manage\.newUI\.targets:hover, #updateInterval:hover, #popupWidth:hover,
-	#editor\.linter:hover, #options button:hover, #manage\.newUI\.sort:hover,
-	#message-box-contents select:hover, a.remove-applies-to:hover,
-	#stylus-popup #popup-manage-button:focus-within, a.add-applies-to:hover,
-	#stylus-popup #popup-options-button:focus-within,
-	#stylus-popup #popup-wiki-button:focus-within,
-	#header button#save-button:focus-within, #header button#beautify:focus-within,
-	#header button#cancel-button:focus-within, #header button:focus-within,
-	#manage\.newUI\.sort:focus-within, a#find-editor-styles:focus-within button,
-	#check-all-updates:focus-within,
-	a[href="edit.html"]:focus-within button#add-style-label
-	{
+	#save-button:hover, #beautify:hover, #cancel-button:hover, #from-mozilla:hover, #to-mozilla:hover, #editor\.keyMap:hover, #editor\.theme:hover, #editor\.matchHighlight:hover, .applies-type.style-contributor:hover, .add-section:hover, .beautify-section:hover, .test-regexp:hover, .remove-applies-to:hover, .add-applies-to:hover, option:hover, #check-all-updates:hover, button#add-style-label:hover, #manage-options-button:hover, button:hover, #manage\.newUI\.targets:hover, #updateInterval:hover, #popupWidth:hover, #editor\.linter:hover, #options button:hover, #manage\.newUI\.sort:hover, #message-box-contents select:hover, a.remove-applies-to:hover, #stylus-popup #popup-manage-button:focus-within, a.add-applies-to:hover, #stylus-popup #popup-options-button:focus-within, #stylus-popup #popup-wiki-button:focus-within, #header button#save-button:focus-within, #header button#beautify:focus-within, #header button#cancel-button:focus-within, #header button:focus-within, #manage\.newUI\.sort:focus-within, a#find-editor-styles:focus-within button, #check-all-updates:focus-within, a[href="edit.html"]:focus-within button#add-style-label {
 		color: var(--main-color) !important;
 		border: 1px solid var(--main-color) !important;
 	}
-	#stylus .options-column .option input#editor\.tabSize:focus-within
-	#stylus .options-column .option select:focus-within,
-	{
+	#stylus .options-column .option input#editor\.tabSize:focus-within, #stylus .options-column .option select:focus-within {
 		border: 1px solid var(--main-color) !important;
 	}
-	button
-	{
+	button {
 		background-image: none !important;
 		text-shadow: none !important;
 	}
-	optgroup
-	{
+	optgroup {
 		background: var(--even-entry-background);
 		color: var(--main-color) !important;
 	}
-	option
-	{
+	option {
 		background: var(--main-background) !important;
 		color: var(--main-text) !important;
 	}
-	#stylus button[disabled]
-	{
+	#stylus button[disabled] {
 		opacity: .4;
 	}
-	#stylus button[disabled]:hover
-	{
+	#stylus button[disabled]:hover {
 		color: var(--main-text) !important;
 	}
-	.install::before
-	{
+	.install::before {
 		box-shadow: var(--shadow);
 	}
 
-	.install.update::after
-	{
+	.install.update::after {
 		filter: none;
 	}
-	.install.update::before, .install.update:active::before,
-	.install.update:active:hover::before
-	{
-	  background-color: var(--hover-background);
+	.install.update::before, .install.update:active::before, .install.update:active:hover::before {
+		background-color: var(--hover-background);
 		opacity: .6;
-  }
-	.install.update:hover::before
-	{
+	}
+	.install.update:hover::before {
 		background-color: var(--hover-background);
 		opacity: .9;
 	}
 
 	/* Search
 	 * Fixed search including replace and match highlight */
-	#search-replace-dialog
-	{
+	#search-replace-dialog {
 		background: var(--second-background) !important;
 	}
-	#search-replace-dialog textarea, #search-replace-dialog [data-action="clear"]
-	{
+	#search-replace-dialog textarea, #search-replace-dialog [data-action="clear"] {
 		background: var(--main-background) !important;
 	}
-	body.find-open .search-target-editor.CodeMirror-active
-	{
+	body.find-open .search-target-editor.CodeMirror-active {
 		outline-color: var(--main-color) !important;
 	}
-	body.find-open .cm-searching
-	{
+	body.find-open .cm-searching {
 		background-color: var(--warning-disable-all) !important;
 		color: var(--main-text) !important;
 	}
-	body.find-open .cm-searching.search-target-match
-	{
+	body.find-open .cm-searching.search-target-match {
 		background-color: var(--no-match) !important;
 		color: var(--main-text) !important;
 	}
-	body.find-open .CodeMirror-search-match
-	{
+	body.find-open .CodeMirror-search-match {
 		background: var(--main-color) !important;
 		border-top: 1px solid var(--no-match) !important;
 		border-bottom: 1px solid var(--no-match) !important;
 	}
 	/* match highlighter is too dark for dark themes so we tweak that also */
-	@keyframes fadein-match-highlighter
-	{
-		from
-		{
+	@keyframes fadein-match-highlighter {
+		from {
 			background-color: inherit;
 			color: inherit;
 		}
-		to
-		{
+		to {
 			background-color: var(--main-color);
 			color: var(--main-text);
 			opacity: .8;
 		}
 	}
 
-	.CodeMirror-dialog, .CodeMirror-dialog input
-	{
+	.CodeMirror-dialog, .CodeMirror-dialog input {
 		background: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	.CodeMirror-dialog-top
-	{
+	.CodeMirror-dialog-top {
 		border-color: var(--main-color) !important;
 	}
-	if hide-scrollbar
-	{
+	if hide-scrollbar {
 		/* this hack prevents Ubuntu Firefox from showing a scrollbar when using
 		 * Global Overlay Scrollbars styles
 		 */
-		 .firefox .CodeMirror-search-field
-		 {
-			 overflow: hidden !important;
-		 }
+		.firefox .CodeMirror-search-field {
+			overflow: hidden !important;
+		}
 	}
 
 	/* Autocomplete hints */
-	.CodeMirror-hints
-	{
+	.CodeMirror-hints {
 		background: var(--second-background) !important;
 		box-shadow: var(--shadow) !important;
 		border-color: var(--hover-background) !important;
 	}
-	li.CodeMirror-hint
-	{
+	li.CodeMirror-hint {
 		color: var(--dimmer-text) !important;
 	}
-	li.CodeMirror-hint-active
-	{
+	li.CodeMirror-hint-active {
 		background: var(--main-color) !important;
 		border-color: var(--main-color) !important;
 	}
-	li.CodeMirror-hint:hover
-	{
+	li.CodeMirror-hint:hover {
 		background: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	.CodeMirror-linenumber:hover, .CodeMirror-foldgutter-open:hover,
-	.CodeMirror-foldgutter-folded:hover
-	{
+	.CodeMirror-linenumber:hover, .CodeMirror-foldgutter-open:hover, .CodeMirror-foldgutter-folded:hover {
 		color: inherit !important;
 	}
 	if use-modified-default {
 		/* Default theme overwritten with adjusted colors */
-		.cm-s-default.CodeMirror { background: var(--second-background); color: var(--main-text); }
-		.cm-s-default div.CodeMirror-selected { background: var(--select-background); }
+		.cm-s-default.CodeMirror {
+			background: var(--second-background);
+			color: var(--main-text);
+		}
+		.cm-s-default div.CodeMirror-selected {
+			background: var(--select-background);
+		}
 
-		.cm-s-default .CodeMirror-line::selection, .cm-s-default .CodeMirror-line > span::selection,
-		.cm-s-default .CodeMirror-line > span > span::selection { background: var(--select-background); }
-		.cm-s-default .CodeMirror-line::-moz-selection, .cm-s-default .CodeMirror-line > span::-moz-selection,
-		.cm-s-default .CodeMirror-line > span > span::-moz-selection { background-color: var(--select-background); }
+		.cm-s-default .CodeMirror-line::selection, .cm-s-default .CodeMirror-line > span::selection, .cm-s-default .CodeMirror-line > span > span::selection {
+			background: var(--select-background);
+		}
+		.cm-s-default .CodeMirror-line::-moz-selection, .cm-s-default .CodeMirror-line > span::-moz-selection, .cm-s-default .CodeMirror-line > span > span::-moz-selection {
+			background-color: var(--select-background);
+		}
 
-		.cm-s-default .CodeMirror-gutters { background: var(--hover-background); border-right: 0; }
-		.cm-s-default .CodeMirror-guttermarker { color: var(--main-text); }
-		.cm-s-default .CodeMirror-guttermarker-subtle,
-		.cm-s-default .CodeMirror-linenumber { color: var(--dimmer-text); }
-		.cm-s-default .CodeMirror-linenumber:hover, .cm-s-default .CodeMirror-foldgutter-open:hover,
-		.cm-s-default .CodeMirror-foldgutter-folded:hover { color: initial; }
-		.cm-s-default .CodeMirror-cursor { border-left: var(--cursor-width) solid var(--cursor-color); }
+		.cm-s-default .CodeMirror-gutters {
+			background: var(--hover-background);
+			border-right: 0;
+		}
+		.cm-s-default .CodeMirror-guttermarker {
+			color: var(--main-text);
+		}
+		.cm-s-default .CodeMirror-guttermarker-subtle, .cm-s-default .CodeMirror-linenumber {
+			color: var(--dimmer-text);
+		}
+		.cm-s-default .CodeMirror-linenumber:hover, .cm-s-default .CodeMirror-foldgutter-open:hover, .cm-s-default .CodeMirror-foldgutter-folded:hover {
+			color: initial;
+		}
+		.cm-s-default .CodeMirror-cursor {
+			border-left: var(--cursor-width) solid var(--cursor-color);
+		}
 
-		.cm-s-default span.cm-comment { color: var(--dimmer-text); }
-		.cm-s-default span.cm-atom, .cm-s-default span.cm-number { color: var(--main-color); }
+		.cm-s-default span.cm-comment {
+			color: var(--dimmer-text);
+		}
+		.cm-s-default span.cm-atom, .cm-s-default span.cm-number {
+			color: var(--main-color);
+		}
 
-		.cm-s-default span.cm-property, .cm-s-default span.cm-attribute { color: var(--main-color); opacity: 1; }
-		.cm-s-default span.cm-keyword, .cm-s-default span.cm-string { color: var(--main-color); }
-		.cm-s-default span.cm-string.cm-property { color: var(--main-text); }
+		.cm-s-default span.cm-property, .cm-s-default span.cm-attribute {
+			color: var(--main-color);
+			opacity: 1;
+		}
+		.cm-s-default span.cm-keyword, .cm-s-default span.cm-string {
+			color: var(--main-color);
+		}
+		.cm-s-default span.cm-string.cm-property {
+			color: var(--main-text);
+		}
 
-		.cm-s-default span.cm-variable { color: var(--main-text); }
-		.cm-s-default span.cm-variable-2 { color: var(--main-color); opacity: .7; }
+		.cm-s-default span.cm-variable {
+			color: var(--main-text);
+		}
+		.cm-s-default span.cm-variable-2 {
+			color: var(--main-color);
+			opacity: .7;
+		}
 
-		.cm-s-default .cm-variable-3,
-		.cm-s-default .cm-type { color: var(--main-color); filter: invert(100%); }
-		.cm-s-default span.cm-def { color: var(--main-text); }
-		.cm-s-default span.cm-bracket { color: var(--main-text); font-weight: bold; }
-		.cm-s-default span.cm-tag { color: var(--main-color); opacity: .7; }
-		.cm-s-default span.cm-link, .cm-s-default span.cm-keyword { color: var(--main-color); }
-		.cm-s-default span.cm-keyword:not(.colorview-swatch),
-		.cm-s-default span.cm-string { color: var(--main-color); filter: hue-rotate(60deg); }
-		.cm-s-default span.cm-link,
-		.cm-s-default span.cm-keyword:not(.colorview-swatch) { color: var(--main-color); filter: invert(100%); }
-		.cm-s-default span.cm-error { border-bottom: var(--hover-background); color: var(--main-text); }
-		.cm-s-default span.cm-qualifier { color: var(--main-text); }
+		.cm-s-default .cm-variable-3, .cm-s-default .cm-type {
+			color: var(--main-color);
+			filter: invert(100%);
+		}
+		.cm-s-default span.cm-def {
+			color: var(--main-text);
+		}
+		.cm-s-default span.cm-bracket {
+			color: var(--main-text);
+			font-weight: bold;
+		}
+		.cm-s-default span.cm-tag {
+			color: var(--main-color);
+			opacity: .7;
+		}
+		.cm-s-default span.cm-link, .cm-s-default span.cm-keyword {
+			color: var(--main-color);
+		}
+		.cm-s-default span.cm-keyword:not(.colorview-swatch), .cm-s-default span.cm-string {
+			color: var(--main-color);
+			filter: hue-rotate(60deg);
+		}
+		.cm-s-default span.cm-link, .cm-s-default span.cm-keyword:not(.colorview-swatch) {
+			color: var(--main-color);
+			filter: invert(100%);
+		}
+		.cm-s-default span.cm-error {
+			border-bottom: var(--hover-background);
+			color: var(--main-text);
+		}
+		.cm-s-default span.cm-qualifier {
+			color: var(--main-text);
+		}
 
-		.cm-s-default .CodeMirror-activeline-background { background: var(--select-background); }
-		.cm-s-default .CodeMirror-matchingbracket { color: var(--main-color); }
-		.cm-s-default .CodeMirror-matchingtag { background: var(--dimmer-text); }
+		.cm-s-default .CodeMirror-activeline-background {
+			background: var(--select-background);
+		}
+		.cm-s-default .CodeMirror-matchingbracket {
+			color: var(--main-color);
+		}
+		.cm-s-default .CodeMirror-matchingtag {
+			background: var(--dimmer-text);
+		}
 
-		.cm-s-default .cm-builtin { color: var(--main-color); }
-		.cm-s-default .cm-meta { color: var(--dimmer-text); }
+		.cm-s-default .cm-builtin {
+			color: var(--main-color);
+		}
+		.cm-s-default .cm-meta {
+			color: var(--dimmer-text);
+		}
 	}
 
 	/* Stylish in chrome specific */
 	/* fix: Stylus remove that unsightly white border in input */
-	body:not(#stylus-options) input:not(.slider),
-	#stylus-options label input[type=number]#popupWidth,
-	#stylus-options input[type="number"]#updateInterval,
-	#stylus .options-column .option input#editor\.tabSize
-	{
+	body:not(#stylus-options) input:not(.slider), #stylus-options label input[type="number"]#popupWidth, #stylus-options input[type="number"]#updateInterval, #stylus .options-column .option input#editor\.tabSize {
 		background-color: var(--hover-background) !important;
 		border: 1px solid var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	body:not(#stylus-options) input:not(:invalid):not(.slider):focus,
-	body:not(#stylus-options) input:not(:invalid):not(.slider):hover,
-	#stylus .options-column .option input#editor\.tabSize:hover,
-	#stylus-options label input[type=number]#popupWidth:hover,
-	#stylus-options input[type="number"]#updateInterval:hover
-	{
+	body:not(#stylus-options) input:not(:invalid):not(.slider):focus, body:not(#stylus-options) input:not(:invalid):not(.slider):hover, #stylus .options-column .option input#editor\.tabSize:hover, #stylus-options label input[type="number"]#popupWidth:hover, #stylus-options input[type="number"]#updateInterval:hover {
 		border: 1px solid var(--main-color) !important;
 	}
-	body:not(#stylus-options) input:invalid
-	{
+	body:not(#stylus-options) input:invalid {
 		border-color: var(--warning-disable-all) !important;
 		color: var(--warning-disable-all) !important;
 		background-color: darken(colorRed, 80%) !important;
 	}
-	fieldset, [style-id], .disabled
-	{
+	fieldset, [style-id], .disabled {
 		border-color: var(--hover-background);
 	}
-	.CodeMirror.cm-s-default.CodeMirror-wrap.CodeMirror-active
-	{
+	.CodeMirror.cm-s-default.CodeMirror-wrap.CodeMirror-active {
 		outline-color: var(--main-color);
 	}
 
 	/* Stylus in chrome specific */
-	#manage\.onlyEnabled\.invert, #manage\.onlyLocal\.invert,
-	#manage\.onlyUsercss\.invert
-	{
+	#manage\.onlyEnabled\.invert, #manage\.onlyLocal\.invert, #manage\.onlyUsercss\.invert {
 		color: var(--dimmer-text);
 		box-shadow: var(--shadow) !important;
 	}
-	#advanced.collapsible h1
-	{
+	#advanced.collapsible h1 {
 		color: var(--main-text) !important;
 	}
-	#advanced.collapsible h1:hover
-	{
+	#advanced.collapsible h1:hover {
 		color: var(--main-color) !important;
 	}
-	.block, .color-swatch
-	{
+	.block, .color-swatch {
 		border-color: var(--hover-background) !important;
 	}
 
-	body #options-title
-	{
+	body #options-title {
 		color: var(--main-text);
 		background: var(--hover-background);
 	}
-	#options-close-icon svg path
-	{
+	#options-close-icon svg path {
 		fill: var(--dimmer-text);
 	}
-	#options-close-icon:hover svg path
-	{
+	#options-close-icon:hover svg path {
 		fill: var(--main-color);
 	}
 
 	/* Install *.user.css page */
-	.CodeMirror-linewidget .applies-to
-	{
+	.CodeMirror-linewidget .applies-to {
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	.applies-type
-	{
+	.applies-type {
 		background-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
-	.applies-type:hover, #options .option label:hover
-	{
+	.applies-type:hover, #options .option label:hover {
 		color: var(--main-color) !important;
 	}
-	.config-dialog label
-	{
+	.config-dialog label {
 		border-color: var(--hover-background) !important;
 	}
-	.config-dialog select, .beautify-options select
-	{
+	.config-dialog select, .beautify-options select {
 		background-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
-	.config-dialog select:hover, .beautify-options select:hover
-	{
+	.config-dialog select:hover, .beautify-options select:hover {
 		color: var(--main-color) !important;
 	}
 	/* userCSS button */
-	.install.reinstall
-	{
+	.install.reinstall {
 		background: var(--hover-background) !important;
 	}
-	.header
-	{
+	.header {
 		border-color: var(--hover-background) !important;
 	}
 
 	/* Checkboxes *
 	* input[type="checkbox"] cant have a bg, else .onoffswitch goes square */
-	input[type="checkbox"]
-	{
+	input[type="checkbox"] {
 		border-color: var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
 	}
-	input[type="checkbox"]:not(.slider)
-	{
+	input[type="checkbox"]:not(.slider) {
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 		box-shadow: var(--shadow) !important;
 	}
-	input[type="checkbox"]:hover, input[type="checkbox"]:not(.slider):hover,
-	.filter-selection:hover input[type="checkbox"],
-	#enabled-label input[type="checkbox"]:not(.slider).style-contributor:hover
-	{
+	input[type="checkbox"]:hover, input[type="checkbox"]:not(.slider):hover, .filter-selection:hover input[type="checkbox"], #enabled-label input[type="checkbox"]:not(.slider).style-contributor:hover {
 		border-color: var(--main-color) !important;
 	}
-	input[type="checkbox"]:checked:not(.slider) + .svg-icon.checked
-	{
+	input[type="checkbox"]:checked:not(.slider) + .svg-icon.checked {
 		fill: var(--main-color) !important;
 	}
 	/* fixes the popup/manager elsewhere checkbox hover */
-	.style-name:hover input[type="checkbox"]:not(.slider),
-	#stylus-popup .entry.disabled .style-name:hover input[type="checkbox"]:not(.slider),
-	#stylus-popup .entry.enabled .style-name:hover input[type="checkbox"]:not(.slider),
-	#stylus-manage .style-name:hover .checker[type="checkbox"],
-	#options label input[type="checkbox"]:not(.slider):hover,
-	#options label:focus-within input[type="checkbox"]:not(.slider),
-	#basic-info-enabled input[type="checkbox"]:not(.slider):focus-within,
-	#filters .filter-selection input[type="checkbox"]:not(.slider):focus-within,
-	#filters .filter-selection input[type="checkbox"]:not(.slider):hover,
-	#filters .filter-selection:focus-within input[type="checkbox"]:not(.slider),
-	#filters .filter-selection:hover input[type="checkbox"]:not(.slider),
-	.entry .style-name:focus-within input[type="checkbox"]:not(.slider),
-	#stylus-manage .style-name:focus-within input[type="checkbox"]:not(.slider),
-	#stylus-popup #find-styles-inline-group:focus-within input[type="checkbox"]:not(.slider),
-	#stylus-popup #find-styles-inline-group:hover input[type="checkbox"]:not(.slider),
-	#stylus-popup #installed .style-name:focus-within input[type="checkbox"]:not(.slider),
-	#stylus-popup #installed .style-name:hover input[type="checkbox"]:not(.slider),
-	#add-style-as-usercss-wrapper input#newStyleAsUsercss[type="checkbox"]:hover,
-	#add-style-as-usercss-wrapper input#newStyleAsUsercss[type="checkbox"]:focus-within,
-	label#enabled-label:hover input#enabled[type="checkbox"].style-contributor,
-	label#enabled-label:focus-within input#enabled[type="checkbox"].style-contributor,
-	label#preview-label:hover input#editor\.livePreview[type="checkbox"],
-	label#preview-label:focus-within input#editor\.livePreview[type="checkbox"],
-	input#enabled[type="checkbox"]:hover, #basic-info-enabled input[type="checkbox"]:not(.slider):hover,
-	body:not(#stylus-options) input.exclude-by-domain-checkbox:not(:invalid):not(.slider):focus,
-	body:not(#stylus-options) input.exclude-by-domain-checkbox:not(:invalid):not(.slider):focus-within,
-	body:not(#stylus-options) input.exclude-by-domain-checkbox:not(:invalid):not(.slider):hover,
-	body:not(#stylus-options) input.exclude-by-url-checkbox:not(:invalid):not(.slider):focus,
-	body:not(#stylus-options) input.exclude-by-url-checkbox:not(:invalid):not(.slider):focus-within,
-	body:not(#stylus-options) input.exclude-by-url-checkbox:not(:invalid):not(.slider):hover
-	{
+	.style-name:hover input[type="checkbox"]:not(.slider), #stylus-popup .entry.disabled .style-name:hover input[type="checkbox"]:not(.slider), #stylus-popup .entry.enabled .style-name:hover input[type="checkbox"]:not(.slider), #stylus-manage .style-name:hover .checker[type="checkbox"], #options label input[type="checkbox"]:not(.slider):hover, #options label:focus-within input[type="checkbox"]:not(.slider), #basic-info-enabled input[type="checkbox"]:not(.slider):focus-within, #filters .filter-selection input[type="checkbox"]:not(.slider):focus-within, #filters .filter-selection input[type="checkbox"]:not(.slider):hover, #filters .filter-selection:focus-within input[type="checkbox"]:not(.slider), #filters .filter-selection:hover input[type="checkbox"]:not(.slider), .entry .style-name:focus-within input[type="checkbox"]:not(.slider), #stylus-manage .style-name:focus-within input[type="checkbox"]:not(.slider), #stylus-popup #find-styles-inline-group:focus-within input[type="checkbox"]:not(.slider), #stylus-popup #find-styles-inline-group:hover input[type="checkbox"]:not(.slider), #stylus-popup #installed .style-name:focus-within input[type="checkbox"]:not(.slider), #stylus-popup #installed .style-name:hover input[type="checkbox"]:not(.slider), #add-style-as-usercss-wrapper input#newStyleAsUsercss[type="checkbox"]:hover, #add-style-as-usercss-wrapper input#newStyleAsUsercss[type="checkbox"]:focus-within, label#enabled-label:hover input#enabled[type="checkbox"].style-contributor, label#enabled-label:focus-within input#enabled[type="checkbox"].style-contributor, label#preview-label:hover input#editor\.livePreview[type="checkbox"], label#preview-label:focus-within input#editor\.livePreview[type="checkbox"], input#enabled[type="checkbox"]:hover, #basic-info-enabled input[type="checkbox"]:not(.slider):hover, body:not(#stylus-options) input.exclude-by-domain-checkbox:not(:invalid):not(.slider):focus, body:not(#stylus-options) input.exclude-by-domain-checkbox:not(:invalid):not(.slider):focus-within, body:not(#stylus-options) input.exclude-by-domain-checkbox:not(:invalid):not(.slider):hover, body:not(#stylus-options) input.exclude-by-url-checkbox:not(:invalid):not(.slider):focus, body:not(#stylus-options) input.exclude-by-url-checkbox:not(:invalid):not(.slider):focus-within, body:not(#stylus-options) input.exclude-by-url-checkbox:not(:invalid):not(.slider):hover {
 		border-color: var(--main-color) !important;
 		background-color: var(--main-background) !important;
 	}
 
 	/* override the browser built in style for checkbox sliders */
-	.onoffswitch span
-	{
+	.onoffswitch span {
 		border-color: var(--main-color);
 	}
-	.onoffswitch span:before
-	{
+	.onoffswitch span::before {
 		background: var(--hover-background);
 	}
-	.onoffswitch input:checked + span
-	{
+	.onoffswitch input:checked + span {
 		background-color: var(--dimmer-text);
 	}
-	.onoffswitch input:checked + span, .onoffswitch input:checked + span:before
-	{
+	.onoffswitch input:checked + span, .onoffswitch input:checked + span::before {
 		border-color: var(--dimmer-text);
 	}
-	.onoffswitch input:checked + span:before
-	{
+	.onoffswitch input:checked + span::before {
 		background-color: var(--main-color);
 	}
 
 	/* This fixes the misalignment between:
 	 * [ ] checkbox and label */
-	#disableAll, #find-styles-inline-group label input[type="checkbox"]:not(.slider)
-	{
+	#disableAll, #find-styles-inline-group label input[type="checkbox"]:not(.slider) {
 		margin-top: 2px !important;
 	}
-	#find-styles-inline-group .checked
-	{
+	#find-styles-inline-group .checked {
 		padding-top: 2px !important;
 	}
 	/* This fixes the disable all checkbox bg being too bright on hover	*/
-	#stylus-popup input#disableAll[type="checkbox"]:not(.slider):hover,
-	#stylus-popup input#disableAll[type="checkbox"]:not(.slider):focus,
-	#stylus-popup input#disableAll[type="checkbox"]:not(.slider):focus-within,
-	{
+	#stylus-popup input#disableAll[type="checkbox"]:not(.slider):hover, #stylus-popup input#disableAll[type="checkbox"]:not(.slider):focus, #stylus-popup input#disableAll[type="checkbox"]:not(.slider):focus-within {
 		border-color: var(--warning-disable-all) !important;
 		background-color: var(--second-background) !important;
 	}
-	#stylus-popup #disableAll-label:hover,
-	#stylus-popup #disableAll-label:focus-within
-	{
+	#stylus-popup #disableAll-label:hover, #stylus-popup #disableAll-label:focus-within {
 		color: var(--warning-disable-all) !important;
 	}
 
 	/* Colorpicker
 	 * This prevents the format change arrow from being cut off to the right,
 	 * and in addition when hovering/focus we get the nice --main-color. */
-	.colorpicker-format-change
-	{
+	.colorpicker-format-change {
 		top: 3px;
 		right: -1px;
 		padding-right: 2px;
 	}
-	.colorpicker-format-change-button:hover
-	{
+	.colorpicker-format-change-button:hover {
 		color: var(--main-color) !important;
 	}
-	.colorpicker-input:hover, .colorpicker-input:focus
-	{
+	.colorpicker-input:hover, .colorpicker-input:focus {
 		border-color: var(--main-color) !important;
 	}
 }
