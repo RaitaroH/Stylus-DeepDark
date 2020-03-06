@@ -31,9 +31,12 @@
   ],
   "license": "GPL-3.0-only",
   "devDependencies": {
+    "prettier": "^1.19.1",
+    "stylelint": "^13.2.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-prettier": "^1.1.2",
     "updates": "^9.3.3",
-    "versions": "^8.1.0",
-    "stylelint": "^13.2.0"
+    "versions": "^8.1.0"
   },
   "scripts": {
     "patch": "versions -p -d -C patch StylusDeepDark.user.css",
