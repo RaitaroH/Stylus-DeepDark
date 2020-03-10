@@ -2,11 +2,7 @@
   "extends": [
     "stylelint-prettier/recommended"
   ],
-  "plugins": [
-    "stylelint-prettier"
-  ],
   "rules": {
-    "prettier/prettier": true,
     "number-leading-zero": "never",
     "block-opening-brace-space-before": "always",
     "block-no-empty": true,
