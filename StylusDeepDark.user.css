@@ -870,8 +870,9 @@
     padding: 0;
     height: 28px;
   }
-  /* add option color swatch hover style to clearly indicate editable field */
-  input[type="color"]:hover, .color-swatch:hover {
+  /* add option color swatch hover/focus-within style to clearly indicate editable field */
+  input[type="color"]:hover, .color-swatch:hover,
+  input[type="color"]:focus-within, .color-swatch:focus-within {
     outline: 1px solid var(--main-color) !important;
   }
   /* style the confirm delete popup border-color as red to show this is a danger area */
@@ -941,8 +942,13 @@
     border: 1px solid var(--main-color) !important;
   }
   #stylus .options-column .option input#editor\.tabSize:focus-within,
-  #stylus .options-column .option select:focus-within {
+  #stylus .options-column .option select:focus-within,
+  #stylus #options label:focus-within input[type="number"],
+  #stylus #options [type="button"]:focus-within {
     border: 1px solid var(--main-color) !important;
+  }
+  #stylus #options .select-resizer:focus-within  {
+    outline: 1px solid var(--main-color) !important;
   }
   button {
     background-image: none !important;
