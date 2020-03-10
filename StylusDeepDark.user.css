@@ -961,6 +961,7 @@
   }
   #stylus button[disabled]:hover {
     color: var(--main-text) !important;
+		border: 1px solid var(--hover-background) !important;
   }
   .install::before {
     box-shadow: var(--shadow);
