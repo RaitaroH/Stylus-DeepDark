@@ -2,6 +2,21 @@
 <img src="./Images/Stylus-DeepDark.png">
 </h1>
 <p align="center">
+  <a href="https://github.com/RaitaroH/Stylus-DeepDark/actions?query=workflow%3ACI">
+    <img src="https://img.shields.io/github/workflow/status/RaitaroH/Stylus-DeepDark/CI?style=flat-square&logo=github&label=CI%20status" alt="actions status">
+  </a>
+  <a href="https://github.com/RaitaroH/Stylus-DeepDark/tags">
+    <img src="https://img.shields.io/github/tag/RaitaroH/Stylus-DeepDark.svg?label=current%20version&style=flat-square" alt="version">
+  </a>
+  <a href="https://github.com/RaitaroH/Stylus-DeepDark/stargazers">
+    <img src="https://img.shields.io/github/stars/RaitaroH/Stylus-DeepDark.svg?style=flat-square" alt="stars">
+  </a>
+  <a href="https://github.com/RaitaroH/Stylus-DeepDark/network">
+    <img src="https://img.shields.io/github/forks/RaitaroH/Stylus-DeepDark.svg?style=flat-square" alt="forks">
+  </a>
+  <a href="https://david-dm.org/RaitaroH/Stylus-DeepDark?type=dev">
+    <img src="https://img.shields.io/david/dev/RaitaroH/Stylus-DeepDark.svg?label=devdependencies&style=flat-square" alt="devdependencies">
+  </a>
   <a href="https://github.com/RaitaroH/Stylus-DeepDark/#contributors">
     <img src="https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square" alt="All Contributors">
   </a>
