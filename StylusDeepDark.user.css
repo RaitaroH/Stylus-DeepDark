@@ -650,8 +650,7 @@
 
   /* dont uncomment anything below */
   .CodeMirror, .CodeMirror-hints {
-    font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro",
-      monospace !important;
+    font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas", "source-code-pro", monospace !important;
     font-size: var(--font-size) !important;
   }
   .CodeMirror-lint-tooltip {
@@ -667,7 +666,7 @@
     color: var(--main-color) !important;
     -webkit-text-fill-color: var(--main-color) !important;
     font-weight: 900 !important;
-    outline: none !important;
+    outline: 0 !important;
   }
   div.CodeMirror span.CodeMirror-nonmatchingbracket {
     color: var(--warning-disable-all) !important;
@@ -765,7 +764,6 @@
       padding: 1ex 1.5ex;
       border-radius: 4px;
       animation: fadeout 10s;
-      animation-fill-mode: none;
       animation-fill-mode: both;
       background: var(--second-background);
       border: 1px solid var(--warning-disable-all);
