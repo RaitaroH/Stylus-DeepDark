@@ -947,7 +947,7 @@
   #stylus #options [type="button"]:focus-within {
     border: 1px solid var(--main-color) !important;
   }
-  #stylus #options .select-resizer:focus-within  {
+  #stylus #options .select-resizer:focus-within {
     outline: 1px solid var(--main-color) !important;
   }
   button {
@@ -967,7 +967,7 @@
   }
   #stylus button[disabled]:hover {
     color: var(--main-text) !important;
-		border: 1px solid var(--hover-background) !important;
+    border: 1px solid var(--hover-background) !important;
   }
   .install::before {
     box-shadow: var(--shadow);
