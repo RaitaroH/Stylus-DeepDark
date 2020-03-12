@@ -34,6 +34,7 @@
     "perfectionist": "^2.4.0",
     "stylelint": "^13.2.0",
     "stylelint-config-standard": "^20.0.0",
+    "stylint": "^2.0.0",
     "updates": "^9.3.3",
     "versions": "^8.1.0"
   },
@@ -43,6 +44,7 @@
     "major": "versions -p -d -C major StylusDeepDark.user.css",
     "update": "updates -cu && npm install",
     "lintfix": "stylelint --fix StylusDeepDark.user.css && npm run clean",
+    "stylint": "stylint StylusDeepDark.user.css && npm run clean",
     "clean": "npm run options && node tools/clean.js",
     "options": "npx perfectionist StylusDeepDark.user.css --indentSize 2 --maxAtRuleLength 250"
   }
