@@ -29,7 +29,6 @@
       "url": "https://gitlab.com/RaitaroH/Stylus-DeepDark/-/graphs/master"
     }
   ],
-  "main": "StylusDeepDark.user.css",
   "license": "GPL-3.0-only",
   "devDependencies": {
     "perfectionist": "^2.4.0",

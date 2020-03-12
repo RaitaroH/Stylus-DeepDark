@@ -1,26 +1,29 @@
 #!/usr/bin/env node
 "use strict";
 
-const fs = require("fs").promises;
-const path = require("path");
-const pkg = require("../package.json");
+// this script does some cleanups after perfectionist ran
 
-const fileName = path.join(__dirname, "..", pkg.main);
+const {readFile} = require("fs").promises;
+const {join} = require("path");
+const {writeFile, exit} = require("./utils");
 
-function cleanup(css) {
-  return css
+const source = join(__dirname, "..", "StylusDeepDark.user.css");
+
+const replacements = [
     // Perfectionist adds comments to the end of the previous line...
     // }/* comment */ => }\n\n  /* comment */
-    .replace(/}\/\*(([\s\S])+?)\*\/\s*/g, "}\n\n  /*$1*/\n  ")
-    .replace(/,\s\/\*/g, ",\n  /*")
+    {from: /}\/\*(([\s\S])+?)\*\/\s*/g, to: "}\n\n  /*$1*/\n  "},
+    {from: /,\s\/\*/g, to: ",\n  /*"},
     // Remove leading whitespace from @-moz-document entries
-    .replace(/\n\s{15}/g, "\n")
+    {from: /\n\s{15}/g, to: "\n"},
+];
+
+async function main() {
+  let css = await readFile(source, "utf8");
+  for (const replacement of replacements) {
+    css = css.replace(replacement.from, replacement.to);
+  }
+  await writeFile(source, css);
 }
 
-async function postPerfectionist() {
-  const css = await fs.readFile(fileName, "utf8");
-  await fs.writeFile(fileName, cleanup(css));
-  console.info("\u001B[32m%s\u001B[0m", `${pkg.title} usercss cleanup completed`);
-}
-
-postPerfectionist();
+main().then(exit).catch(exit);
