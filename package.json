@@ -45,8 +45,8 @@
     "update": "updates -cu && npm install",
     "lintfix": "stylelint --fix StylusDeepDark.user.css && npm run clean",
     "test": "stylelint StylusDeepDark.user.css && npm run stylint",
-    "stylint": "stylint StylusDeepDark.user.css && npm run clean",
+    "stylint": "stylint StylusDeepDark.user.css",
     "clean": "npm run options && node tools/clean.js",
-    "options": "npx perfectionist StylusDeepDark.user.css --indentSize 2 --maxAtRuleLength 250"
+    "options": "perfectionist StylusDeepDark.user.css --indentSize 2 --maxAtRuleLength 250"
   }
 }
