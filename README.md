@@ -30,7 +30,7 @@ This is a dark theme for Stylus inspired by FT DeepDark, now defunct theme for F
 Credit for some of the the color palettes in use. ([@KDE](https://github.com/KDE), [@horst3180](https://github.com/horst3180), [@linuxmint](https://github.com/linuxmint), [Firefox](https://www.mozilla.org/en-US/firefox/new/), [YouTube](https://www.youtube.com/) and [Discord](https://discordapp.com/))
 
 ## Installing
-
+[![alt tag](https://img.shields.io/badge/Install%20directly%20with-Stylus-%233daee9?style=for-the-badge)](https://github.com/RaitaroH/Stylus-DeepDark/raw/master/StylusDeepDark.user.css)
 #### Using a browser extension:
 * Stylus - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) and [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
 * This is only available using Stylus (see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss)).
