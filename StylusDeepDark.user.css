@@ -816,7 +816,7 @@
     color: var(--main-color) !important;
   }
   #name, .applies-to li .applies-value, #search, .keymap-list input,
-  .config-value, #sort-select, .sorter-selection select,
+  #sort-select, .sorter-selection select,
   body#stylus-options #message-box input {
     background-color: var(--hover-background) !important;
     border: 1px solid var(--hover-background) !important;
