@@ -43,10 +43,10 @@
     "minor": "versions -p -d -C minor StylusDeepDark.user.css",
     "major": "versions -p -d -C major StylusDeepDark.user.css",
     "update": "updates -cu && npm install",
-    "lintfix": "stylelint --fix StylusDeepDark.user.css && npm run clean",
+    "lintfix": "stylelint -q --fix StylusDeepDark.user.css",
     "test": "stylelint StylusDeepDark.user.css && npm run stylint",
     "stylint": "stylint StylusDeepDark.user.css",
-    "clean": "npm run options && node tools/clean.js",
+    "clean": "npm run options && npm run lintfix && node tools/clean.js",
     "options": "perfectionist StylusDeepDark.user.css --indentSize 2 --maxAtRuleLength 250"
   }
 }
