@@ -782,8 +782,9 @@
   }
 
   #filters.active, .active #filters-stats {
-    background-color: var(--main-color) !important;
-    border-color: var(--main-color) !important;
+    background-color: var(--hover-background);
+    border-color: var(--main-color);
+		color: var(--main-text);
   }
 
   body.all-styles-hidden-by-filters::before, body.all-styles-hidden-by-filters::after {
