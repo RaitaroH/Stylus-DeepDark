@@ -989,6 +989,8 @@
    * Fixed search including replace and match highlight */
   #search-replace-dialog {
     background: var(--second-background) !important;
+    box-shadow: 4px 5px 20px -6px var(--shadow)
+    border: 1px solid var(--hover-background)
   }
   #search-replace-dialog textarea, #search-replace-dialog [data-action="clear"] {
     background: var(--main-background) !important;
@@ -1035,6 +1037,14 @@
      */
     .firefox .CodeMirror-search-field {
       overflow: hidden !important;
+    }
+  }
+
+  /* style some weird Firefox side outline color that is caused by gremlins */
+  .CodeMirror-search-field {
+    &:focus {
+      outline: 1px solid var(--main-color)
+      outline-offset: -1px
     }
   }
 
