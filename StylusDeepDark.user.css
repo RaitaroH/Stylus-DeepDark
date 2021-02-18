@@ -807,8 +807,8 @@
   option[disabled] {
     color: var(--hover-background) !important;
   }
-  select {
-    background-color: var(--second-background) !important;
+  select:not([id*="manage"]) {
+    background-color: var(--second-background);
     color: var(--main-text) !important;
     border-color: var(--hover-background) !important;
   }
