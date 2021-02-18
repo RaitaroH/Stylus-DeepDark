@@ -816,6 +816,7 @@
     border-color: var(--main-color) !important;
     color: var(--main-color) !important;
   }
+
   #name, .applies-to li .applies-value, #search, .keymap-list input,
   #sort-select, .sorter-selection select,
   body#stylus-options #message-box input {
@@ -995,6 +996,7 @@
   #search-replace-dialog textarea, #search-replace-dialog [data-action="clear"] {
     background: var(--main-background) !important;
   }
+
   body.find-open .search-target-editor.CodeMirror-active {
     outline-color: var(--main-color) !important;
   }
@@ -1337,6 +1339,11 @@
   }
   .onoffswitch input:checked + span::before {
     background-color: var(--main-color);
+  }
+
+  /* This fixes the color and hover of ff input range */
+  .firefox input[type="range"] {
+    filter: invert(1) hue-rotate(180deg) brightness(1.2)
   }
 
   /* This fixes the misalignment between:
