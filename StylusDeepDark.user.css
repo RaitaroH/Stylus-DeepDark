@@ -2,7 +2,7 @@
 @name        Stylus DeepDark
 @namespace   gitlab.com/RaitaroH/Stylus-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/Stylus-DeepDark
-@version     2.2.10
+@version     2.3.0
 @updateURL   https://gitlab.com/RaitaroH/Stylus-DeepDark/raw/master/StylusDeepDark.user.css
 @description Write thy themes in the dark. May the dark be kinder on thine eyes. (Stylus dark theme)
 @author      RaitaroH and contributors
@@ -112,7 +112,7 @@
   /* Co-authors : https://gitlab.com/RaitaroH/Stylus-DeepDark/graphs/contributors */
   /* Home       : https://gitlab.com/RaitaroH/Stylus-DeepDark */
   /* Licence    : GNU General Public License v3.0 */
-  /* Version    : 2.2.10 (2021-02-18) */
+  /* Version    : 2.3.0 (2021-06-01) */
   /* Main color variables */
   /* stylelint-disable */
   :root {
@@ -1057,15 +1057,16 @@
     border-color: var(--hover-background) !important;
   }
   li.CodeMirror-hint {
-    color: var(--dimmer-text) !important;
+    color: var(--main-text) !important;
   }
   li.CodeMirror-hint-active {
-    background: var(--main-color) !important;
+    background: var(--hover-background) !important;
     border-color: var(--main-color) !important;
+    color: var(--main-color) !important;
   }
   li.CodeMirror-hint:hover {
     background: var(--hover-background) !important;
-    color: var(--main-text) !important;
+    color: var(--main-color) !important;
   }
   .CodeMirror-linenumber:hover, .CodeMirror-foldgutter-open:hover,
   .CodeMirror-foldgutter-folded:hover {
