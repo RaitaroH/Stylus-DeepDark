@@ -698,6 +698,27 @@
     background-color: var(--second-background) !important;
     border-color: var(--hover-background) !important;
   }
+  .blocked-info, .blocked-info label {
+    background-color: var(--main-background) !important;
+    border-bottom: 1px solid var(--hover-background) !important;
+  }
+
+  /* Splash menus */
+  .split-btn-menu {
+    background-color: var(--main-background) !important;
+  }
+
+  /* Options */
+  header {
+    background-color: #059f9f !important;
+  }
+  main {
+    background-color: var(--main-background) !important;
+  }
+  footer {
+    background-color: var(--main-background) !important;
+    border-top: 1px solid var(--hover-background) !important;
+  }
 
   /* Icons */
   .svg-icon, .svg-icon.info, .newUI .entry .svg-icon {
@@ -897,7 +918,9 @@
   #add-style-label, #manage-options-button, button, #manage\.newUI\.targets,
   #badgeNormal, #badgeDisabled, #updateInterval, #popupWidth,
   #editor\.linter, #options button, #manage\.newUI\.sort,
-  #message-box-contents select, a.remove-applies-to, a.add-applies-to {
+  #message-box-contents select, a.remove-applies-to, a.add-applies-to,
+  #manage\.searchMode, #manage\.minColumnWidth, #schemeSwitcher\.nightStart,
+  #schemeSwitcher\.nightEnd {
     background-color: var(--second-background) !important;
     color: var(--main-text) !important;
     border: 1px solid var(--hover-background) !important;
@@ -937,7 +960,8 @@
   #header button#cancel-button:focus-within, #header button:focus-within,
   #manage\.newUI\.sort:focus-within, a#find-editor-styles:focus-within button,
   #check-all-updates:focus-within,
-  a[href="edit.html"]:focus-within button#add-style-label {
+  a[href="edit.html"]:focus-within button#add-style-label,
+  #manage\.searchMode:hover, #manage\.minColumnWidth:hover {
     color: var(--main-color) !important;
     border: 1px solid var(--main-color) !important;
   }
