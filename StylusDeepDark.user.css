@@ -698,6 +698,10 @@
     background-color: var(--second-background) !important;
     border-color: var(--hover-background) !important;
   }
+  .blocked-info, .blocked-info label {
+    background-color: var(--main-background) !important;
+    border-bottom: 1px solid var(--hover-background) !important;
+  }
 
   /* Splash menus */
   .split-btn-menu {
